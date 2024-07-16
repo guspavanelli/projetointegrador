@@ -1,0 +1,6 @@
+.home_posso_doar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+}
