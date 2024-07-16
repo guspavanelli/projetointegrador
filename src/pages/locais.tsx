@@ -1,7 +1,7 @@
 
 function Locais(){
     return(
-        <div></div>
+        <div>está é a página locais</div>
     )
 }
 
