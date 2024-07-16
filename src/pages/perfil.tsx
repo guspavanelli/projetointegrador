@@ -1,7 +1,9 @@
 
 function Perfil(){
     return(
-        <div></div>
+        <div>
+            <h1>Pagina de perfik</h1>
+        </div>
     )
 }
 

@@ -1,7 +1,9 @@
 
 function Checkin(){
     return(
-        <div></div>
+        <div>
+            <h1>Pagina Check IN</h1>
+        </div>
     )
 }
 

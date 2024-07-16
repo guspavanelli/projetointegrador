@@ -1,7 +1,9 @@
 
 function PageLogin(){
     return(
-        <div></div>
+        <div>
+            <h1>Pagina de login</h1>
+        </div>
     )
 }
 

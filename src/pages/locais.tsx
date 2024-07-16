@@ -1,7 +1,9 @@
 
 function Locais(){
     return(
-        <div></div>
+        <div>
+            <h1>Pagina de Locais</h1>
+        </div>
     )
 }
 
