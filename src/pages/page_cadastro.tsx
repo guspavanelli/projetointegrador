@@ -1,7 +1,9 @@
 
 function PageCadastro(){
     return(
-        <div></div>
+        <div>
+            <h1>Pagina de cadastro</h1>
+        </div>
     )
 }
 

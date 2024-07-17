@@ -1,7 +1,9 @@
 
 function Sobre(){
     return(
-        <div></div>
+        <div>
+            <h1>Pagina Sobre</h1>
+        </div>
     )
 }
 
