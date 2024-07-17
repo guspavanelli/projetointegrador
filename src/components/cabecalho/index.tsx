@@ -1,7 +1,7 @@
 
 function Cabecalho(){
     return(
-        <div>
+        <div className="cab_container">
             <div className="cab_logo">
                 SANGUE BOM 
             </div>
@@ -10,8 +10,10 @@ function Cabecalho(){
                 <div className="cab_options_info">Informações</div>
                 <div className="cab_options_check">Checkin</div>
             </div>
-            <div>
-                LOGIN
+            <div className="cab_login">
+                <div className="teste">
+                    LOGIN
+                </div>  
             </div>
         </div>
     )
