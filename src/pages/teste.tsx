@@ -1,7 +1,11 @@
+import Cabecalho from "../components/cabecalho";
 
 function Teste(){
     return(
-        <div></div>
+        <div>
+            <Cabecalho/>
+            <p>Página Teste</p>
+        </div>
     )
 }
 
