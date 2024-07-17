@@ -1,6 +1,7 @@
 
 import BotaoLike from '../components/buttons';
 import Cabecalho from '../components/cabecalho';
+import Comentarios from '../components/coments';
 import '../style/style.css';
 
 function Home(){
@@ -91,6 +92,9 @@ function Home(){
                 </div>
             </div>
             <BotaoLike/>
+            <div>
+                <Comentarios/>
+            </div>
         </div>
     )
 }
