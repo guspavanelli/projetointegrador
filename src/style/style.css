@@ -53,6 +53,10 @@
 
 }
 
+.cab_container, .cab_login, .cab_options{
+    text-decoration: none;
+}
+
 /* POSSO DOAR */
 .home_container{
     width: 100%;
