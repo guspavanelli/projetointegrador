@@ -1,6 +1,7 @@
 
 import BotaoLike from '../components/buttons';
 import Cabecalho from '../components/cabecalho';
+import Comentarios from '../components/coments';
 import '../style/style.css';
 import { Link } from 'react-router-dom';
 
@@ -92,6 +93,9 @@ function Home(){
                 </div>
             </div>
             <BotaoLike/>
+            <div>
+                <Comentarios/>
+            </div>
         </div>
     )
 }

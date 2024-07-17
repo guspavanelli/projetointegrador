@@ -212,3 +212,11 @@ h3{
     font-weight: 500;
     line-height: 150%; 
 }
+
+/* COMENTARIOS */
+
+.container_coments{
+    background-color: #0000;
+    width: 80%;
+    height: 800px;
+}
