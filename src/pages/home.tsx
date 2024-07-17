@@ -2,6 +2,7 @@
 import BotaoLike from '../components/buttons';
 import Cabecalho from '../components/cabecalho';
 import '../style/style.css';
+import { Link } from 'react-router-dom';
 
 function Home(){
     return(
@@ -15,7 +16,7 @@ function Home(){
                     <p>Faça o teste e descubra se você está apto para doação.</p>
                 </div>
                 <div className="home_pd_teste">
-                    <p>teste</p>
+                    <Link to="/teste"><p>Teste</p></Link>
                 </div>
             </div>
             <div className='home_doadores'>
