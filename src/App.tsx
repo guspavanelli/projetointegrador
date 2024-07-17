@@ -14,30 +14,28 @@ import Sobre from './pages/sobre';
 function App() {
   return (
     <div className='container_body'>
-        <Home/>
-    <div>
-    <Routes>
-      <Route path='*' element={<Erro404/>}>
-      </Route>
-      <Route path='/' element={<Home/>}>
-      </Route>
-      <Route path='/checkin' element={<Checkin/>}>
-      </Route>
-      <Route path='/info' element={<Info/>}>
-      </Route>
-      <Route path='/locais' element={<Locais/>}>
-      </Route>
-      <Route path='/pagecadastro' element={<PageCadastro/>}>
-      </Route>
-      <Route path='/pagelogin' element={<PageLogin/>}>
-      </Route>
-      <Route path='/checkin' element={<Checkin/>}>
-      </Route>
-      <Route path='/perfil' element={<Perfil/>}>
-      </Route>
-      <Route path='/sobre' element={<Sobre/>}>
-      </Route>    
-    </Routes>
+      <Routes>
+        <Route path='*' element={<Erro404/>}>
+        </Route>
+        <Route path='/' element={<Home/>}>
+        </Route>
+        <Route path='/checkin' element={<Checkin/>}>
+        </Route>
+        <Route path='/info' element={<Info/>}>
+        </Route>
+        <Route path='/locais' element={<Locais/>}>
+        </Route>
+        <Route path='/pagecadastro' element={<PageCadastro/>}>
+        </Route>
+        <Route path='/pagelogin' element={<PageLogin/>}>
+        </Route>
+        <Route path='/checkin' element={<Checkin/>}>
+        </Route>
+        <Route path='/perfil' element={<Perfil/>}>
+        </Route>
+        <Route path='/sobre' element={<Sobre/>}>
+        </Route>    
+      </Routes>
     </div>
   );
 }
