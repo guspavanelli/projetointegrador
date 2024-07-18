@@ -21,7 +21,6 @@ function Home(){
                 <Link to="/teste">
                 <div className="home_pd_teste">
                     <p>Teste</p>
-                    <Link className="teste" to="/teste"><p>Teste</p></Link>
                 </div>
                 </Link>
             </div>
