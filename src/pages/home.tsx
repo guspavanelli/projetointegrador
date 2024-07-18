@@ -1,6 +1,7 @@
 
 import BotaoLike from '../components/buttons';
 import Cabecalho from '../components/cabecalho';
+import Footer from '../components/footer';
 import '../style/style.css';
 
 function Home(){
@@ -91,6 +92,7 @@ function Home(){
                 </div>
             </div>
             <BotaoLike/>
+            <div><Footer/></div>
         </div>
     )
 }

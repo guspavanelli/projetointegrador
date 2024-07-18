@@ -208,3 +208,28 @@ h3{
     font-weight: 500;
     line-height: 150%; 
 }
+
+/*Footer*/
+h1{
+    color: #A60321;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 30px;
+}
+
+h4{
+    color: #828282;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 30px;
+}
+
+/* .footer_apo{
+        background-color: #658C7A;
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        
+    }
