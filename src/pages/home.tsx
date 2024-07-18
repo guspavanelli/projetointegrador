@@ -18,7 +18,7 @@ function Home(){
                     <p>Faça o teste e descubra se você está apto para doação.</p>
                 </div>
                 <div className="home_pd_teste">
-                    <Link to="/teste"><p>Teste</p></Link>
+                    <Link className="teste" to="/teste"><p>Teste</p></Link>
                 </div>
             </div>
             <div className='home_doadores'>
