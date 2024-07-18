@@ -285,8 +285,6 @@ h1{
     color: #FFF;
     text-decoration: none;
 }
-
-
 .botao-google {
     display: flex;
     background-color: #fff;
@@ -298,7 +296,6 @@ h1{
     border-radius: 4px;
     text-decoration: none;
 }
-
 .botao-google:hover {
     box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.10);
 }
@@ -330,7 +327,6 @@ h1{
     display: flex;
     flex-direction: column;
 }
-
 .title_cadastro{
     color: #A60321;
     text-align: center;
@@ -340,7 +336,10 @@ h1{
     line-height: normal;
     height: 30px;
 }
-
+.return_form_cad{
+    color: #000;
+    text-decoration: none;
+}
 /*CABEÇALHO ESPECÍFICO DAS PÁGINAS DE LOGIN E CADASTRO */
 .pai_logincad{
     display: flex;
@@ -348,7 +347,6 @@ h1{
     margin-top: 10px;
     padding-bottom: 30px;
 }
-
 .cab_logincad{
     color: #A60321;
     width: 1370px;
@@ -359,9 +357,6 @@ h1{
     justify-content: center;
     align-items: center;
 }
-
-
-
 /* COMPONENTES */
 
 /* LIKE */

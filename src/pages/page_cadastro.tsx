@@ -27,6 +27,10 @@ function PageCadastro(){
                         <p>Ao clicar em Cadastrar, você concorda com nossos Termos de <br />
                             Serviço e Política de Privacidade
                         </p>
+                        <Link className="return_form_cad" to="/pagelogin">
+                            <p><b>Já é um(a) Sangue Bom?</b> Clique <b>aqui</b> e faça seu login!
+                            </p>
+                        </Link>
                     </div>
                 </div>
             </div>
