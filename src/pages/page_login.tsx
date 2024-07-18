@@ -15,20 +15,21 @@ function PageLogin(){
                 <div className="pai_login">
                     <div className="title_form_login">
                         <h2 className="title_login">Login</h2>
+                        <hr className="line_divisor"/>
                         <h4>Digite seu email e senha para entrar:</h4>
-                        <Link className="botao_login" to="/"><h3>Entrar</h3></Link>
+                        <Link className="botao_loginecad" to="/"><h3>Entrar</h3></Link>
                         <hr className="line_divisor" />
                         <h4>Ou entre com o Google:</h4>
                         <a href="#" className="botao-google">
                             <img className="imagem_botao_google" src="https://developers.google.com/identity/images/g-logo.png" alt="Logo do Google"></img>
                             Continue com Google
                         </a>
-                        <p>Ao clicar em continuar, você concorda com nossos Termos de <br />
+                        <p>Ao clicar em Entrar, você concorda com nossos Termos de <br />
                             Serviço e Política de Privacidade
                         </p>
                         <hr className="line_divisor"/>
                         <h5>É novo(a) por aqui? Então cadastre-se para criar sua conta!</h5>
-                        <Link className="botao_login" to="/pagecadastro"><h3>Cadastre-se aqui</h3></Link>
+                        <Link className="botao_loginecad" to="/pagecadastro"><h3>Cadastre-se aqui</h3></Link>
                     </div>
                 </div>
             </div>

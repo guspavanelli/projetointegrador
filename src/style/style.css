@@ -251,7 +251,7 @@ h1{
 .line_divisor{
     border: none;
     border-top: 1px solid #ccc; /* Cor e estilo da linha */
-    margin: 10px 10px; /* Espaçamento acima e abaixo da linha */
+    margin: 5px 5px; /* Espaçamento acima e abaixo da linha */
 }
 
 /*FORM PÁGINA DE LOGIN */
@@ -276,7 +276,7 @@ h1{
     line-height: normal;
     height: 30px;
 }
-.botao_login{
+.botao_loginecad{
     background-color: #A60321;
     text-align: center;
     width: 450px;
@@ -324,7 +324,22 @@ h1{
 
 
 /*FORM PÁGINA DE CADASTRO */
+.title_form_cadastro{
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.title_cadastro{
+    color: #A60321;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 30px;
+}
 
 /*CABEÇALHO ESPECÍFICO DAS PÁGINAS DE LOGIN E CADASTRO */
 .pai_logincad{
