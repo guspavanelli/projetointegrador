@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import '../../style/style.css'
+import Linha from "../linha";
 
 function Cabecalho(){
     return(
