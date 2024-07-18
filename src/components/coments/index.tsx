@@ -1,5 +1,6 @@
 import BotaoLike from "../buttons/like";
 import BotaoCompartilhar from "../buttons/share";
+import Linha from "../linha";
 
 function Comentarios(){
     return(
@@ -17,7 +18,8 @@ function Comentarios(){
                     <div><BotaoCompartilhar/></div>
                 </div>
             </div>
-            <div id="linha"></div>
+            {/* <div id="linha"></div> */}
+            <Linha/>
             <div className="coments_two">
                 <div className="coments_post">
                     <h3>Maria Camila </h3>
@@ -31,7 +33,7 @@ function Comentarios(){
                     <div><BotaoCompartilhar/></div>
                 </div>
             </div>
-            <div id="linha"></div>
+            <Linha/>
             <div className="coments_three">
                 <div className="coments_post">
                     <h3>Caio Castro</h3>
@@ -45,7 +47,7 @@ function Comentarios(){
                     <div><BotaoCompartilhar/></div>
                 </div>
             </div>
-            <div id="linha"></div>
+            <Linha/>
             <div className="coments_four">
                 <div className="coments_post">
                     <h3>Postagens e mais postagens</h3>
@@ -55,7 +57,7 @@ function Comentarios(){
                     <div><BotaoCompartilhar/></div>
                 </div>
             </div>
-            <div id="linha"></div>
+            <Linha/>
             <div className="coments_five">
                 <div className="coments_post">
                     <h3>Carregar mais postagens é só descer</h3>
