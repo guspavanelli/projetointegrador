@@ -8,7 +8,12 @@
     height: 200px;
     display:flex;
     align-items:center ;
+    /* background-color: #000; */
+    /* text-decoration: none; */
 }
+
+
+
 
 .cab_logo{
     color: #A60321;
@@ -20,7 +25,8 @@
     line-height: 150%;
     width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    /* text-decoration: none; */
 }
 
 .cab_options{
@@ -28,6 +34,7 @@
     display: flex;
     flex:10;
     gap: 48px;
+    text-decoration: none;
 }
 .cab_login{
     margin-right: 30px;
@@ -51,6 +58,11 @@
     font-style: normal;
     font-weight: 500;
 
+}
+
+.cab_logo, .cab_options_home, .cab_options_info, .cab_options_check, .teste{
+    text-decoration: none;
+    background-color: #0000;
 }
 
 /* POSSO DOAR */
@@ -233,3 +245,10 @@ h4{
         flex-direction: column;
         
     }
+/* COMENTARIOS */
+
+.container_coments{
+    background-color: #658C7A;
+    width: 800px;
+    height: 800px;
+}

@@ -10,6 +10,7 @@ import PageCadastro from './pages/page_cadastro';
 import PageLogin from './pages/page_login';
 import Perfil from './pages/perfil';
 import Sobre from './pages/sobre';
+import Teste from './pages/teste';
 
 function App() {
   return (
@@ -34,7 +35,9 @@ function App() {
         <Route path='/perfil' element={<Perfil/>}>
         </Route>
         <Route path='/sobre' element={<Sobre/>}>
-        </Route>    
+        </Route>
+        <Route path='/teste' element={<Teste/>}>
+        </Route>      
       </Routes>
     </div>
   );

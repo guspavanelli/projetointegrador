@@ -1,19 +1,25 @@
+import { Link } from "react-router-dom";
+import '../../style/style.css'
 
 function Cabecalho(){
     return(
         <div className="cab_container">
-            <div className="cab_logo">
-                SANGUE BOM 
+            <Link className="cab_logo" to="/">
+            <div >
+                SANGUE BOM
             </div>
+                </Link> 
             <div className="cab_options">
-                <div className="cab_options_home">Home</div>
-                <div className="cab_options_info">Informações</div>
-                <div className="cab_options_check">Checkin</div>
+                <Link className="cab_options_home"to="/"><div >Home</div></Link>
+                <Link className="cab_options_info"to="/info"><div>Informações</div></Link>
+                <Link className="cab_options_check"to="/checkin"><div >Checkin</div></Link>
             </div>
             <div className="cab_login">
-                <div className="teste">
-                    LOGIN
-                </div>  
+                <Link className="teste"to="/pagelogin">
+                    <div >
+                        LOGIN
+                    </div>  
+                </Link>
             </div>
         </div>
     )
