@@ -4,7 +4,7 @@ import imagemcadastro from "../assests/imagem cadastro.jpg"
 
 function PageCadastro(){
     return(
-    <div>
+    <div className="g">
         <Cablogcad/>
         <div className="pai_componentes_loginecad">
             <div className="molde_imagem_logecad">
