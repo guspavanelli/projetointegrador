@@ -245,6 +245,12 @@ h1{
     overflow: hidden;
     flex: 1;
 }
+.return_cablogecad{
+    text-decoration: none;
+    color: #A60321;
+}
+
+
 /*FORM PÁGINA DE LOGIN */
 
 /*FORM PÁGINA DE CADASTRO */
