@@ -92,9 +92,9 @@ function Home(){
                 doação de sangue e para canditos que querem doar.
                 </div>
             </div>
-            <BotaoLike/>
             <div>
-                <Comentarios/>
+            <Comentarios/>
+            <BotaoLike/>
             </div>
         </div>
     )
