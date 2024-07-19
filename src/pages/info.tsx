@@ -1,6 +1,8 @@
 import Cabecalho from "../components/cabecalho";
+import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 function Info(){
+    TabTitle('Informações Gerais - Sangue Bom')
     return(
         <div>
             <Cabecalho/>

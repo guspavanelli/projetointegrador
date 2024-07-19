@@ -1,9 +1,11 @@
 import Cablogcad from "../components/cabecalho-log-cad";
 import imagemlogin from "../assests/imagem login.jpg"
 import { Link } from "react-router-dom";
+import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 
 function PageLogin(){
+    TabTitle('Login - Sangue Bom')
     return(
     <div>
         <Cablogcad/>

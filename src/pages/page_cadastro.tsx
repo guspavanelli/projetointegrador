@@ -1,9 +1,11 @@
 import Cablogcad from "../components/cabecalho-log-cad";
 import imagemcadastro from "../assests/imagem cadastro.jpg"
 import { Link } from "react-router-dom";
+import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 
 function PageCadastro(){
+    TabTitle('Cadastro - Sangue Bom')
     return(
     <div className="g">
         <Cablogcad/>
