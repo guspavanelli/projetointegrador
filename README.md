@@ -13,8 +13,8 @@ Sangue Bom é um projeto desenvolvido por alunos do curso de Desenvolvedor Full 
 - **Interação Social**: Funcionalidade que permite aos usuários interagir com postagens dentro do site e compartilhar conteúdo nas redes sociais.
 
 ## Tecnologias Utilizadas
-- **Frontend**: React, HTML5, CSS3, JavaScript, TypeScript
-- **Backend**: Node.js, Nest.js
+- **Frontend**: React, HTML5, CSS3, TypeScript
+- **Backend**: Node.js, Nest.js, JavaScript
 - **Controle de Versionamento**: Git e GitHub
 - **Mapas**: Google Maps API
 <!-- 
