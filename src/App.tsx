@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet'
 import Erro404 from './pages/erro404';
 import Home from './pages/home';
 import Checkin from './pages/checkin';
