@@ -249,19 +249,106 @@ h1{
     border: 3px solid rgba(255, 0, 0, 0.30);
     box-shadow: 4px 4px 3px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     flex: 1;
 }
 .return_cablogecad{
     text-decoration: none;
     color: #A60321;
 }
-
+.line_divisor{
+    border: none;
+    border-top: 1px solid #ccc; /* Cor e estilo da linha */
+    margin: 5px 5px; /* Espaçamento acima e abaixo da linha */
+}
 
 /*FORM PÁGINA DE LOGIN */
 
+.cab_logincad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title_form_login{
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.title_login{
+    color: #A60321;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 30px;
+}
+.botao_loginecad{
+    background-color: #A60321;
+    text-align: center;
+    width: 450px;
+    height: 30px;
+    border-radius: 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+.botao-google {
+    display: flex;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.botao-google:hover {
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.10);
+}
+.imagem_botao_google{
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*FORM PÁGINA DE CADASTRO */
-
-
+.title_form_cadastro{
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.title_cadastro{
+    color: #A60321;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 30px;
+}
+.return_form_cad{
+    color: #000;
+    text-decoration: none;
+}
 /*CABEÇALHO ESPECÍFICO DAS PÁGINAS DE LOGIN E CADASTRO */
 .pai_logincad{
     display: flex;
@@ -269,7 +356,6 @@ h1{
     margin-top: 10px;
     padding-bottom: 30px;
 }
-
 .cab_logincad{
     color: #A60321;
     width: 1370px;
@@ -280,9 +366,6 @@ h1{
     justify-content: center;
     align-items: center;
 }
-
-
-
 /* COMPONENTES */
 
 /* LIKE */

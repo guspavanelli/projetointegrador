@@ -7,8 +7,10 @@ import '../style/style.css';
 import { Link } from 'react-router-dom';
 import BotaoCompartilhar from '../components/buttons/share';
 import Linha from '../components/linha';
+import { TabTitle } from '../components/GeneralFunctions/GeneralFunctions';
 
 function Home(){
+    TabTitle('Sangue Bom');
     return(
         <div className='home_container'>
             <Cabecalho/>

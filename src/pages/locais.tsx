@@ -1,6 +1,8 @@
 import Cabecalho from "../components/cabecalho";
+import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 function Locais(){
+    TabTitle('Locais - Sangue Bom')
     return(
         <div>
             <Cabecalho/>
