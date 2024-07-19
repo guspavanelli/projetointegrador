@@ -1,7 +1,10 @@
+import Cabecalho from "../components/cabecalho";
 
 function Locais(){
     return(
-        <div>está é a página locais</div>
+        <div>
+            <Cabecalho/>
+            está é a página locais</div>
     )
 }
 
