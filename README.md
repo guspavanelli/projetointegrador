@@ -65,6 +65,7 @@ Sangue Bom é um projeto desenvolvido por alunos do curso de Desenvolvedor Full 
     - **Footer/**: Componente de rodapé.
     - **coments/**: Componente de comentários.
     - **linhas/**: Componente de linha de divisão.
+    - **GeneralFunctions/**: Componente de Dynamics Tytles.
     - **Buttons/**: Componentes de botões.
   - **pages/**: Contém as páginas da aplicação.
 
