@@ -1,46 +1,135 @@
-# Getting Started with Create React App
+# Projeto Integrador - Desenvolvedor Full Stack SENAC
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Nome do Projeto: Sangue Bom
 
-## Available Scripts
+## Descrição
+Sangue Bom é um projeto desenvolvido por alunos do curso de Desenvolvedor Full Stack do SENAC, com o objetivo de criar um site para incentivar a doação de sangue na cidade de Bauru. O site disponibiliza informações gerais sobre a doação de sangue, um teste de aptidão para doação, locais de doação, e um feed para postagens das instituições e usuários, possibilitando interação dentro do site e com redes sociais.
 
-In the project directory, you can run:
+## Funcionalidades
+- **Informações Gerais sobre Doação**: Seção dedicada a explicar o processo de doação de sangue, benefícios, requisitos e cuidados necessários.
+- **Teste de Aptidão para Doação**: Ferramenta que permite ao usuário verificar se está apto a doar sangue com base em um questionário simples.
+- **Locais de Doação**: Mapa e lista de locais onde é possível doar sangue na cidade de Bauru.
+- **Feed de Postagens**: Espaço onde instituições e usuários podem postar notícias, eventos e experiências relacionadas à doação de sangue.
+- **Interação Social**: Funcionalidade que permite aos usuários interagir com postagens dentro do site e compartilhar conteúdo nas redes sociais.
 
-### `npm start`
+## Tecnologias Utilizadas
+- **Frontend**: React, HTML5, CSS3, JavaScript, TypeScript
+- **Backend**: Node.js, Nest.js
+- **Controle de Versionamento**: Git e GitHub
+- **Mapas**: Google Maps API
+<!-- 
+- **Banco de Dados**: 
+- **Autenticação**: 
+- **Hospedagem**: 
+- **Gerenciamento de Estado**: -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instalação e Configuração
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/guspavanelli/projetointegrador
+   cd projetointegrador
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+<!--3. **Configuração do Banco de Dados**
+   - Configure a conexão com o MongoDB no arquivo `.env`:
+     ```
+     MONGODB_URI=sua_uri_do_mongodb
+     JWT_SECRET=sua_chave_secreta
+     ```
+-->
+3. **Inicialize o servidor**
+   ```bash
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Acesse a aplicação**
+   - Abra seu navegador e vá para `http://localhost:3000`
 
-### `npm run build`
+## Descrição das Pastas e Arquivos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **public/**: Contém arquivos públicos que serão servidos diretamente pelo servidor.
+  - `index.html`: Documento HTML principal.
+  - `favicon.ico`: Ícone da aplicação.
+  - `manifest.json`: Arquivo de manifesto para aplicativos web progressivos (PWA).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **src/**: Diretório principal do código-fonte.
+  - **assets/**: Contém recursos estáticos como imagens, fontes, etc.
+  - **components/**: Componentes reutilizáveis da aplicação.
+    - **Cabecalho/**: Componente de cabeçalho.
+    - **Cabecalho-log-cad/**: Componente de cabeçalho para as páginas de Login e Cadastro.
+    - **Footer/**: Componente de rodapé.
+    - **coments/**: Componente de comentários.
+    - **linhas/**: Componente de linha de divisão.
+    - **Buttons/**: Componentes de botões.
+  - **pages/**: Contém as páginas da aplicação.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - **home.tsx/**: Página inicial.
+    - **sobre.tsx/**: Página sobre.
+    - **teste.tsx/**: Página de teste de aptidão.
+    - **perfil.tsx/**: Página de perfil do usuário.
+    - **page_login.tsx/**: Página de Login.
+    - **page_cadastro.tsx/**: Página de Cadastro.
+    - **locais.tsx/**: Página de Localização dos pontos de doação.
+    - **info.tsx/**: Página de informações gerais sobre doação.
+    - **checkin.tsx/**: Página de CheckIn.
+    - **erro404.tsx/**: Página de erro 404 (NotFound).
+<!-- **services/**: Módulos para interação com APIs e serviços externos.
+    - `api.ts`: Configuração e chamadas de API.
+    - `auth.ts`: Funções de autenticação.
+  - **utils/**: Funções utilitárias e constantes.
+    - `helpers.ts`: Funções auxiliares.
+    - `constants.ts`: Constantes da aplicação.-->
+  - `App.tsx`: Componente principal da aplicação.
+  - `index.tsx`: Ponto de entrada da aplicação React.
+  - `Routes.tsx`: Configuração de rotas.
+  <!-- **store/**: Gerenciamento de estado com Redux (se aplicável).
+    - `actions.ts`: Ações do Redux.
+    - `reducers.ts`: Redutores do Redux.
+    - `store.ts`: Configuração da store do Redux.-->
+  - **style/**: Arquivos de estilos globais.
+    - `style.css`: Estilos globais da aplicação.
 
-### `npm run eject`
+- **.gitignore**: Arquivo para ignorar arquivos no controle de versão.
+- **package.json**: Dependências e scripts do projeto.
+- **tsconfig.json**: Configuração do TypeScript.
+- **README.md**: Documentação do projeto.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Equipe
+- **Alexandre De Paula Angelo**
+- **Daniel Izidoro Vieira Da Silva** 
+- **Gabriel Martielo Da Silva**
+- **Gustavo Pavanelli De Araujo Linhari**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribuição
+Contribuições são bem-vindas! Por favor, siga os passos abaixo para contribuir:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **Fork o repositório**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. **Crie uma branch para sua feature ou correção de bug**
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. **Commit suas alterações**
+   ```bash
+   git commit -m 'Adicionei minha feature'
+   ```
+4. **Push para a branch**
+   ```bash
+   git push origin minha-feature
+   ```
+5. **Abra um Pull Request**
 
-## Learn More
+## Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contato
+Para mais informações, entre em contato com a equipe do projeto pelo email: `contato@sanguebombauru.com.br`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+    Sangue Bom - Salvando vidas uma doação de cada vez.
