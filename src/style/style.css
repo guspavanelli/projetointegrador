@@ -1,5 +1,5 @@
 .container_body{
-    margin: 40px 150px 0px 150px;
+    /* margin: 40px 150px 0px 150px; */
 }
 
 .linha {
@@ -444,33 +444,57 @@ h1{
 
 
 /*Footer*/
-/* h1{
-    color: #A60321;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 30px;
+.footer_principal{
+    display: flex;
+    justify-content: space-between;
+    background-color: #658C7A;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;    
 }
 
-h4{
-    color: #828282;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 30px;
-} */
-
-/* .footer_apo{
-        background-color: #658C7A;
-        width: 1200px;
+.footer_apo{
+        background-color: #9adada;
+        height: 100%;
         display: flex;
         flex-direction: column;
         
+
     }
+.footer_sobr{
+    background-color: #9adada;
+    height: 100%;
+    
+
+
+}
+.footer_duv{
+    background-color: #9adada;
+    height: 100%;
+
+}
+.footer_Loc{
+    background-color: #9adada;
+    height: 100%;
+
+}
+.footer_qr{
+    background-color: #9adada;
+    height: 100%;
+
+}
+.title_footer{
+    font-size: 20px;
+    height: 100%;
+}
+
+
 /* COMENTARIOS */
 
 .container_coments{
-    width: 80em;
+    /* width: 80em; */
     height: 100%;
     padding-top: 110px;
 }
