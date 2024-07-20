@@ -1,7 +1,9 @@
 
 function Linha(){
     return(
-        <div className="linha"></div>
+        <div className="linha">
+            <hr></hr>
+        </div>
     )
 }
 
