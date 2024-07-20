@@ -1,5 +1,5 @@
 .container_body{
-    margin: 40px 150px 0px 150px;
+    /* margin: 40px 150px 0px 150px; */
 }
 
 .linha {
@@ -214,6 +214,28 @@ h1{
     line-height: 150%; 
 }
 
+/*PÁGINA DE INFORMAÇÕES*/
+.info_container{
+    width: 100%;
+    height: 2077px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_info{
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 837px;
+    gap: 24px;
+}
+
+.h1_info{
+    margin-top: 150px
+}
+
 /*PÁGINA LOGIN E CADASTRO */
 .pai_componentes_loginecad{
     display: flex;
@@ -397,7 +419,30 @@ h1{
     font-weight: 500;
     line-height: 150%; 
 }
+/*Footer*/
+/* h1{
+    color: #A60321;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 30px;
+}
 
+h4{
+    color: #828282;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 30px;
+} */
+
+/* .footer_apo{
+        background-color: #658C7A;
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        
+    }
 /* COMENTARIOS */
 
 .container_coments{
