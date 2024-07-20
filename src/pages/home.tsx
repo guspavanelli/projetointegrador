@@ -15,7 +15,6 @@ function Home(){
         <div className='home_container'>
             <Cabecalho/>
             <div className="home_posso_doar">
-    
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>

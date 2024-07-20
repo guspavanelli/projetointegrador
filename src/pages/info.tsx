@@ -4,9 +4,11 @@ import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 function Info(){
     TabTitle('Informações Gerais - Sangue Bom')
     return(
-        <div>
+        <div className="info_container">
             <Cabecalho/>
-            <h1>Pagina Info</h1>
+            <div className="title_info">
+                <h1 className="h1_info">Pagina Info</h1>
+            </div>
         </div>
     )
 }
