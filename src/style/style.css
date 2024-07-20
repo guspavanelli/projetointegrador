@@ -462,3 +462,23 @@ h6{
     line-height: 22px;
     letter-spacing: -0.084px;
 }
+
+
+/* SOBRE */
+.container_sobre_{
+    display: flex;
+    border-radius: 20px;
+    border: solid;
+    background-color: #F7F7F7;
+    font-style: normal;
+    text-align: center; color: #000;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 2px;
+    height: auto;
+    width: auto;
+
+
+  
+}
