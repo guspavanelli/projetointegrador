@@ -10,7 +10,8 @@ function Home(){
     return(
         <div className='home_container'>
             <Cabecalho/>
-            <div className="home_posso_doar">    
+            <div className="home_posso_doar">
+    
                 <div className="home_pd_possodoar">
                     <h3>Posso doar?</h3>
                 </div>
