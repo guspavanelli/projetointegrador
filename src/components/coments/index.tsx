@@ -47,7 +47,7 @@ function Comentarios(){
                     <div><BotaoCompartilhar/></div>
                 </div>
             </div>
-            <Linha/>
+            {/* <Linha/>
             <div className="coments_four">
                 <div className="coments_post">
                     <h3>Postagens e mais postagens</h3>
@@ -66,7 +66,7 @@ function Comentarios(){
                     <div><BotaoLike/></div>
                     <div><BotaoCompartilhar/></div>
                 </div>
-            </div>
+            </div> */}
     </div>
     )
 }

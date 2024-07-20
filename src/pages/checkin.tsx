@@ -4,9 +4,11 @@ import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 function Checkin(){
     TabTitle('CheckIn - Sangue Bom')
     return(
-        <div>
+        <div className="check_container">
             <Cabecalho/>
-            <h1>Pagina Check IN</h1>
+            <div className="check_page_title">
+                <h1>Pagina Check IN</h1>
+            </div>
         </div>
     )
 }
