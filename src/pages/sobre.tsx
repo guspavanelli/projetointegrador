@@ -1,7 +1,9 @@
+import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 import Cabecalho from "../components/cabecalho";
 
 function Sobre(){
+    TabTitle('Sobre - Sangue Bom')
     return(
         <div className="container_sobre">
             <Cabecalho/>
