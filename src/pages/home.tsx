@@ -91,12 +91,15 @@ function Home(){
             <div className='home_mural_help'>
                 <h1>Mural de Ajuda</h1>
                 <div className='home_mural_dif'>
-                Espaço de postagem para pedidos de
-                doação de sangue e para canditos que querem doar.
+                    Espaço de postagem para pedidos de
+                    doação de sangue e para canditos que querem doar.
                 </div>
             </div>
             <div>
             <Comentarios/>
+            </div>
+            <div>
+                Veja os Locais de Doação
             </div>
 
             <Footer/>

@@ -6,7 +6,10 @@ function Info(){
     return(
         <div className="info_container">
             <Cabecalho/>
-            <h1>Pagina Info</h1>
+            <div className="info_title">
+                <h1>Pagina Info</h1>
+
+            </div>
         </div>
     )
 }

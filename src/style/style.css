@@ -21,13 +21,8 @@
 
 .cab_logo{
     color: #A60321;
-    -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #A60321;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 150%;
-    width: 10%;
     display: flex;
     justify-content: center;    
 }
@@ -39,24 +34,21 @@
     gap: 48px;
     text-decoration: none;
 }
-
-.cab_login, .teste{
+/* DOIS BOTÕES */
+.cab_login, .home_pd_teste{ 
     width: 100px;
     height: 20px;
     display: flex;
     justify-content: center;
-    display: inline-flex;
     padding: 14px 24px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     border-radius: 8px;
     background: #A60321;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     color: #FFF;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
+    text-decoration: none;
 
 }
 
@@ -67,17 +59,20 @@
 
 /* POSSO DOAR */
 .home_container{
-    width: 100%;
-    height: 2077px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.home_posso_doar{
-    margin-top: 56px;
+
+.check_container, .info_container{
+    display: flex ;
+    justify-content: center ;
+}
+
+.home_posso_doar, .info_title, .check_page_title{
+    margin-top: 250px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 837px;
@@ -86,9 +81,7 @@
 
 h1{
     color: #A60321;
-    text-align: center;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     height: 30px;
@@ -98,52 +91,20 @@ h1{
     color: #828282;
     text-align: center;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
-}
-
-.home_pd_teste{
-    width: 100px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    display: inline-flex;
-    padding: 14px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 8px;
-    background: #A60321;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
 }
 
 /* ULTIMOS CHECKIN */
 .home_doadores{
     margin-top: 110px;
-    display: flex;
-    flex-direction: column;
     align-self: self-start;
-    color: #000;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
     display: flex;
-    width: 1280px;
-    height: 100px;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .home_doadores_dif{
     color: #828282;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;   
     line-height: 150%; 
 }
 
@@ -159,10 +120,7 @@ h1{
 .home_box_one, .home_box_two, .home_box_three{
     border-radius: 12px;
     border: 1px solid #F7F7F7;
-    background: #FFF;
     box-shadow: -4px 8px 20px 0px;
-    display: flex;
-    padding: var(--Spacing-SM, 32px);
     width: 25%;
     padding: 40px;
 }
@@ -172,45 +130,28 @@ h1{
     gap: 30px;
 }
 
-.home_box_name{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .home_box_one_avatar, .home_box_two_avatar, .home_box_three_avatar{
     background-color: #000;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    display: flex;
 }
 
 /* MURAL DE AJUDA */
 .home_mural_help{
     margin-top: 110px;
-    display: flex;
-    flex-direction: column;
     align-self: self-start;
-    color: #000;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
     display: flex;
-    width: 1280px;
-    height: 100px;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .home_mural_dif{
     color: #828282;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;   
     line-height: 150%; 
 }
+
+
 
 /*PÁGINA LOGIN E CADASTRO */
 .pai_componentes_loginecad{
@@ -305,21 +246,6 @@ h1{
     align-self: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FORM PÁGINA DE CADASTRO */
 .title_form_cadastro{
     margin-top: 0px;
@@ -395,35 +321,11 @@ h1{
     font-weight: 500;
     line-height: 150%; 
 }
-/*Footer*/
-/* h1{
-    color: #A60321;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 30px;
-}
 
-h4{
-    color: #828282;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 30px;
-} */
-
-/* .footer_apo{
-        background-color: #658C7A;
-        width: 1200px;
-        display: flex;
-        flex-direction: column;
-        
-    }
-/* COMENTARIOS */
 
 .container_coments{
-    width: 80em;
-    height: 100%;
+    /* width: 80em; */
+    /* height: 100%; */
     padding-top: 110px;
 }
 
@@ -461,24 +363,4 @@ h6{
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.084px;
-}
-
-
-/* SOBRE */
-.container_sobre_{
-    display: flex;
-    border-radius: 20px;
-    border: solid;
-    background-color: #F7F7F7;
-    font-style: normal;
-    text-align: center; color: #000;
-    align-items: center;
-    justify-content: center;
-    margin: 1px;
-    padding: 2px;
-    height: auto;
-    width: auto;
-
-
-  
 }
