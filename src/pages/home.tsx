@@ -1,12 +1,13 @@
-
 import Cabecalho from '../components/cabecalho';
 import Footer from '../components/footer';
 import Comentarios from '../components/coments';
 import '../style/style.css';
 import { Link } from 'react-router-dom';
+import { TabTitle } from '../components/GeneralFunctions/GeneralFunctions';
 import BotaoLike from '../components/buttons/like';
 
 function Home(){
+    TabTitle('Home - Sangue Bom')
     return(
         <div className='home_container'>
             <Cabecalho/>
