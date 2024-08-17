@@ -6,7 +6,9 @@ function Locais(){
     return(
         <div>
             <Cabecalho/>
-            está é a página locais</div>
+            <h1>Locais de Doação</h1>
+            <h3>Confira os locais para doação em Bauru-SP!</h3>
+        </div>
     )
 }
 
