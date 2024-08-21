@@ -398,15 +398,43 @@ h6{
 /* Pagina perfil*/
 .perfil_pr{
     text-align: center;
+    align-items: center;
 }
 
 .imgp{
 
-    width: 10px;
-    height: 10px;
     align-items: center;
+    width: 100px;
+    height: 100px;
 }
 
+#Alterarfotodeperfil{
 
+    font-size: 12px;
+}
+
+#btcertificado{
+
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(91, 143, 99);
+    border: none;
+    font-size: 15px;
+    color: #ccc;
+    
+}
+
+.inpf1{
+
+text-align: left;
+
+}
+
+.inputpf1{
+    width: 100%;
+    height: 17px;
+}
+        
     
 

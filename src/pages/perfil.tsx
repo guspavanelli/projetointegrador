@@ -10,24 +10,37 @@ function Perfil(){
             <Cabecalho/>
                 <div className="perfil_pr">
                     <div className="titulo_imagem_botaocertificado">
-                        Editar Perfis <br />
-                        <h4>Helena Hills</h4>
-                             <div className="imgp"> <img src={ftPerfil} alt="foto perfil"/></div>
+                        Editar Perfis
+                         <br />
+                        <h3>Helena Hills</h3>
+                        <br />
+                             <img className="imgp" src={ftPerfil} alt="foto perfil"/> <br />
+                           <div id="Alterarfotodeperfil"> Alterar foto de perfil </div> 
+                           <br />
 
+                           <button id="btcertificado">Gerar Certificado</button>                                           
                      </div>
 
 
+                             <div className="inputprincipalpf">
 
 
 
-                             <div className="dados_perfil">
-                                <div></div>
-                                <div></div>
+                                <div className="inpf1">
+                                   <h4>Username</h4>
+                                   <input id="Username" type="text" className="inputpf1" placeholder="Username"/> 
+                                </div>
+
+
+
+
+                                <div>
+                                    <h4>Email</h4>
+                                    <input id="Username" type="text" className="inputpf2" placeholder="Email@domain.com"/>
+                                </div>
                                 <div></div>
                             </div>
-                    <div className="botao_vermelho">
-
-                         </div>
+                  
                 </div>
 
 
