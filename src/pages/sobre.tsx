@@ -1,5 +1,5 @@
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
-
+import Footer from "../components/footer";
 import Cabecalho from "../components/cabecalho";
 
 function Sobre(){
@@ -34,7 +34,7 @@ function Sobre(){
             </ul> 
 
             </div>
-        
+        <Footer/>
         </div>
 
     )
