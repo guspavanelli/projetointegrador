@@ -394,6 +394,47 @@ h6{
     margin-top: 10px;
 }
 
+/*Pagina Locais*/
+.title_locais, .sub_title_locais{
+    align-items: center;
+}
+
+.pai_locais{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pai_blocos_locais{
+    display: flex;
+    height: 900px;
+    width: 1200px;
+    background-color: #658C7A;
+    flex-direction: column;  
+    gap: 100px;
+}
+
+.filho_local1{
+    display: flex;
+    width: inherit;
+    height: inherit;
+    background-color: #A60321;
+}
+
+.filho_local2{
+    display: flex;
+    width: inherit;
+    height: inherit;
+    background-color: #6b69de;
+}
+
+
+
+
+
+
+
+
 
 /* Pagina perfil*/
 .perfil_pr{
