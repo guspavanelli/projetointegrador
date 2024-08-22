@@ -425,16 +425,33 @@ h6{
     
 }
 
-.inpf1{
+.inpf1, .inpf2, .inpf3, .inpf4{
 
 text-align: left;
 
 }
 
-.inputpf1{
+.inputpf1,.inputpf2, .inputpf4{
     width: 100%;
     height: 17px;
 }
+        
+.inputpf3{
+
+    width: 100%;
+    height: 150px;
+}
+
+#btsalvar{
+
+    border-radius: 5px;
+    width: 700px;
+    height: 30px;
+    background-color: #A60321;
+    border: none;
+    font-size: 15px;
+}
+
 
 /* SOBRE */
 
