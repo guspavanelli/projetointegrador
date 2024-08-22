@@ -13,6 +13,8 @@ function Locais(){
                 <div className="filho_local1"></div>
                 <div className="filho_local2"></div>
             </div>
+            <br />
+            <br />
             <Footer/>
         </div>
     )

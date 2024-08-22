@@ -8,15 +8,15 @@ function Footer(){
     return (
     <div className="footer_principal">
         <div className="footer_1">
-            <h1 className="title_footer">Apoiadores</h1>
-            <h2 className="subtitle_footer_flex1">Seja um Apoiador!</h2>
-            <h4 className="subtitle_footer_flex1">Sobre o Sangue-Bom</h4>
+           <Link className="title_footer" to= '/sobre'>Apoiadores</Link>
+           <Link className="subtitle_footer_flex1" to = '/sobre'>Seja um Apoiador!</Link>
+           <Link className="subtitle_footer_flex1" to = '/sobre'>Sobre o Sangue-Bom</Link>
         
         <div className="footer_img">
-            <img src = {Instagram} alt="Instagram"/>
-            <img src = {Facebook} alt="Facebook" />
-            <img src= {Linkedin} alt="Linkedin" />
-            <img src= {Youtube} alt="Youtube" />
+            <Link to='https://www.instagram.com/'><img src = {Instagram} alt="Instagram"/></Link>
+            <Link to='https://www.facebook.com/'><img src = {Facebook} alt="Facebook" /></Link>
+            <Link to='https://www.linkedin.com/'><img src= {Linkedin} alt="Linkedin" /></Link>
+            <Link to='https://www.youtube.com/'><img src= {Youtube} alt="Youtube" /></Link>
         </div>
         </div>
         <div className="footer_2">

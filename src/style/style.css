@@ -361,6 +361,8 @@ h6{
 
 /*FOOTER*/
 .footer_principal{
+    border-top: 2px solid rgba(72, 70, 70, 0.656);
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     height: 200px;
@@ -387,9 +389,12 @@ h6{
 }
 .title_footer{
     font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
     margin-right: 8px;
     margin-top: 10px;
+    text-decoration: none;
+    color: #A60321;
 }
 .subtitle_footer{
     font-size: larger;
@@ -404,7 +409,7 @@ h6{
     font-size: larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 8px;
-    margin-top: 8px;
+    margin-top: 15px;
     text-decoration: none;
     color: #333333ca;
 }
@@ -414,11 +419,16 @@ h6{
     color: #A60321;
 
 }
+.subtitle_footer_flex1:hover{
+    transform: 0.5;
+    color: #A60321;
+}
 
 .footer_img{
     display: flex;
     /* background-color: black; */
     gap:10px;
+    margin-top: 15px;
 }
 
 /*Pagina Locais*/

@@ -102,6 +102,8 @@ function Home(){
             <div>
                 Veja os Locais de Doação
             </div>
+            <br />
+            <br />
 
             <Footer/>
 

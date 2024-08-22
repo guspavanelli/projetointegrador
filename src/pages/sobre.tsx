@@ -34,6 +34,8 @@ function Sobre(){
             </ul> 
 
             </div>
+            <br />
+            <br />
         <Footer/>
         </div>
 

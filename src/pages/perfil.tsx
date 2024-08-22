@@ -67,6 +67,8 @@ function Perfil(){
                             </div>
 
                 </div>
+                <br />
+                <br />
 
                 <Footer/>
 
