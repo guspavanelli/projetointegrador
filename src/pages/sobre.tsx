@@ -11,7 +11,7 @@ function Sobre(){
 
             <div>
 
-            <h1>Pagina Sobre</h1>
+            <h1>Sobre o sangue bom</h1>
             <br />
             <h3>Sangue bom é um site projetado em informar as pessoas sobre doações de sangue, onde doar, quem pode doar, locais de doação e tambem informativo a respeito.</h3>
             <br />
@@ -39,14 +39,14 @@ function Sobre(){
                     <div className="sobre_doacao_">
                     Ajude-nos e Seja um Sanguebom!
                     <br />
-                    Ajude a manter o projeto e seja um membro Sangue Bom!
-                    Faça sua doação via PIX para os seguintes dados:
+                    <h2>Ajude a manter o projeto e seja um membro Sangue Bom!
+                    Faça sua doação via PIX para os seguintes dados:</h2>
                     <br />
                     <br />
                     <br />
-                    
+
                         <div className="pai_qr">
-                               <div className="info_qr"> CNPJ: XXXXXXXXXXXXXXXXXXXX Nome: XXXXXXXXXXXXXXXXXXXX</div>
+                               <div className="info_qr"> <h2>CNPJ: XXXXXXXXXXXXXXXXXXXX Nome: XXXXXXXXXXXXXXXXXXXX </h2> </div>
                                     <div className="sobre_qr_">
                                         <img className="qr_sb" src={QrCode} alt="qr code" /></div>
                         </div>
