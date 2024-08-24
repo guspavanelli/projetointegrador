@@ -585,11 +585,42 @@ text-align: left;
 /* SOBRE */
 
 .container_sobre_{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    height: auto;
+
 
     
 }
 
+.sobre_doacao_{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    height: auto;
+}
 
+.sobre_qr_{
+text-align: right;
+flex: 1;
 
+}
+
+.qr_sb{
+       
+
+    height: 200px;
+    width: 200px;
+}
+
+.pai_qr{
+    display: flex;
+    flex-direction: row;
+}
+
+.info_qr{
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
     
 
