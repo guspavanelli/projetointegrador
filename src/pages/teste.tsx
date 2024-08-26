@@ -1,4 +1,5 @@
 import Cabecalho from "../components/cabecalho";
+import Footer from "../components/footer";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 function Teste(){
@@ -7,6 +8,10 @@ function Teste(){
         <div>
             <Cabecalho/>
             <p>Página Teste</p>
+        
+        <br />
+        <br />
+        <Footer/>
         </div>
     )
 }

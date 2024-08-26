@@ -1,4 +1,5 @@
 import Cabecalho from "../components/cabecalho";
+import Footer from "../components/footer";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 function Checkin(){
@@ -9,6 +10,9 @@ function Checkin(){
             <div className="check_page_title">
                 <h1>Pagina Check IN</h1>
             </div>
+            <br />
+            <br />
+            <Footer/>
         </div>
     )
 }
