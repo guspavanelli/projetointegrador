@@ -158,7 +158,7 @@ h1{
     height: 100px;
     padding: 40px;
     background-color: white;
-    color: #000;
+    /* color: #000; */
 }
 
 .home_box_avatar_container{
