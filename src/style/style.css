@@ -17,7 +17,7 @@ input{
     border: 1px solid rgb(175, 169, 169);
 }
 
-.cadastro_form,  {
+.cadastro_form {
     display: flex;
     flex-direction: column;
 }
@@ -532,6 +532,13 @@ h6{
     height: 300px;
     width: 500px;
     border-radius: 20px;
+    align-items: center;
+    contain: content;
+}
+
+.iframe_maps{
+    height: 320px;
+    width: 600px;
 }
 
 .info_local_maps{
@@ -546,6 +553,15 @@ h6{
     background-color: #69dec5;
     height: 200px;
     width: 350px;
+    align-items: center;
+    object-fit: contain;
+}
+
+.imagemHemonucleo{
+    height: 100px;
+    width: 150px;
+    align-self: center;
+    object-fit: contain;
 }
 
 .botao_local{

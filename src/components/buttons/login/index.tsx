@@ -1,4 +1,4 @@
-import '../../../style/stylebotao.css'
+import '../../../components/buttons/login/stylelogin.css'
 import { Link } from 'react-router-dom'
 
 function Botao(){
