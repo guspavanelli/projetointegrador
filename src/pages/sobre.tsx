@@ -7,8 +7,7 @@ function Sobre(){
     TabTitle('Sobre - Sangue Bom')
     return(
         <div className="container_sobre_">
-            <Cabecalho/>
-
+            <Cabecalho/>    
             <div>
 
             <h1>Sobre o sangue bom</h1>

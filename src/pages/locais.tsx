@@ -13,6 +13,9 @@ function Locais(){
     return(
         <div className="locais_container">
             <Cabecalho/>
+            <hr/>   
+            <hr/>
+            <hr/>
             <div className="info_title">
                 <h1>Locais de Doação</h1>
                 <h3>Confira os locais para doação em Bauru-SP!</h3>
@@ -41,6 +44,8 @@ function Locais(){
                     </div>
                 </div>
             </div>
+            <br />
+            <br />
             <Footer/>
         </div>
     )

@@ -23,7 +23,7 @@ button{
     top: -50px;
     left: 0;
     width: 100%;
-    height: 250px;
+    height: 150px;
     background: linear-gradient(45deg, #A60321, #a6032183);
     transition: .5s ease;
   }
@@ -40,7 +40,7 @@ button{
     content:'';
     position: absolute;
     width: 200%;
-    height: 200%;
+    height: 300%;
     top: -10px;
     left: 50%;
     transform:translate(-50%, -75%);
@@ -49,7 +49,7 @@ button{
   
   button .wave::before{
     border-radius: 40%;
-    background: #a6032183;
+    background: #A60321;
     animation: wave 7s linear infinite;
   }
   

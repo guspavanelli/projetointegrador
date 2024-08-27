@@ -11,6 +11,9 @@ function Home(){
     return(
         <div className='home_container'>
             <Cabecalho/>
+            <hr/>   
+            <hr/>
+            <hr/>
             <div className="home_posso_doar">
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
@@ -30,9 +33,8 @@ function Home(){
                     Doadores que fizeram a diferença
                 </div>
             </div>
-            <div className='home_box_container'>
+            {/* <div className='home_box_container'>
                 <div className='home_box_one'>
-                    {/* <div> */}
                         <div className='home_box_avatar_container'>
                             <div className='home_box_one_avatar'>
                             </div>
@@ -45,7 +47,6 @@ function Home(){
                                 </div>
                             </div>
                         </div> 
-                    {/* </div> */}
                 </div>
                 <div className='home_box_two'>
                     <div>
@@ -92,7 +93,7 @@ function Home(){
             </div>
             <div>
                 Veja os Locais de Doação
-            </div>
+            </div> */}
             <br />
             <br />
 
