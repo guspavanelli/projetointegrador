@@ -8,14 +8,38 @@
     justify-content: center;
     /* padding: 20px 0px 20px 0px; */
     opacity: 0.2;
-
 }
 
+input{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 169, 169);
+}
+
+.cadastro_form,  {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
 /* CABECALHO */
+
+.cab_container_pai{
+    display: flex;
+    background-color: #a6032128;
+    width: 100%;
+    height: 150px;
+    border-radius: 0px 0px 30px 30px;
+}
+
 .cab_container{
     width: 100%;
     display:flex;
     align-items:center;
+    display: flex;
 }
 
 .cab_logo{
@@ -23,17 +47,21 @@
     font-size: 20px;
     font-weight: 500;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    padding-left: 50px;    
 }
 
 .cab_options{
     justify-content: center;
     display: flex;
-    flex:10;
+    flex:5;
     gap: 48px;
     text-decoration: none;
 }
 /* DOIS BOTÕES */
+.gabriel123{
+    padding-right: 50px;
+}
 .cab_login, .home_pd_teste{ 
     width: 100px;
     height: 20px;
@@ -64,7 +92,7 @@
 }
 
 .home_posso_doar, .info_title, .check_page_title, .info_locais{
-    margin-top: 110px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,25 +135,35 @@ h1{
 }
 
 /* BOX */
+
 .home_box_container{
     margin-top: 110px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     width: 100%;
     gap: 10%;
+    height: 300px;
+    background-color: rgba(230, 74, 74, 0.267);
+    /* padding: 40px; */
+    border-radius: 20px;
 }
 
 .home_box_one, .home_box_two, .home_box_three{
     border-radius: 12px;
-    border: 1px solid #F7F7F7;
+    /* border: 1px solid #F7F7F7; */
     box-shadow: -4px 8px 20px 0px;
-    width: 25%;
+    /* width: 250px; */
+    height: 100px;
     padding: 40px;
+    background-color: white;
+    /* color: #000; */
 }
 
 .home_box_avatar_container{
     display: flex;
-    gap: 30px;
+    gap: 10px;
 }
 
 .home_box_one_avatar, .home_box_two_avatar, .home_box_three_avatar{
@@ -152,13 +190,13 @@ h1{
 
 
 /*PÁGINA LOGIN E CADASTRO */
-.pai_componentes_loginecad{
+.container_login,.container_cadastro{
     display: flex;
     flex-direction: row;
     gap: 100px;
 }
 
-.molde_imagem_logecad{
+.login_image, .castrado_image{
     width: 660px;
     height: 550px;
     border-radius: 30px;
@@ -167,12 +205,12 @@ h1{
     overflow: hidden;
     flex: 1;
 }
-.imagem_loginecad{
+.login_img, .cadastro_img{
     object-fit: fill;
     width: 100%;
     height: 100%;
 }
-.molde_form_login{
+.molde_form_login, .cadastro_container_info{
     width: 660px;
     height: 550px;
     border-radius: 30px;
@@ -245,6 +283,14 @@ h1{
 }
 
 /*FORM PÁGINA DE CADASTRO */
+
+/* .cadastro_info_dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+} */
 .title_form_cadastro{
     margin-top: 0px;
     text-align: center;
@@ -325,6 +371,9 @@ h1{
     /* width: 80em; */
     /* height: 100%; */
     padding-top: 110px;
+    background-color: rgba(230, 74, 74, 0.267);
+    padding: 40px;
+    border-radius: 20px;
 }
 
 .coments_one, .coments_two, .coments_three, .coments_four, .coments_five{
@@ -440,39 +489,72 @@ h6{
     align-items: center;
 }
 
-.pai_locais{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .pai_blocos_locais{
     display: flex;
-    height: 900px;
-    width: 1200px;
-    background-color: #658C7A;
-    flex-direction: column;  
-    gap: 100px;
+    height: 1000px;
+    width: 1000px;
+    flex-direction: column;
+    gap: 100px;  
 }
 
 .filho_local1{
+    margin-top: 75px;
     display: flex;
+    flex-direction: row;
     width: inherit;
-    height: inherit;
-    background-color: #A60321;
+    flex: 1;
+    background-color: rgba(230, 74, 74, 0.120);
+    border-radius: 10px;
+    align-items: center;
 }
+
 
 .filho_local2{
+    margin-bottom: 100px;
     display: flex;
+    flex-direction: row;
     width: inherit;
-    height: inherit;
-    background-color: #6b69de;
+    flex: 1;
+    background-color: rgba(230, 74, 74, 0.137);
+    border-radius: 10px;
+    align-items: center;
 }
 
+.filho_local1:hover, .filho_local2:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
 
+.local_fotos{
+    display: flex;
+    margin-left: 50px;
+    background-color: #6b69de;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
 
+.info_local_maps{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
+.resumo_local{
+    display: flex;
+    margin-left: 50px;
+    background-color: #69dec5;
+    height: 200px;
+    width: 350px;
+}
 
+.botao_local{
+    display: flex;
+    margin-left: 50px;
+    background-color: #bfd85a;
+    height: 100px;
+    width: 350px;
+}
 
 
 
@@ -538,11 +620,42 @@ text-align: left;
 /* SOBRE */
 
 .container_sobre_{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    height: auto;
+
 
     
 }
 
+.sobre_doacao_{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    height: auto;
+}
 
+.sobre_qr_{
+text-align: right;
+flex: 1;
 
+}
+
+.qr_sb{
+       
+
+    height: 200px;
+    width: 200px;
+}
+
+.pai_qr{
+    display: flex;
+    flex-direction: row;
+}
+
+.info_qr{
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
     
 

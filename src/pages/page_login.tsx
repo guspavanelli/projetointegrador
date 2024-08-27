@@ -9,9 +9,9 @@ function PageLogin(){
     return(
     <div>
         <Cablogcad/>
-        <div className="pai_componentes_loginecad">
-            <div className="molde_imagem_logecad">
-                <img className="imagem_loginecad" src={imagemlogin} alt="imagem página de login" />
+        <div className="container_login">
+            <div className="login_image">
+                <img className="login_img" src={imagemlogin} alt="imagem página de login" />
             </div>
             <div className="molde_form_login">
                 <div className="pai_login">

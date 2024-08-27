@@ -32,10 +32,7 @@ function Home(){
             </div>
             <div className='home_box_container'>
                 <div className='home_box_one'>
-                    <div>
-                        <div>
-                            <p>“Ninguém me avisou que doia ”</p>
-                        </div> 
+                    {/* <div> */}
                         <div className='home_box_avatar_container'>
                             <div className='home_box_one_avatar'>
                             </div>
@@ -48,13 +45,10 @@ function Home(){
                                 </div>
                             </div>
                         </div> 
-                    </div>
+                    {/* </div> */}
                 </div>
                 <div className='home_box_two'>
                     <div>
-                        <div>
-                            <p>“Ninguém me avisou que doia ”</p>
-                        </div> 
                         <div className='home_box_avatar_container'>
                             <div className='home_box_two_avatar'>
                             </div>
@@ -71,9 +65,6 @@ function Home(){
                 </div>
                 <div className='home_box_three'>
                     <div>
-                        <div>
-                            <p>“Ninguém me avisou que doia ”</p>
-                        </div> 
                         <div className='home_box_avatar_container'>
                             <div className='home_box_three_avatar'>
                             </div>
