@@ -14,7 +14,7 @@ function Cabecalho(){
             <div className="cab_options">
                 <Link className="cab_options_home"to="/locais"><div >Locais</div></Link>
                 <Link className="cab_options_info"to="/info"><div>Informações</div></Link>
-                <Link className="cab_options_check"to="/checkin"><div >Checkin</div></Link>
+                <Link className="cab_options_sobre"to="/sobre"><div >Sobre</div></Link>
             </div>
             <Botao/>
         </div>
