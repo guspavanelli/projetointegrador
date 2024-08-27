@@ -11,6 +11,8 @@ function Locais(){
                 <h1>Locais de Doação</h1>
                 <h3>Confira os locais para doação em Bauru-SP!</h3>
             </div>
+            <br />
+            <br />
             <Footer/>
         </div>
     )
