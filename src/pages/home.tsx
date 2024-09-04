@@ -5,6 +5,9 @@ import '../style/style.css';
 import { Link } from 'react-router-dom';
 import { TabTitle } from '../components/GeneralFunctions/GeneralFunctions';
 import BotaoLike from '../components/buttons/like';
+import Locais from './locais';
+import Complocais from '../components/Locais';
+import Divlocal from '../components/Locais';
 
 function Home(){
     TabTitle('Home - Sangue Bom')
@@ -27,13 +30,13 @@ function Home(){
                 </div>
                 </Link>
             </div>
-            <div className='home_doadores'>
+            {/*<div className='home_doadores'>
                 <h1>Últimos Checkins</h1>
                 <div className='home_doadores_dif'>
                     Doadores que fizeram a diferença
                 </div>
             </div>
-            {/* <div className='home_box_container'>
+             <div className='home_box_container'>
                 <div className='home_box_one'>
                         <div className='home_box_avatar_container'>
                             <div className='home_box_one_avatar'>
@@ -94,6 +97,7 @@ function Home(){
             <div>
                 Veja os Locais de Doação
             </div> */}
+            <Divlocal/>
             <br />
             <br />
 

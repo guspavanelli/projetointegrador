@@ -715,3 +715,52 @@ flex: 1;
     width: 100%;
     flex: 7;
 }
+
+/* Locais Home */
+.locais_Pai{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 80%;
+}
+.locais_1{
+    background-color: #de7369;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.locais_2{
+    background-color: #a969de;
+    display: flex;
+    border-radius: 20%;
+    flex-direction: row;
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.img_locais{
+    background-color: #333;
+    display: flex;
+    flex: 1;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+.desc_locais{
+    display: flex;
+    flex: 2;
+}
+
+.but_locais{
+    display: flex;
+    flex: 1;
+}
