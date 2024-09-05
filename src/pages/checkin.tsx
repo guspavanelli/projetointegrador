@@ -9,7 +9,7 @@ function Checkin(){
             <Cabecalho/>
             <div className="check_page_title">
                 <h1>Check IN</h1>
-                <h3>Página para fazer checkin</h3>
+                <h3>Aponte sua camera para o QR CODE</h3>
             </div>
             <br />
             <br />
