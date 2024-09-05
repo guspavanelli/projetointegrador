@@ -100,6 +100,9 @@ function Home(){
             <Divlocal/>
             <br />
             <br />
+            <br />
+            <br />
+            <br />
 
             <Footer/>
 
