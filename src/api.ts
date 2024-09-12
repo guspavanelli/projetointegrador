@@ -2,7 +2,7 @@ export const MeuModuloApi = {
 /* MODULO CADASTRO */
 CadastrarUsuarios: async() => {
     let response = await
-    fetch('http://localhost:3001/pagecadastro');
+    fetch('http://localhost:3000/pagecadastro');
     let json = await response.json();
     return json;
 
@@ -12,7 +12,7 @@ CadastrarUsuarios: async() => {
 
 RealizarLogin: async() => {
     let response = await
-    fetch('http://localhost:3001/pagelogin');
+    fetch('http://localhost:3000/pagelogin');
     let json = await response.json();
     return json;
 
@@ -22,7 +22,7 @@ RealizarLogin: async() => {
 
 RealizarCheckin: async() => {
     let response = await
-    fetch('http://localhost:3001/checkin');
+    fetch('http://localhost:3000/checkin');
     let json = await response.json();
     return json;
 
