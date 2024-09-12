@@ -1,5 +1,5 @@
 export const MeuModuloApi = {
-
+/* MODULO CADASTRO */
 CadastrarUsuarios: async() => {
     let response = await
     fetch('http://localhost:3001/pagecadastro');
@@ -8,6 +8,7 @@ CadastrarUsuarios: async() => {
 
 },
 
+/*MODULO LOGIN */
 
 RealizarLogin: async() => {
     let response = await
@@ -17,6 +18,8 @@ RealizarLogin: async() => {
 
 },
 
+/*MODULO CHECKIN */
+
 RealizarCheckin: async() => {
     let response = await
     fetch('http://localhost:3001/checkin');
@@ -24,6 +27,8 @@ RealizarCheckin: async() => {
     return json;
 
 },
+
+/* MODULO LOGOFF */
 
 RealizarLogoff: async() => {
     let response = await
