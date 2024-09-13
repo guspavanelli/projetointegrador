@@ -22,12 +22,19 @@ function Sobre(){
                 <li>Alexandre, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
                     porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
                     não estava apto naquele momento</li>
+                    <br />
+
                 <li>Daniel, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
                     porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
                     não estava apto naquele momento</li>
+                    <br />
+
                 <li>Gabriel, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
                     porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
                     não estava apto naquele momento</li>
+                    <br />
+
+
                 <li>Gustavo, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
                     porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
                     não estava apto naquele momento.</li>
@@ -52,9 +59,32 @@ function Sobre(){
                     </div>
             </ul> 
 
+            <h1>Contatos </h1>
+            <br />
+            Hemonúcleo: (14) 3231-4771
+            <br />
+            Endereço: R. Monsenhor Claro, 8-88 - Centro, Bauru - SP, 17015-130
+            <br />
+            sau.hb@famesp.org.br
+            <br />
+            <br />
+            Beneficiencia Portuguesa: (14)3223-6933
+            <br />
+            Endereço: Rua Rio Branco, 13-83 Centro Bauru, SP, CEP 17015-311
+            <br />
+            contato@benebauru.com.br
+            <br />
+
+
             </div>
             <br />
             <br />
+
+
+
+
+
+
         <Footer/>
         </div>
 

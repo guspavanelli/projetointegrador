@@ -1,19 +1,16 @@
-/*  BEST VIEWED IN FULL-SCREEN ON CHROME / SAFARI */
-
-
 
 section {
     width: 100%;
-    height: 100%; 
+    height: 100%;
   }
   
-  
+
   
   svg {
     position: fixed;
     z-index: 900;
-    height: 90%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     left: 0;
     top: 5%;
   }

@@ -15,6 +15,7 @@ function Coracao(){
      </filter>
    </defs>
    
+
  <g id="low-poly" className='low-poly' stroke-width="0" stroke-linejoin="round" filter="url(#polycleaner)">
      <g filter="url(#polycleaner)">
                <polygon className="st347" points="725.3847,693.75 787.8847,706.25 737.8847,631.25 		"/>
@@ -597,6 +598,7 @@ function Coracao(){
        
  
  <polygon className="st256" points="431.90598,643.59497 475.38474,618.75 519.1347,587.5 531.6347,575 437.88474,600 		"/>
+ 
      </g>
      
      <path className="st355" d="M363.13474,943.75"/>
@@ -604,6 +606,7 @@ function Coracao(){
      <path className="st131" d="M750.3847,462.5L750.3847,462.5L750.3847,462.5z"/>
      <polyline className="st133" points="749.00262,464.39771 749.79279,461.56708 752.13806,463.33813 	"/>
  </g>
+ 
  </svg>
  
    
