@@ -715,3 +715,96 @@ flex: 1;
     width: 100%;
     flex: 7;
 }
+
+/* Locais Home */
+.locais_Pai{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 80%;
+}
+.locais_1{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 300px;
+    border: 1px solid #f7f7f7;
+    box-shadow: -4px 8px 20px 0px rgb(0, 0, 0,0.10);
+}
+
+.locais_2{
+    border: 2px;
+    border-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 300px;
+    border: 1px solid #f7f7f7;
+    box-shadow: -4px 8px 20px 0px rgb(0, 0, 0,0.10);
+}
+
+.img_locais{
+    width: 130px;
+    height: 130px;
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.img_img_locais{
+    
+    object-fit: cover;
+}
+
+.desc_locais{
+    
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.but_locais{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.h3_locais{
+    margin: 0;
+}
+
+.button_local{
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #A60321;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+
+}
+
+.button_letra{
+    color: white;
+}
