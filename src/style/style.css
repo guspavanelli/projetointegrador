@@ -10,6 +10,7 @@
     opacity: 0.2;
 }
 
+
 input{
     width: 90%;
     height: 30px;
@@ -21,9 +22,6 @@ input{
     display: flex;
     flex-direction: column;
 }
-
-
-
 
 /* CABECALHO */
 
@@ -554,18 +552,19 @@ h6{
 .resumo_local{
     display: flex;
     margin-left: 50px;
+    margin-top: 40px;
     background-color: #69dec5;
     height: 200px;
     width: 350px;
     align-items: center;
     object-fit: contain;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .imagemHemonucleo{
-    height: 100px;
-    width: 150px;
-    align-self: center;
-    object-fit: contain;
+    height: 300px;
+    width: 350px;    
 }
 
 .botao_local{
@@ -574,6 +573,7 @@ h6{
     background-color: #bfd85a;
     height: 100px;
     width: 350px;
+    margin-bottom: 30px;
 }
 
 
