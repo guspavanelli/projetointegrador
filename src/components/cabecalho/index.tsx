@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import '../../style/style.css'
 import Linha from "../linha";
+import Botao from "../../components/buttons/login/index";
 
 function Cabecalho(){
     return(
@@ -13,15 +14,9 @@ function Cabecalho(){
             <div className="cab_options">
                 <Link className="cab_options_home"to="/locais"><div >Locais</div></Link>
                 <Link className="cab_options_info"to="/info"><div>Informações</div></Link>
-                <Link className="cab_options_check"to="/checkin"><div >Checkin</div></Link>
+                <Link className="cab_options_sobre"to="/sobre"><div >Sobre</div></Link>
             </div>
-            <div >
-                <Link className="cab_login"to="/pagelogin">
-                    <div >
-                        LOGIN
-                    </div>  
-                </Link>
-            </div>
+            <Botao/>
         </div>
     )
 }

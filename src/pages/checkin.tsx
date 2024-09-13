@@ -8,7 +8,8 @@ function Checkin(){
         <div className="check_container">
             <Cabecalho/>
             <div className="check_page_title">
-                <h1>Pagina Check IN</h1>
+                <h1>Check IN</h1>
+                <h3>Página para fazer checkin</h3>
             </div>
             <br />
             <br />

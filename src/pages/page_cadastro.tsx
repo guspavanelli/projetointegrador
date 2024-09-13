@@ -10,17 +10,17 @@ function PageCadastro(){
     return(
     <div className="g">
         <Cablogcad/>
-        <div className="pai_componentes_loginecad">
-            <div className="molde_imagem_logecad">
-                <img className="imagem_loginecad" src={imagemcadastro} alt="imagem página de cadastro" />
+        <div className="container_cadastro">
+            <div className="castrado_image">
+                <img className="cadastro_img" src={imagemcadastro} alt="imagem página de cadastro" />
             </div>
-            <div className="molde_form_login">
-            <div className="pai_login">
-                    <div>
+            <div className="cadastro_container_info">
+                <div className="cadastro_info">
+                    <div className="cadastro_info_dados">
                         <h2>Seja bem-vindo(a)!
                         Cadastre-se aqui:</h2>
                         <h4>Digite seus dados para criar sua conta:</h4>
-                    <form>
+                    <form className="cadastro_form">
                         <div>
                             <input type="text" placeholder="seu nome" name="" id="" />
                         </div>
@@ -48,7 +48,7 @@ function PageCadastro(){
                             </a>
                             <p>Ao clicar em Cadastrar, você concorda com nossos Termos de <br />
                                 Serviço e Política de Privacidade
-                            </p>
+                            </p> 
                         <Link className="return_form_cad" to="/pagelogin">
                             <p><b>Já é um(a) Sangue Bom?</b> Clique <b>aqui</b> e faça seu login!
                             </p>

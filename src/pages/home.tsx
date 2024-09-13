@@ -5,12 +5,18 @@ import '../style/style.css';
 import { Link } from 'react-router-dom';
 import { TabTitle } from '../components/GeneralFunctions/GeneralFunctions';
 import BotaoLike from '../components/buttons/like';
+import Locais from './locais';
+import Complocais from '../components/Locais';
+import Divlocal from '../components/Locais';
 
 function Home(){
     TabTitle('Home - Sangue Bom')
     return(
         <div className='home_container'>
             <Cabecalho/>
+            <hr/>   
+            <hr/>
+            <hr/>
             <div className="home_posso_doar">
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
@@ -24,18 +30,14 @@ function Home(){
                 </div>
                 </Link>
             </div>
-            <div className='home_doadores'>
+            {/*<div className='home_doadores'>
                 <h1>Últimos Checkins</h1>
                 <div className='home_doadores_dif'>
                     Doadores que fizeram a diferença
                 </div>
             </div>
-            <div className='home_box_container'>
+             <div className='home_box_container'>
                 <div className='home_box_one'>
-                    <div>
-                        <div>
-                            <p>“Ninguém me avisou que doia ”</p>
-                        </div> 
                         <div className='home_box_avatar_container'>
                             <div className='home_box_one_avatar'>
                             </div>
@@ -48,13 +50,9 @@ function Home(){
                                 </div>
                             </div>
                         </div> 
-                    </div>
                 </div>
                 <div className='home_box_two'>
                     <div>
-                        <div>
-                            <p>“Ninguém me avisou que doia ”</p>
-                        </div> 
                         <div className='home_box_avatar_container'>
                             <div className='home_box_two_avatar'>
                             </div>
@@ -71,9 +69,6 @@ function Home(){
                 </div>
                 <div className='home_box_three'>
                     <div>
-                        <div>
-                            <p>“Ninguém me avisou que doia ”</p>
-                        </div> 
                         <div className='home_box_avatar_container'>
                             <div className='home_box_three_avatar'>
                             </div>
@@ -101,7 +96,8 @@ function Home(){
             </div>
             <div>
                 Veja os Locais de Doação
-            </div>
+            </div> */}
+            <Divlocal/>
             <br />
             <br />
 
