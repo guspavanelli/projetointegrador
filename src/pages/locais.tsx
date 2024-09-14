@@ -4,11 +4,12 @@ import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import '../style/style.css'
 import HemonucleoB from '../assests/locais/hemonucleo_base.jpg'
 import HemonucleoP from '../assests/locais/beneficienciaport.webp'
+import whatsLogo from '../assests/locais/whatsapp.png'
+import emailLogo from '../assests/locais/email.png'
+
 
 function Locais(){
     TabTitle('Locais - Sangue Bom')
-
-    
 
     return(
         <div className="locais_container">
@@ -29,7 +30,19 @@ function Locais(){
                         <div className="resumo_local">
                             <img src={HemonucleoB} className="imagemHemonucleo" alt="Hemonucleo do Hospital de Base de Bauru-SP" />
                         </div>
-                        <div className="botao_local"></div>
+                        <div className="contatos_local">
+                            <div className="contato_hemo">
+                            Hemonúcleo: (14) 3231-4771
+                            Endereço: R. Monsenhor Claro, 8-88 - Centro, Bauru - SP
+                            sau.hb@famesp.org.br
+                            </div>
+                            <div className="botao_hemo">
+                                <div><a href="mailto:sau.hb@famesp.org.br" target="_blank"><img src={emailLogo} className="email_hemo" alt="Email" /></a>
+                                </div>
+                                <div><a href="https://wa.me/5514991255559" target="_blank"><img src={whatsLogo} className="whats_hemo" alt="WhatsApp" /></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>                        
                 </div>
                 <div className="filho_local2">
@@ -40,7 +53,19 @@ function Locais(){
                         <div className="resumo_local">
                             <img src={HemonucleoP} className="imagemHemonucleo" alt="Hemonucleo Hemovida do Hospital Benefiência Portuguesa de Bauru-SP" />
                         </div>
-                        <div className="botao_local"></div>
+                        <div className="contatos_local">
+                            <div className="contato_hemo">
+                            Beneficiencia Portuguesa: (14)3223-6933
+                            Endereço: Rua Rio Branco, 13-83 Centro Bauru, SP
+                            contato@benebauru.com.br
+                            </div>
+                            <div className="botao_hemo">
+                                <div><a href="mailto:contato@benebauru.com.br" target="_blank"><img src={emailLogo} className="email_hemo" alt="Email" /></a>
+                                </div>
+                                <div><a href="https://wa.me/5514991255559" target="_blank"><img src={whatsLogo} className="whats_hemo" alt="WhatsApp" /></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
