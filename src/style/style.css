@@ -642,7 +642,7 @@ h6{
     background-color: rgb(91, 143, 99);
     border: none;
     font-size: 15px;
-    color: #ccc;
+    color: white;
     
 }
 
@@ -671,6 +671,7 @@ text-align: left;
     background-color: #A60321;
     border: none;
     font-size: 15px;
+    color: white;
 }
 
 
