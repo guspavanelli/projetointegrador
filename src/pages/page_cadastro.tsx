@@ -3,10 +3,16 @@ import imagemcadastro from "../assests/imagem cadastro.jpg"
 import { Link } from "react-router-dom";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import Linha from "../components/linha";
+import { Usuarios } from "../types/usuarios";
+import { MeuModuloApi } from "../api";
+import { ChangeEvent, useState } from "react";
 
 
 function PageCadastro(){
     TabTitle('Cadastro - Sangue Bom')
+
+    //criar uma função que chame a cadastrar usuarios//
+
     return(
     <div className="g">
         <Cablogcad/>

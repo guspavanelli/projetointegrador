@@ -89,7 +89,7 @@ input{
     align-items: center;
 }
 
-.home_posso_doar, .info_title, .check_page_title, .info_locais{
+.home_posso_doar, .check_page_title, .info_locais{
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -99,12 +99,27 @@ input{
     height: 320px;
 }
 
-.home_posso_doar, .info_title, .check_page_title, .info_locais{
+.home_posso_doar, .check_page_title, .info_locais{
     background-color: rgba(230, 74, 74, 0.267);
     padding: 40px;
     border-radius: 20px;
     margin-bottom: 100px;
 }
+
+.info_title{
+    background-color: rgba(230, 74, 74, 0.267);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 837px;
+    gap: 24px;
+    height: 260px; 
+}
+
 h1{
     color: #A60321;
     font-size: 64px;
@@ -567,16 +582,38 @@ h6{
     width: 350px;    
 }
 
-.botao_local{
+.contatos_local{
     display: flex;
     margin-left: 50px;
-    background-color: #bfd85a;
     height: 100px;
     width: 350px;
     margin-bottom: 30px;
 }
 
+.contato_hemo{
+    flex: 3;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(230, 74, 74, 0.137);
+}
 
+.contato_hemo:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.botao_hemo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.email_hemo, .whats_hemo{
+    height: 48px;
+    width: 48px;
+}
 
 
 /* Pagina perfil*/
@@ -735,6 +772,11 @@ flex: 1;
     height: 300px;
     border: 1px solid #f7f7f7;
     box-shadow: -4px 8px 20px 0px rgb(0, 0, 0,0.10);
+}
+
+.locais_1:hover, .locais_2:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 
 .locais_2{
