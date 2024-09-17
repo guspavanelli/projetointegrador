@@ -11,7 +11,72 @@ import { ChangeEvent, useState } from "react";
 function PageCadastro(){
     TabTitle('Cadastro - Sangue Bom')
 
-    //criar uma função que chame a cadastrar usuarios//
+    //cadastro de usuarios//
+    const [addNome, setaddNome] = useState ('');
+    const [addUsername, setaddUsername] = useState('');
+    const [addEmail, setaddEmail] = useState('');
+    const [addSenha, setaddSenha] = useState('');
+    const [addCosenha, setaddCosenha] = useState('');
+    const [loading, setLoading] = useState(false);
+
+    const handleChangeNome = (info:ChangeEvent<HTMLInputElement>) =>{
+        setaddNome (info.target.value);
+    }
+
+    const handleChangeUsername = (info:ChangeEvent<HTMLInputElement>) =>{
+        setaddUsername (info.target.value);
+    }
+
+    const handleChangeEmail = (info:ChangeEvent<HTMLInputElement>) =>{
+        setaddEmail (info.target.value);
+    }
+
+    const handleChangeSenha = (info:ChangeEvent<HTMLInputElement>) =>{
+        setaddSenha (info.target.value);
+    }
+
+    const handleChangeCosenha = (info:ChangeEvent<HTMLInputElement>) =>{
+        setaddCosenha (info.target.value);
+    }
+    //funções //
+
+    const [usuarios, setUsuarios] = useState <Usuarios[]>([]);
+
+    const CarregarUsuarios = async() => {
+        setLoading(true);
+        let json = await MeuModuloApi.CarregarUsuarios();
+        const Dados = Array.isArray(json) ? json: [json];
+        setLoading (false);
+        setUsuarios (Dados);
+
+
+
+    }
+
+    const CadastrarUsuarios = async () => {
+
+        if (addNome && addUsername && addEmail && addSenha && addCosenha){
+
+            let json = await 
+                MeuModuloApi.CadastrarUsuarios (addNome, addUsername, addEmail,addSenha, addCosenha, '1');
+    
+        if (json.id){
+            alert('Post adicionado com sucesso')
+            setUsuarios((usuarios) => [...usuarios,json]);
+        }else {
+            alert('Ocorreu alguma falha')
+        }
+
+    } else {
+        alert('preencha as informações');
+    }
+
+ }
+
+
+
+
+
 
     return(
     <div className="g">
@@ -28,19 +93,25 @@ function PageCadastro(){
                         <h4>Digite seus dados para criar sua conta:</h4>
                     <form className="cadastro_form">
                         <div>
-                            <input type="text" placeholder="seu nome" name="" id="" />
+                            <input type="text" placeholder="seu nome" onChange={handleChangeNome}/>
                         </div>
                         <div>
-                            <input type="text" placeholder="username" name="" id="" />
+                            <input type="text" placeholder="username" onChange={handleChangeUsername} />
                         </div>
                         <div>
-                            <input type="email" placeholder="seu e-mail" name="" id="" />
+                            <input type="email" placeholder="seu e-mail" onChange={handleChangeEmail} />
                         </div>
                         <div>
-                            <input type="passowrd" placeholder="digite sua senha" name="senha" id="" />
+                            <input type="passowrd" placeholder="digite sua senha" onChange={handleChangeSenha} />
                         </div>
                         <div>
-                            <input type="passowrd" placeholder="confirme sua senha" name="confirme sua senha" id="" />
+                            <input type="passowrd" placeholder="confirme sua senha" onChange={handleChangeCosenha} />
+
+
+                        <button onClick={CadastrarUsuarios}> Confirmar Cadastro </button>
+                        <hr />
+
+                        
                         </div>
                         <div>
                             <input type="submit" value="Cadastre-se com email" />

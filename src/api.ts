@@ -1,14 +1,24 @@
 export const MeuModuloApi = {
 /* MODULO CADASTRO */
-CadastrarUsuarios: async(userId: string,
-    id: number,
+
+CarregarUsuarios: async () => {
+    let response = await
+    fetch('http://localhost:3000/pagecadastro');
+    let json = await response.json();
+    return json;
+},
+
+
+CadastrarUsuarios: async(
+    userId: string,
+    id: string,
     nome: string,
     username: string,
     email: string,
     senha: string) => {
 
     let response = await
-    fetch('http://localhost:3000/pagecadastro',{
+    fetch('https://localhost:3000/pagecadastro',{
             method: 'POST',
             body:JSON.stringify
             ({
