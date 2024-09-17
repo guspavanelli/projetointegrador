@@ -4,7 +4,7 @@ import '../style/style.css';
 import ftPerfil from "../assests/usuario-de-perfil.png"
 import Footer from "../components/footer";
 import { ChangeEvent, useState } from "react";
-import { Usuarios } from "../components/type/usuario";
+import { Usuarios } from "../types/usuarios";
 
 
 
@@ -142,7 +142,7 @@ function Perfil() {
                     {usuarios.map((item, index) => (
                         <div>
                             <h2>Dados usuario</h2>
-                            Titulo: {item.title} <br /> <br />
+                            Nome: {item.nome} <br /> <br />
                             User id: {item.userId}
 
                         </div>
