@@ -1,10 +1,10 @@
 export type Usuarios = {
-    userId: string;
-    id: number;
+    userId: string,
     nome: string;
     username: string;
     email: string;
     senha: string;
+    cosenha: string;
 
 
 
