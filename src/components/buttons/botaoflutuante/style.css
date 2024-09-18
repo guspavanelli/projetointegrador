@@ -1,0 +1,128 @@
+/* Botão flutuante com bordas arredondadas */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b71c1c;
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  color: #333333ca; /* Cinza claro */
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.floating-button.expanded {
+  background-color: #d32f2f; /* Cor mais clara quando expandido */
+}
+
+/* Pop-up */
+.popup-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popup-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.dropdown {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid #b71c1c;
+  background-color: #ffe6e6;
+  color: #b71c1c;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+/* Tabela com bordas arredondadas */
+.compatibility-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px; /* Bordas arredondadas na tabela */
+  overflow: hidden; /* Garante que o arredondamento funcione corretamente */
+}
+
+.compatibility-table th, .compatibility-table td {
+  padding: 10px;
+  border: 1px solid #b71c1c;
+  text-align: center;
+  background-color: #ffebee;
+}
+
+/* Arredondando as bordas nas células */
+.compatibility-table th:first-child {
+  border-top-left-radius: 12px; /* Arredondamento canto superior esquerdo */
+}
+
+.compatibility-table th:last-child {
+  border-top-right-radius: 12px; /* Arredondamento canto superior direito */
+}
+
+.compatibility-table td:first-child {
+  border-bottom-left-radius: 12px; /* Arredondamento canto inferior esquerdo */
+}
+
+.compatibility-table td:last-child {
+  border-bottom-right-radius: 12px; /* Arredondamento canto inferior direito */
+}
+
+.compatibility-table th {
+  background-color: #b71c1c;
+  color: white;
+}
+
+.compatibility-table ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.compatibility-table li {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #ff8a80;
+  color: white;
+  border-radius: 5px; /* Bordas arredondadas nos itens */
+}
+
+/* Botão fechar */
+.close-popup {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.close-popup:hover {
+  background-color: #ff5252;
+}

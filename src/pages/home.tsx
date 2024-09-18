@@ -8,12 +8,15 @@ import BotaoLike from '../components/buttons/like';
 import Locais from './locais';
 import Complocais from '../components/Locais';
 import Divlocal from '../components/Locais';
+import BloodTypeSelector from "../components/buttons/botaoflutuante";
+
 
 function Home(){
     TabTitle('Home - Sangue Bom')
     return(
         <div className='home_container'>
             <Cabecalho/>
+            <BloodTypeSelector/>
             <hr/>   
             <hr/>
             <hr/>

@@ -6,6 +6,7 @@ import HemonucleoB from '../assests/locais/hemonucleo_base.jpg'
 import HemonucleoP from '../assests/locais/beneficienciaport.webp'
 import whatsLogo from '../assests/locais/whatsapp.png'
 import emailLogo from '../assests/locais/email.png'
+import BloodTypeSelector from "../components/buttons/botaoflutuante";
 
 
 function Locais(){
@@ -14,6 +15,7 @@ function Locais(){
     return(
         <div className="locais_container">
             <Cabecalho/>
+            <BloodTypeSelector/>
             <hr/>   
             <hr/>
             <hr/>
