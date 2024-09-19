@@ -11,6 +11,7 @@ import Locais from './locais';
 import Complocais from '../components/Locais';
 import Divlocal from '../components/Locais';
 import BloodTypeSelector from "../components/buttons/botaoflutuante";
+import ExpandablePopup from '../components/buttons/botaoajuda';
 
 >>>>>>> 78e53b7a6f825460b8ea30c7964efd99d7765588:FRONT/src/pages/home.tsx
 
@@ -25,6 +26,7 @@ function Home() {
 =======
             <Cabecalho/>
             <BloodTypeSelector/>
+            <ExpandablePopup/>
             <hr/>   
             <hr/>
             <hr/>
