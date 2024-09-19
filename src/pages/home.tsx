@@ -9,6 +9,7 @@ import Locais from './locais';
 import Complocais from '../components/Locais';
 import Divlocal from '../components/Locais';
 import BloodTypeSelector from "../components/buttons/botaoflutuante";
+import ExpandablePopup from '../components/buttons/botaoajuda';
 
 
 function Home(){
@@ -17,6 +18,7 @@ function Home(){
         <div className='home_container'>
             <Cabecalho/>
             <BloodTypeSelector/>
+            <ExpandablePopup/>
             <hr/>   
             <hr/>
             <hr/>
