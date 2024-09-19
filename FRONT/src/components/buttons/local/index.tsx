@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 function BotaoLocal(){
     return(
         <div className="button_local">

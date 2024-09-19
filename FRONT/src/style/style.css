@@ -558,12 +558,12 @@ h6{
 .local_fotos{
     display: flex;
     margin-left: 50px;
-    background-color: #6b69de;
     height: 300px;
     width: 500px;
     border-radius: 20px;
     align-items: center;
     contain: content;
+    border: rgba(230, 74, 74, 0.137) 3px solid;
 }
 
 .iframe_maps{
@@ -581,13 +581,13 @@ h6{
     display: flex;
     margin-left: 50px;
     margin-top: 40px;
-    background-color: #69dec5;
     height: 200px;
     width: 350px;
     align-items: center;
     object-fit: contain;
     overflow: hidden;
     border-radius: 10px;
+    border: rgba(230, 74, 74, 0.137) 3px solid;
 }
 
 .imagemHemonucleo{
@@ -606,12 +606,12 @@ h6{
 .contato_hemo{
     flex: 3;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 5px 5px rgba(230, 74, 74, 0.137);
+    border: 3px rgba(230, 74, 74, 0.137) solid;
+    border-radius: 10px;
 }
 
-.contato_hemo:hover{
-    transform: scale(1.05);
+.email_hemo:hover, .whats_hemo:hover{
+    transform: scale(1.10);
     transition: 0.5s;
 }
 
@@ -620,7 +620,6 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .email_hemo, .whats_hemo{
