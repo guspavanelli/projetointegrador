@@ -1,44 +1,52 @@
-export const MeuModuloApi = {
-/* MODULO CADASTRO */
-CadastrarUsuarios: async(userId: string,
-    id: number,
-    nome: string,
-    username: string,
-    email: string,
-    senha: string) => {
+export const ModuloApi = {
 
-    let response = await
-    fetch('http://localhost:3000/pagecadastro',{
-            method: 'POST',
-            body:JSON.stringify
-            ({
-                    id,
+    CarregarUsuarios: async () => {
+        let response = await fetch('http://localhost:3001/doadores');
+        let json = await response.json();
+        return json;
+    },
+
+    AdicionarUsuario: async (
+        nome: string,
+        email: string,
+        telefone: string,
+        senha: string,
+        data: string,
+        tipoSanguineo: string
+    ): Promise<boolean> => {
+        try {
+            let response = await fetch('http://localhost:3001/doadores', {
+                method: 'POST',
+                body: JSON.stringify({
                     nome,
-                    username,
-                    userId,
                     email,
-                    senha, }),
-
-        headers: {
-
-            'Content-Type': 'application/json'
+                    telefone,
+                    senha,
+                    data,
+                    tipoSanguineo
+                }),
+                headers: {
+                    'Content-Type': 'application/json; charset=UTF-8'
                 }
-     }
-     );
+            });
 
-    let json = await response.json();
-
-    console.log(json);
-
-    return json;
-    
+            if (response.ok) {
+                return true; 
+            } else {
+                console.error('Erro ao adicionar o item');
+                return false; 
+            }
+        } catch (error) {
+            console.error('Erro na requisição:', error);
+            return false; 
+        }
     },
 
 /*MODULO LOGIN */
 
 RealizarLogin: async() => {
     let response = await
-    fetch('http://localhost:3000/pagelogin');
+    fetch('http://localhost:3001/pagelogin');
     let json = await response.json();
     return json;
 
@@ -48,7 +56,7 @@ RealizarLogin: async() => {
 
 RealizarCheckin: async() => {
     let response = await
-    fetch('http://localhost:3000/checkin');
+    fetch('http://localhost:3001/checkin');
     let json = await response.json();
     return json;
 
@@ -63,8 +71,6 @@ RealizarLogoff: async() => {
     return json;
 
 },
-
-
 
 
 
