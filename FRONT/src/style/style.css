@@ -16,29 +16,7 @@
 /* CABECALHO */
 
 
-.license {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../assests/banner_init.png);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh; /* Altura responsiva */
-}
 
-@media (max-width: 768px) {
-    .license {
-        height: 500px; /* Ajuste para telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .license {
-        height: 300px; /* Ajuste para telas muito pequenas */
-    }
-}
 
 .cab_container_pai{
     display: flex;
@@ -52,7 +30,6 @@
     width: 100%;
     display:flex;
     align-items:center;
-    display: flex;
 }
 
 .cab_logo{

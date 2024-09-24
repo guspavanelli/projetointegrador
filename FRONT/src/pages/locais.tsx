@@ -15,7 +15,6 @@ function Locais(){
     return(
         <div className="locais_container">
             <Cabecalho/>
-            <BloodTypeSelector/>
             <hr/>   
             <hr/>
             <hr/>
