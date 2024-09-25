@@ -8,7 +8,7 @@ function Cabecalho(){
         <div className="cab_container">
             <Link className="cab_logo" to="/">
             <div >
-                SANGUE BOM
+                SANGUE BOM é demaizi
             </div>
                 </Link> 
             <div className="cab_options">
