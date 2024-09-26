@@ -75,12 +75,6 @@
     height: 320px;
 }
 
-.home_posso_doar, .check_page_title, .info_locais{
-    padding: 40px;
-    border-radius: 20px;
-    margin-bottom: 100px;
-}
-
 .info_title{
     background-color: rgba(230, 74, 74, 0.267);
     padding: 40px;

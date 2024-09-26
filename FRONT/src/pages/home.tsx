@@ -16,13 +16,8 @@ function Home() {
     return (
         
         <div className='home_container'>
-            <BloodTypeSelector/>
-            <ExpandablePopup/>
-            <hr/>   
-            <hr/>
-            <hr/>
-            <div className="home_posso_doar">
             <Cabecalho/>
+            <div className="home_posso_doar">
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>
@@ -39,6 +34,8 @@ function Home() {
             <div>Veja os Locais de Doação</div>
             <Divlocal />
             <Footer />
+            <BloodTypeSelector/>
+            <ExpandablePopup/>
         </div>
     );
 }
