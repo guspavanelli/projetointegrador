@@ -16,7 +16,8 @@ function Home() {
     return (
         
         <div className='home_container'>
-            <Cabecalho/>
+                        <Cabecalho/>
+
             <div className="home_posso_doar">
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
@@ -31,7 +32,7 @@ function Home() {
                     </div>
                 </Link>
             </div>
-            <div>Veja os Locais de Doação</div>
+            <h2>Veja os Locais de Doação</h2>
             <Divlocal />
             <Footer />
             <BloodTypeSelector/>

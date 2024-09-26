@@ -11,9 +11,10 @@
 }
 
 .cab_container{
-    width: 100%;
+    width: 80%;
     display:flex;
     align-items:center;
+    height: auto;
 }
 
 .cab_logo{
@@ -72,7 +73,8 @@
     align-items: center;
     width: 837px;
     gap: 24px;
-    height: 320px;
+    height: auto;
+    margin-bottom: 10%;
 }
 
 .info_title{
@@ -1056,7 +1058,7 @@ bg-img{
 }
 
 body {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
