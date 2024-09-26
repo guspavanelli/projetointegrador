@@ -1,23 +1,7 @@
 
-#linha {
-    border-bottom: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    /* padding: 20px 0px 20px 0px; */
-    opacity: 0.2;
-}
-
-.cadastro_form  {
-    display: flex;
-    flex-direction: column;
-}
 
 
 /* CABECALHO */
-
-
-
-
 .cab_container_pai{
     display: flex;
     background-color: #a6032128;
@@ -192,9 +176,6 @@ h1{
     font-size: 24px;
     line-height: 150%; 
 }
-
-
-
 /*PÁGINA LOGIN E CADASTRO */
 .container_login,.container_cadastro{
     display: flex;
@@ -422,11 +403,13 @@ h6{
 /*FOOTER*/
 .footer_principal{
     border-top: 2px solid rgba(72, 70, 70, 0.656);
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
-    height: 200px;
-    width: 100%;    
+    height: auto;
+    width: 80%; 
+    margin-top: 5%;
+   
 }
 .footer_1{
     display: flex;
@@ -747,7 +730,7 @@ flex: 1;
 .locais_Pai{
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: auto;
     width: 80%;
 }
 .locais_1{
@@ -1337,4 +1320,16 @@ path.two {
   .date-container input {
     flex: 1;
   }
+  #linha {
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 0px 20px 0px; */
+    opacity: 0.2;
+}
+
+.cadastro_form  {
+    display: flex;
+    flex-direction: column;
+}
   
