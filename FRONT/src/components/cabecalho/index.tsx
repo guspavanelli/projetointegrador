@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import '../../style/style.css'
-import Linha from "../linha";
 import Botao from "../../components/buttons/login/index";
 
 function Cabecalho(){
