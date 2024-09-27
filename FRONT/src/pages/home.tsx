@@ -11,6 +11,7 @@ import BloodTypeSelector from "../components/buttons/botaoflutuante";
 import ExpandablePopup from '../components/buttons/botaoajuda';
 
 
+
 function Home() {
     TabTitle('Home - Sangue Bom');
     return (
@@ -23,6 +24,10 @@ function Home() {
             <hr/>
             <div className="home_posso_doar">
             <Cabecalho/>
+
+
+
+
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>
