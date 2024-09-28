@@ -1,12 +1,10 @@
 import Cablogcad from "../components/cabecalho-log-cad";
 import imagemcadastro from "../assests/imagem cadastro.jpg"; 
 import { ChangeEvent, useState } from "react";
-import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import { Usuarios } from "../types/usuarios";
 import { ModuloApi } from "../api";
 
 function PageCadastro() {
-    TabTitle('Cadastro - Sangue Bom');
     
     const [addNome, setAddNome] = useState('');
     const [addEmail, setAddEmail] = useState('');
