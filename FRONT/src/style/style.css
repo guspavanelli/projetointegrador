@@ -893,13 +893,17 @@ bg-img{
     background-attachment: fixed;
 }
 
-.quiz-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.quiz-container,.form-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ffe5e5;
+        background-color: #ffffff;
+        padding: 20px;
+        width: 80%;
+        justify-content: space-between;
+        box-sizing: border-box;
   }
   
   
@@ -1199,21 +1203,6 @@ path.two {
     height: 100vh;
     padding: 1rem; 
   }
-  
-  .form-wrapper {
-    display: flex;
-    flex-direction: row; 
-    border-radius: 15px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ffe5e5;
-    background-color: #ffffff;
-    padding: 20px;
-    width: 100%; 
-    max-width: 900px; 
-    justify-content: space-between;
-    box-sizing: border-box; 
-  }
-  
   .form {
     display: flex;
     flex-direction: column;
@@ -1260,7 +1249,8 @@ path.two {
     height: auto;
     padding-top: 20%; 
   }
-  
+
+
   /* Media queries */
   @media (max-width: 768px) {
     .form-wrapper {
