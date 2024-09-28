@@ -11,7 +11,6 @@ import BloodTypeSelector from "../components/buttons/botaoflutuante";
 
 function Locais(){
     TabTitle('Locais - Sangue Bom')
-
     return(
         <div className="locais_container">
             <Cabecalho/>

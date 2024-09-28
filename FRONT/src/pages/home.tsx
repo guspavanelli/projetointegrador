@@ -9,6 +9,8 @@ import Locais from './locais';
 import Complocais from '../components/Locais';
 import BloodTypeSelector from "../components/buttons/botaoflutuante";
 import ExpandablePopup from '../components/buttons/botaoajuda';
+import DonationLocation from '../components/teste';
+import hemonucleob from '../assests/locais/logo famesp.png'
 
 
 function Home() {
@@ -32,8 +34,22 @@ function Home() {
                     </div>
                 </Link>
             </div>
-            <h2>Veja os Locais de Doação</h2>
+            <h2>Veja os Locais de Doação em Bauru-SP:</h2>
             <Divlocal />
+            <DonationLocation
+            name="Hemonucleo Hospital de Base"
+            endereco="Endereço: R. Monsenhor Claro, 8-88 - Centro, Bauru - SP"
+            phone="Contato: (14) 3231-4771"
+            imageUrl={hemonucleob} 
+            mapUrl="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJd8BlQ2BZwokRAFUEcm_qrcA&key=YOUR_API_KEY"
+            />
+            <DonationLocation
+            name="Hemovida - Benefiência Portuguesa"
+            endereco="Endereço: Rua Rio Branco, 13-83 Centro Bauru, SP"
+            phone="Contato: (14)3223-6933 "
+            imageUrl={hemonucleob} 
+            mapUrl="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJd8BlQ2BZwokRAFUEcm_qrcA&key=YOUR_API_KEY"
+            />
             <Footer />
             <BloodTypeSelector/>
             <ExpandablePopup/>
