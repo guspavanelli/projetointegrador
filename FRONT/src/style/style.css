@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 
-
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
 /* CABECALHO */
 .cab_container_pai{
     display: flex;
@@ -11,6 +16,7 @@
 }
 
 .cab_container{
+    padding-top: 30px;
     width: 80%;
     display:flex;
     align-items:center;
@@ -39,7 +45,7 @@
 }
 .cab_login, .home_pd_teste{ 
     width: 100px;
-    height: 20px;
+    height: 50px;
     display: flex;
     justify-content: center;
     padding: 14px 24px;
@@ -605,13 +611,14 @@ h6{
 #btcertificado{
 
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
     height: 25px;
     background-color: rgb(91, 143, 99);
     border: none;
     font-size: 15px;
     color: white;
-    
+    text-align: center;
+    align-items: center;
 }
 
 .inpf1, .inpf2, .inpf3, .inpf4{
@@ -622,7 +629,7 @@ text-align: left;
 
 .inputpf1,.inputpf2, .inputpf4{
     width: 100%;
-    height: 17px;
+    height: 25px;
 }
         
 .inputpf3{
@@ -793,18 +800,18 @@ flex: 1;
     flex: 1;
     align-items: center;
     padding-left: 40px;
+    justify-content: center;
 }
 
 .h3_locais{
     margin: 0;
+    padding-top: 10px;
 }
 
 .button_local{
-    width: 100px;
-    height: 20px;
+    width: 90px;
+    height: 50px;
     display: flex;
-    justify-content: center;
-    padding: 14px 24px;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -813,6 +820,8 @@ flex: 1;
     font-weight: 500;
     color: white;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
 
 }
 
@@ -1104,7 +1113,6 @@ body {
 
   span:nth-child(2) {
     width: 20px;
-    margin-left: 30px;
     position: relative;
     top: 12%;
   }
@@ -1306,6 +1314,10 @@ path.two {
   .date-container input {
     flex: 1;
   }
+   
+   
+     
+      
   #linha {
     border-bottom: 1px solid #000;
     display: flex;
@@ -1318,6 +1330,7 @@ path.two {
     display: flex;
     flex-direction: column;
 }
+
   .img_logo{
     max-width: 50%;
     min-width: 25%;
