@@ -4,7 +4,7 @@ import BloodTypeSelector from "../components/buttons/botaoflutuante";
 import '../style/style.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import BloodDonationCarousel from "../components/carrosel";
+import BloodDonationCarousel from "../components/teste";
 import React from "react";
 
 
@@ -12,22 +12,17 @@ import React from "react";
 
 function Erro404(){
     TabTitle('Erro 404 - Not Found')
-    const App: React.FC = () => {
+    const Erro404: React.FC = () => {
         return (
           <div>
+            <Cabecalho/>
+            <h1>Pagina Erro 404</h1>
             <h1>Bem-vindo ao Sistema de Doação de Sangue</h1>
             <BloodDonationCarousel />
           </div>
-        );
+        )
       }
-        <div>
-            <Cabecalho/>
-            <div className="home_posso_doar">
-                <h1>Pagina Erro 404</h1>
-                <BloodTypeSelector/>
-            </div>    
-            
-        </div>
+        
     
 }
 
