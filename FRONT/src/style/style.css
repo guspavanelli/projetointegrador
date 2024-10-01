@@ -1,23 +1,7 @@
 
-#linha {
-    border-bottom: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    /* padding: 20px 0px 20px 0px; */
-    opacity: 0.2;
-}
-
-.cadastro_form  {
-    display: flex;
-    flex-direction: column;
-}
 
 
 /* CABECALHO */
-
-
-
-
 .cab_container_pai{
     display: flex;
     background-color: #a6032128;
@@ -27,9 +11,10 @@
 }
 
 .cab_container{
-    width: 100%;
+    width: 80%;
     display:flex;
     align-items:center;
+    height: auto;
 }
 
 .cab_logo{
@@ -88,13 +73,8 @@
     align-items: center;
     width: 837px;
     gap: 24px;
-    height: 320px;
-}
-
-.home_posso_doar, .check_page_title, .info_locais{
-    padding: 40px;
-    border-radius: 20px;
-    margin-bottom: 100px;
+    height: auto;
+    margin-bottom: 10%;
 }
 
 .info_title{
@@ -192,9 +172,6 @@ h1{
     font-size: 24px;
     line-height: 150%; 
 }
-
-
-
 /*PÁGINA LOGIN E CADASTRO */
 .container_login,.container_cadastro{
     display: flex;
@@ -422,11 +399,13 @@ h6{
 /*FOOTER*/
 .footer_principal{
     border-top: 2px solid rgba(72, 70, 70, 0.656);
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
-    height: 200px;
-    width: 100%;    
+    height: auto;
+    width: 80%; 
+    margin-top: 5%;
+   
 }
 .footer_1{
     display: flex;
@@ -748,7 +727,7 @@ flex: 1;
 .locais_Pai{
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: auto;
     width: 80%;
 }
 .locais_1{
@@ -1080,7 +1059,7 @@ bg-img{
 }
 
 body {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1339,24 +1318,20 @@ path.two {
     flex: 1;
   }
    
-    /* Carrosel */
-    .carousel-container {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-      }
-      
-      .carousel-card {
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      .icon {
-        margin-bottom: 10px;
-        color: #e63946; /* Cor para os ícones */
-      }
-      
+   
      
       
+  #linha {
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 0px 20px 0px; */
+    opacity: 0.2;
+}
+
+.cadastro_form  {
+    display: flex;
+    flex-direction: column;
+}
+  
+/* color: #e63946; Cor para os ícones */
