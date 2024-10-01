@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Erro404 from './pages/erro404';
@@ -11,7 +10,6 @@ import PageLogin from './pages/page_login';
 import Perfil from './pages/perfil';
 import Sobre from './pages/sobre';
 import Teste from './pages/teste';
-import Cabecalho from './components/cabecalho';
 
 function App() {
   return (

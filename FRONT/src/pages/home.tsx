@@ -4,7 +4,7 @@ import Cabecalho from '../components/cabecalho';
 import Footer from '../components/footer'; 
 import BloodTypeSelector from "../components/buttons/botaoflutuante";
 import ExpandablePopup from '../components/buttons/botaoajuda';
-import DonationLocation from '../components/teste';
+import DonationLocation from '../components/Locais_home';
 import hemonucleob from '../assests/locais/logo famesp.png'
 import hemonucleop from '../assests/locais/logo_hemovida.jpg'
 import { TabTitle } from '../components/GeneralFunctions/GeneralFunctions';
