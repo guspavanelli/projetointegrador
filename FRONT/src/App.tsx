@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import Erro404 from './pages/erro404';
 import Home from './pages/home';
 import Checkin from './pages/checkin';
-import Info from './pages/info';
 import Locais from './pages/locais';
 import PageCadastro from './pages/page_cadastro';
 import PageLogin from './pages/page_login';
@@ -20,8 +19,6 @@ function App() {
         <Route path='/' element={<Home/>}>
         </Route>
         <Route path='/checkin' element={<Checkin/>}>
-        </Route>
-        <Route path='/info' element={<Info/>}>
         </Route>
         <Route path='/locais' element={<Locais/>}>
         </Route>

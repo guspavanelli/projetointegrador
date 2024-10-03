@@ -3,9 +3,10 @@ import imagemcadastro from "../assests/imagem cadastro.jpg";
 import { ChangeEvent, useState } from "react";
 import { Usuarios } from "../types/usuarios";
 import { ModuloApi } from "../api";
+import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 function PageCadastro() {
-    
+    TabTitle('Cadastro - Sangue Bom')
     const [addNome, setAddNome] = useState('');
     const [addEmail, setAddEmail] = useState('');
     const [addTelefone, setAddTelefone] = useState('');
