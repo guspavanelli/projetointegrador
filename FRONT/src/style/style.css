@@ -2,7 +2,7 @@
 
 
   
-  body {
+  body{
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -72,7 +72,7 @@
     align-items: center;
 }
 
-.home_posso_doar, .check_page_title, .info_locais{
+.home_posso_doar, .check_page_title, .info_locais, .sobre_pai{
     margin-top: 45px;
     display: flex;
     flex-direction: column;
