@@ -10,8 +10,6 @@ import Perfil from './pages/perfil';
 import Sobre from './pages/sobre';
 import Teste from './pages/teste';
 import Cabecalho from './components/cabecalho';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 
 function App() {
