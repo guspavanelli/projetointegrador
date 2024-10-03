@@ -15,6 +15,7 @@ import { ModuloApi } from "../api";
 
 
 
+
 function Home() {
     TabTitle('Home - Sangue Bom');
 
@@ -322,6 +323,11 @@ function Home() {
         <div className='home_container'>
             <Cabecalho />
             <div className="home_posso_doar">
+            <Cabecalho/>
+
+
+
+
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>
