@@ -1,22 +1,26 @@
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import Footer from "../components/footer";
 import Cabecalho from "../components/cabecalho";
-import QrCode from "../assests/qrcode.webp"
+import QrCode from "../assests/qrcode.webp";
+import '../style/style.css';
+import CardList from "../components/card-carro-sobre/cardlist";
 
 function Sobre(){
     TabTitle('Sobre - Sangue Bom')
     return(
         <div className="container_sobre_">
             <Cabecalho/>    
+                            
+            
             <div>
-
+            
             <h1>Sobre o sangue bom</h1>
             <br />
             <h3>Sangue bom é um site projetado em informar as pessoas sobre doações de sangue, onde doar, quem pode doar, locais de doação e tambem informativo a respeito.</h3>
             <br />
-
-            <p>Criadores</p>
             
+            <p>Criadores</p>
+            <CardList/>
             
             <ul>
                 <li>Alexandre, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação

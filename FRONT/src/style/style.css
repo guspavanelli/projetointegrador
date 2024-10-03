@@ -652,10 +652,13 @@ text-align: left;
 /* SOBRE */
 
 .container_sobre_{
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: auto;
     height: auto;
-
+    
+    
+    
 
     
 }
