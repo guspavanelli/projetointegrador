@@ -321,7 +321,7 @@ function Home() {
     }
     return (
         <div className='home_container'>
-            <Cabecalho />
+            {/* <Cabecalho /> */}
             <div className="home_posso_doar">
             <Cabecalho/>
 
