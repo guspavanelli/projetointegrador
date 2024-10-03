@@ -13,7 +13,6 @@ import React from "react";
 
 function Erro404(){
     TabTitle('Erro 404 - Not Found')
-    const Erro404: React.FC = () => {
         return (
           <div>
             <Cabecalho/>
@@ -21,16 +20,12 @@ function Erro404(){
                 <h1>Pagina Erro 404</h1>
                 <BloodTypeSelector/>
                 <ExpandablePopup />
-                <h1>Pagina Erro 404</h1>
-            <h1>Bem-vindo ao Sistema de Doação de Sangue</h1>
-            <BloodDonationCarousel />
+                <BloodDonationCarousel />
             </div>    
-            
         </div>
         )
-      }
-        
-    
 }
+        
+  
 
 export default Erro404;

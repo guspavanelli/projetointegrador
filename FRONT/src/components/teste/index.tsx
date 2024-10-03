@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { FaHeart, FaHeartbeat, FaInfoCircle } from 'react-icons/fa';
-import "..teste/carrosel.css"
+import '../teste/carrosel.css'
 
 interface Card {
   icon: React.ReactNode;
