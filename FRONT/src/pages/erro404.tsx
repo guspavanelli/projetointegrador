@@ -5,27 +5,25 @@ import '../style/style.css'
 import ExpandablePopup from "../components/buttons/botaoajuda";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import BloodDonationCarousel from "../components/teste";
 import React from "react";
+import Carousel from "../components/teste";
 
 
 
 
 function Erro404(){
     TabTitle('Erro 404 - Not Found')
-        return (
-          <div>
-            <Cabecalho/>
-            <div className="home_posso_doar">
-                <h1>Pagina Erro 404</h1>
-                <BloodTypeSelector/>
-                <ExpandablePopup />
-                <BloodDonationCarousel />
-            </div>    
-        </div>
-        )
+  return (
+    <div>
+      <Cabecalho/>
+      <div className="home_posso_doar">
+          <h1>Pagina Erro 404</h1>
+          <BloodTypeSelector/>
+          <ExpandablePopup />
+          <Carousel/>
+      </div>    
+  </div>
+  )    
 }
-        
-  
 
 export default Erro404;
