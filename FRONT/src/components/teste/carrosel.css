@@ -1,0 +1,68 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  background-color: #f8f9fa; /* Fundo claro */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  min-width: 300px;
+  padding: 20px;
+  margin: 0 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  background-color: #ffffff; /* Fundo dos cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra do card */
+}
+
+.carousel-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon {
+  font-size: 40px; /* Aumenta o tamanho do ícone */
+  margin-bottom: 10px;
+}
+
+.h3-carrossel {
+  margin: 10px 0;
+  color: #343a40; /* Cor do texto */
+}
+
+.p-carrossel {
+  color: #6c757d; /* Texto mais suave */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+button:focus {
+  outline: none;
+}

@@ -9,74 +9,7 @@ import { Usuarios } from "../types/usuarios";
 
 
 function Perfil() {
-    const [usuarios, setUsuario] = useState<Usuarios[]>([])
-
-
-    const [addTitulo, setAddTitulo] = useState('')
-    const [addDetalhe, setAddDetalhe] = useState('')
-
-    const HandleChangeTitulo = (e: ChangeEvent<HTMLInputElement>) => {
-        setAddTitulo(e.target.value);
-
-    }
-    const HandleChangeDetalhe = (e: ChangeEvent<HTMLInputElement>) => {
-        setAddDetalhe(e.target.value);
-        //aa
-    }
-
-    const AdicionarUsuarios = async () => {
-        if (addTitulo && addDetalhe) {
-
-            let response = await fetch('http://localhost:3000/',
-
-                {
-                    method: 'POST',
-                    body: JSON.stringify(
-                        {
-                            title: addTitulo,
-                            body: addDetalhe,
-                            userID: 1
-                        }
-                    ),
-                    headers: {
-                        'Content-Type': 'applicatiom/json'
-
-                    }
-                }
-            )
-            let json = await response.json();
-
-            console.log(json);
-
-            if (json.id) {
-                alert('Post Adicionado com sucesso')
-                setUsuario((usuarios) => [...usuarios, json]);
-
-            } else {
-                alert('Ocorreu alguma falha.')
-            }
-
-
-        }
-
-        else {
-            alert('preencher as informações.')
-        }
-
-    }
-
-
-    const carregarUsuarios = async () => {
-        let response = await fetch('http://localhost:3000/');
-        let json = await response.json();
-        const Dados = Array.isArray(json) ? json : [json];
-        setUsuario(Dados)
-        alert('FOI')
-
-
-
-    }
-
+   
 
 
 
@@ -106,8 +39,7 @@ function Perfil() {
 
                     <div className="inpf1">
                         <h4>Username</h4>
-                        <input type="text" className="inputpf1" placeholder="Username" onChange={HandleChangeTitulo} />
-                        {addTitulo}
+                        <input type="text" className="inputpf1" placeholder="Username"  />
                     </div>
 
                     <br />
@@ -115,7 +47,7 @@ function Perfil() {
 
                     <div className="inpf2">
                         <h4>Email</h4>
-                        <input type="text" className="inputpf2" placeholder="Email@domain.com" onChange={HandleChangeDetalhe} />
+                        <input type="text" className="inputpf2" placeholder="Email@domain.com"  />
                     </div>
                     <br />
 
@@ -136,18 +68,9 @@ function Perfil() {
                     <br />
                     <br />
                     <br />
-                    <button id="btsalvar" onClick={carregarUsuarios}>Salvar</button>
+                    <button id="btsalvar" >Salvar</button>
                     <br />
-                    MOSTRAR SALVO
-                    {usuarios.map((item, index) => (
-                        <div>
-                            <h2>Dados usuario</h2>
-                            Nome: {item.nome} <br /> <br />
-                            User id: {item.userId}
-
-                        </div>
-
-                    ))}
+           
                     <br />
 
 

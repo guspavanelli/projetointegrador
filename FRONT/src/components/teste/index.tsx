@@ -1,94 +1,68 @@
 import React, { useState } from 'react';
-import '../../components/teste/style.css'
+import '../teste/carrosel.css'; // Importar CSS para estilização
+import Slider from 'react-slick';
+import { FaHeart, FaHeartbeat, FaInfoCircle } from 'react-icons/fa';
+import '../teste/carrosel.css'
 
-interface LocationProps {
-  name: string;
-  phone: string;
-  imageUrl: string; 
-  mapUrl: string;
-  endereco: string;   
+// Definindo a interface para as informações do card
+interface CardInfo {
+    id: number;
+    icon: string;
+    title: string;
+    description: string;
 }
 
-const DonationLocation: React.FC<LocationProps> = ({ name, endereco, phone, imageUrl, mapUrl }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+// Dados do carrossel
+const cardData: CardInfo[] = [
+    {
+        id: 1,
+        icon: '❤️',
+        title: 'Doe Sangue',
+        description: 'A doação de sangue pode salvar vidas. Doe e ajude quem precisa!',
+    },
+    {
+        id: 2,
+        icon: '🏥',
+        title: 'Centro de Doação',
+        description: 'Encontre o centro de doação mais próximo de você.',
+    },
+    {
+        id: 3,
+        icon: '💉',
+        title: 'Requisitos',
+        description: 'Verifique os requisitos para ser um doador de sangue.',
+    },
+];
 
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
+const Carousel: React.FC = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-  return (
-    <div style={styles.container}>
-      <div style={styles.locationInfo}>
-        <img src={imageUrl} alt={name} className='image' />
-        <div style={styles.textContainer}>
-          <h2>{name}</h2>
-          <p>{endereco}</p>
-          <p>{phone}</p>
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % cardData.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + cardData.length) % cardData.length);
+    };
+
+    return (
+        <div className="carousel">
+            <button onClick={prevSlide}>&lt;</button>
+            <div className="carousel-content">
+                {cardData.map((card, index) => (
+                    <div
+                        key={card.id}
+                        className={`carousel-card ${index === currentIndex ? 'active' : ''}`}
+                    >
+                        <div className="icon">{card.icon}</div>
+                        <h3 className='h3-carrossel'>{card.title}</h3>
+                        <p className='p-carrossel'>{card.description}</p>
+                    </div>
+                ))}
+            </div>
+            <button onClick={nextSlide}>&gt;</button>
         </div>
-        <button style={styles.button} onClick={toggleExpand}>
-          LOCAL
-        </button>
-      </div>
-
-      {isExpanded && (
-        <div style={styles.extraInfo}>
-          <h3>Mais informações</h3>
-          <p></p>
-          <iframe
-            src={mapUrl}
-            width="100%"
-            height="300"
-            style={styles.map}
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </div>
-      )}
-    </div>
-  );
+    );
 };
 
-// Estilos inline para o componente
-const styles = {
-  container: {
-    marginBottom: '20px',
-    borderRadius: '10px',
-    backgroundColor: '#f8f8f8',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-  },
-  locationInfo: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '20px',
-  },
-  image: {
-    width: '100px',  // Tamanho da imagem
-    height: '100px',
-    marginRight: '20px',
-    borderRadius: '10px',
-    objectFit: 'cover',
-  },
-  textContainer: {
-    flex: 1,  // Permite que o texto ocupe mais espaço
-    marginRight: '20px',
-  },
-  button: {
-    backgroundColor: '#a00000',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '5px',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  },
-  extraInfo: {
-    padding: '20px',
-    backgroundColor: '#fff',
-  },
-  map: {
-    borderRadius: '10px',
-    border: 'none',
-  },
-};
-
-export default DonationLocation;
+export default Carousel;

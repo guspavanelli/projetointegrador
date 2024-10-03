@@ -28,70 +28,70 @@ function Sobre(){
                     não estava apto naquele momento</li>
                     <br />
 
-                <li>Daniel, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
-                    porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
-                    não estava apto naquele momento</li>
-                    <br />
+                    <li>Daniel, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
+                        porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
+                        não estava apto naquele momento</li>
+                        <br />
 
-                <li>Gabriel, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
-                    porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
-                    não estava apto naquele momento</li>
-                    <br />
-
-
-                <li>Gustavo, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
-                    porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
-                    não estava apto naquele momento.</li>
-                    <br />
-                    <br />
+                    <li>Gabriel, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
+                        porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
+                        não estava apto naquele momento</li>
+                        <br />
 
 
-                    <div className="sobre_doacao_">
-                    Ajude-nos e Seja um Sanguebom!
-                    <br />
-                    <h2>Ajude a manter o projeto e seja um membro Sangue Bom!
-                    Faça sua doação via PIX para os seguintes dados:</h2>
-                    <br />
-                    <br />
-                    <br />
+                    <li>Gustavo, 25 anos e nunca doou sangue, certo dia me bateu a curiosidade e coragem para fazer a doação
+                        porem não achava informações faceis de como e onde realizar, então fui atras e descobri que 
+                        não estava apto naquele momento.</li>
+                        <br />
+                        <br />
 
-                        <div className="pai_qr">
-                               <div className="info_qr"> <h2>CNPJ: XXXXXXXXXXXXXXXXXXXX Nome: XXXXXXXXXXXXXXXXXXXX </h2> </div>
-                                    <div className="sobre_qr_">
-                                        <img className="qr_sb" src={QrCode} alt="qr code" /></div>
+
+                        <div className="sobre_doacao_">
+                        Ajude-nos e Seja um Sanguebom!
+                        <br />
+                        <h2>Ajude a manter o projeto e seja um membro Sangue Bom!
+                        Faça sua doação via PIX para os seguintes dados:</h2>
+                        <br />
+                        <br />
+                        <br />
+
+                            <div className="pai_qr">
+                                <div className="info_qr"> <h2>CNPJ: XXXXXXXXXXXXXXXXXXXX Nome: XXXXXXXXXXXXXXXXXXXX </h2> </div>
+                                        <div className="sobre_qr_">
+                                            <img className="qr_sb" src={QrCode} alt="qr code" /></div>
+                            </div>
                         </div>
-                    </div>
-            </ul> 
+                </ul> 
 
-            <h1>Contatos </h1>
-            <br />
-            Hemonúcleo: (14) 3231-4771
-            <br />
-            Endereço: R. Monsenhor Claro, 8-88 - Centro, Bauru - SP, 17015-130
-            <br />
-            sau.hb@famesp.org.br
-            <br />
-            <br />
-            Beneficiencia Portuguesa: (14)3223-6933
-            <br />
-            Endereço: Rua Rio Branco, 13-83 Centro Bauru, SP, CEP 17015-311
-            <br />
-            contato@benebauru.com.br
-            <br />
+                <h1>Contatos </h1>
+                <br />
+                Hemonúcleo: (14) 3231-4771
+                <br />
+                Endereço: R. Monsenhor Claro, 8-88 - Centro, Bauru - SP, 17015-130
+                <br />
+                sau.hb@famesp.org.br
+                <br />
+                <br />
+                Beneficiencia Portuguesa: (14)3223-6933
+                <br />
+                Endereço: Rua Rio Branco, 13-83 Centro Bauru, SP, CEP 17015-311
+                <br />
+                contato@benebauru.com.br
+                <br />
 
 
             </div>
             <br />
             <br />
 
+        <div>
 
 
 
 
-
-        <Footer/>
+            <Footer/>
+            </div>
         </div>
-
     )
 }
 
