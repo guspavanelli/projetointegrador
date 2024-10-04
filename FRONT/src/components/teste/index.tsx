@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import '../teste/carrosel.css'; // Importar CSS para estilização
-import Slider from 'react-slick';
-import { FaHeart, FaHeartbeat, FaInfoCircle } from 'react-icons/fa';
 import '../teste/carrosel.css'
 
 // Definindo a interface para as informações do card

@@ -15,9 +15,7 @@ import Cabecalho from './components/cabecalho';
 function App() {
   return (
     <div className='container_body'>
-      <Routes>
-      <Route path='*' element={<Erro404/>}>
-      </Route>
+      <Routes>      
         <Route path='/' element={<Home/>}>
         </Route>
         <Route path='/checkin' element={<Checkin/>}>
@@ -36,7 +34,7 @@ function App() {
         </Route>
         <Route path='/teste' element={<Teste/>}>
         </Route>      
-      </Routes>
+      </Routes> 
     </div>
   );
 }

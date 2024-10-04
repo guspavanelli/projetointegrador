@@ -8,11 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import React from "react";
 import Carousel from "../components/teste";
 
-
-
-
-function Erro404(){
-    TabTitle('Erro 404 - Not Found')
+function Erro404(){    
   return (
     <div>
       <Cabecalho/>

@@ -17,6 +17,8 @@ import { ModuloApi } from "../api";
 
 
 function Home() {
+
+
     TabTitle('Home - Sangue Bom');
 
     const questions = [
@@ -179,6 +181,8 @@ function Home() {
             </div>
         );
     }
+
+
     function PageCadastro() {
         TabTitle('Cadastro - Sangue Bom');
         
