@@ -1,57 +1,66 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { FaHeart, FaHeartbeat, FaInfoCircle } from 'react-icons/fa';
+import React, { useState } from 'react';
+import '../teste/carrosel.css'; // Importar CSS para estilização
 import '../teste/carrosel.css'
 
-interface Card {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
+// Definindo a interface para as informações do card
+interface CardInfo {
+    id: number;
+    icon: string;
+    title: string;
+    description: string;
 }
 
-const cards: Card[] = [
-  {
-    icon: <FaHeart />,
-    title: "Doe Sangue",
-    description: "Sua doação pode salvar vidas!",
-  },
-  {
-    icon: <FaHeartbeat />,
-    title: "Quem Pode Doar?",
-    description: "Qualquer pessoa saudável entre 16 e 69 anos.",
-  },
-  {
-    icon: <FaInfoCircle />,
-    title: "Como Doar?",
-    description: "Visite um banco de sangue próximo e agende sua doação.",
-  },
+// Dados do carrossel
+const cardData: CardInfo[] = [
+    {
+        id: 1,
+        icon: '❤️',
+        title: 'Doe Sangue',
+        description: 'A doação de sangue pode salvar vidas. Doe e ajude quem precisa!',
+    },
+    {
+        id: 2,
+        icon: '🏥',
+        title: 'Centro de Doação',
+        description: 'Encontre o centro de doação mais próximo de você.',
+    },
+    {
+        id: 3,
+        icon: '💉',
+        title: 'Requisitos',
+        description: 'Verifique os requisitos para ser um doador de sangue.',
+    },
 ];
 
-const BloodDonationCarousel: React.FC = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+const Carousel: React.FC = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-  return (
-    <div style={{ width: '80%', margin: 'auto' }}>
-      <h2>Informações sobre Doação de Sangue</h2>
-      <Slider {...settings}>
-        {cards.map((card, index) => (
-          <div key={index} style={{ padding: '20px', textAlign: 'center' }}>
-            <div style={{ fontSize: '40px', marginBottom: '10px' }}>
-              {card.icon}
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % cardData.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + cardData.length) % cardData.length);
+    };
+
+    return (
+        <div className="carousel">
+            <button onClick={prevSlide}>&lt;</button>
+            <div className="carousel-content">
+                {cardData.map((card, index) => (
+                    <div
+                        key={card.id}
+                        className={`carousel-card ${index === currentIndex ? 'active' : ''}`}
+                    >
+                        <div className="icon">{card.icon}</div>
+                        <h3 className='h3-carrossel'>{card.title}</h3>
+                        <p className='p-carrossel'>{card.description}</p>
+                    </div>
+                ))}
             </div>
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  );
+            <button onClick={nextSlide}>&gt;</button>
+        </div>
+    );
 };
 
-export default BloodDonationCarousel;
+export default Carousel;

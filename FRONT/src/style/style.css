@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-
-  
-  body{
+ body{
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -653,10 +651,12 @@ text-align: left;
 /* SOBRE */
 
 .container_sobre_{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: auto;
     height: auto;
-
+    
+    
+    
 
     
 }
@@ -1252,7 +1252,7 @@ path.two {
   }
   
   .image img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 10px;
     height: auto;
     padding-top: 20%; 
@@ -1332,6 +1332,5 @@ path.two {
 }
 
   .img_logo{
-    max-width: 50%;
-    min-width: 25%;
+    max-width: 90%;
   }
