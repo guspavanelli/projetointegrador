@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../carrossel/carrosel.css.css'
+import '../carrossel/carrosel.css'
 // Definindo a interface para as informações do card
 interface CardInfo {
     id: number;
