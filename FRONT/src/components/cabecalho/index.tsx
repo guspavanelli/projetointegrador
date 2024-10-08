@@ -4,6 +4,7 @@ import img_logo from "../../assests/logomarca-sanguebom.png";
 
 
 function Cabecalho(){
+    
     return(
         <div className="cab_container">
             <Link to="/">
