@@ -96,7 +96,7 @@ function PageCadastro() {
 
     return (
         <div>
-            <Cablogcad />
+            
             <div className="container">
                 <div className="form-wrapper">
                     <div className="image">

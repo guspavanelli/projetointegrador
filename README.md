@@ -9,16 +9,16 @@ Sangue Bom é um projeto desenvolvido por alunos do curso de Desenvolvedor Full 
 - **Informações Gerais sobre Doação**: Seção dedicada a explicar o processo de doação de sangue, benefícios, requisitos e cuidados necessários.
 - **Teste de Aptidão para Doação**: Ferramenta que permite ao usuário verificar se está apto a doar sangue com base em um questionário simples.
 - **Locais de Doação**: Mapa e lista de locais onde é possível doar sangue na cidade de Bauru.
-- **Feed de Postagens**: Espaço onde instituições e usuários podem postar notícias, eventos e experiências relacionadas à doação de sangue.
-- **Interação Social**: Funcionalidade que permite aos usuários interagir com postagens dentro do site e compartilhar conteúdo nas redes sociais.
+- **Tabela de compatibilidade sanguínea**: Funcionalidade que permite aos usuários interagir com um sistema que mostra as compatibilidades de doação e recepção de sangue para todos os tipos.
 
 ## Tecnologias Utilizadas
 - **Frontend**: React, HTML5, CSS3, TypeScript
 - **Backend**: Node.js, Nest.js, JavaScript
+- **API**: Nest.js
 - **Controle de Versionamento**: Git e GitHub
 - **Mapas**: Google Maps API
+- **Banco de Dados**: MySQL
 <!-- 
-- **Banco de Dados**: 
 - **Autenticação**: 
 - **Hospedagem**: 
 - **Gerenciamento de Estado**: -->
@@ -26,11 +26,18 @@ Sangue Bom é um projeto desenvolvido por alunos do curso de Desenvolvedor Full 
 ## Instalação e Configuração
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/guspavanelli/projetointegrador
+   git clone https://github.com/guspavanelli/projetointegrador/front
    cd projetointegrador
    ```
 
-2. **Instale as dependências**
+   ou:
+
+    ```bash
+   git clone https://github.com/guspavanelli/projetointegrador/back
+   cd projetointegrador
+   ```
+
+3. **Instale as dependências**
    ```bash
    npm install
    ```
@@ -71,13 +78,7 @@ Sangue Bom é um projeto desenvolvido por alunos do curso de Desenvolvedor Full 
 
     - **home.tsx/**: Página inicial.
     - **sobre.tsx/**: Página sobre.
-    - **teste.tsx/**: Página de teste de aptidão.
     - **perfil.tsx/**: Página de perfil do usuário.
-    - **page_login.tsx/**: Página de Login.
-    - **page_cadastro.tsx/**: Página de Cadastro.
-    - **locais.tsx/**: Página de Localização dos pontos de doação.
-    - **info.tsx/**: Página de informações gerais sobre doação.
-    - **checkin.tsx/**: Página de CheckIn.
     - **erro404.tsx/**: Página de erro 404 (NotFound).
 <!-- **services/**: Módulos para interação com APIs e serviços externos.
     - `api.ts`: Configuração e chamadas de API.
@@ -105,6 +106,8 @@ Sangue Bom é um projeto desenvolvido por alunos do curso de Desenvolvedor Full 
 - **Daniel Izidoro Vieira Da Silva** 
 - **Gabriel Martielo Da Silva**
 - **Gustavo Pavanelli De Araujo Linhari**
+- **Hyan Henrique Moreno Neves**
+- **Ivan David Chagas**
 
 ## Contribuição
 Contribuições são bem-vindas! Por favor, siga os passos abaixo para contribuir:

@@ -12,14 +12,11 @@ import imagemteste from "../assests/imagem login.jpg";
 import imagemcadastro from "../assests/imagem cadastro.jpg"; 
 import { Usuarios } from "../types/usuarios";
 import { ModuloApi } from "../api";
-
-
-
+import Teste from "./teste";
+import PageCadastro from "./page_cadastro";
 
 function Home() {
     TabTitle('Home - Sangue Bom');
-
-    
 
     const questions = [
         {
@@ -321,10 +318,6 @@ function Home() {
         <div className='home_container'>
             <div className="home_posso_doar">
             <Cabecalho/>
-
-
-
-
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>
