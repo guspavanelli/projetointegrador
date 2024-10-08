@@ -48,6 +48,7 @@
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
+  color: #721c24; 
 }
 
 .carousel-button:first-of-type {
@@ -59,5 +60,5 @@
 }
 
 .carousel-button:hover {
-  color: #007bff; /* Cor ao passar o mouse */
+  color: #ce1414; 
 }

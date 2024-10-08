@@ -6,6 +6,7 @@ import ExpandablePopup from "../components/buttons/botaoajuda";
 import React from "react";
 import Carousel from "../components/carrossel";
 
+
 function Erro404(){    
   return (
     <div>
@@ -14,7 +15,6 @@ function Erro404(){
           <h1>Pagina Erro 404</h1>
           <BloodTypeSelector/>
           <ExpandablePopup />
-          <Carousel/>
       </div>    
   </div>
   )    

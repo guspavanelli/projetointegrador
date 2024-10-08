@@ -14,6 +14,7 @@ import { Usuarios } from "../types/usuarios";
 import { ModuloApi } from "../api";
 import Teste from "./teste";
 import PageCadastro from "./page_cadastro";
+import Carousel from "../components/carrossel";
 
 function Home() {
     TabTitle('Home - Sangue Bom');
@@ -22,6 +23,8 @@ function Home() {
             {/* <Cabecalho /> */}
             <div className="home_posso_doar">
             <Cabecalho/>
+            <Carousel/>
+
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>
