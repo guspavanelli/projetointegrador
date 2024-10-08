@@ -71,7 +71,7 @@
 
 }
 
-.home_posso_doar, .container_sobre_, .check_page_title, .info_locais, .sobre_pai{
+.home_posso_doar, .check_page_title, .info_locais, .sobre_pai{
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -656,7 +656,7 @@ text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: auto;
     height: auto;
-    display: flex;
+    
     
     
     

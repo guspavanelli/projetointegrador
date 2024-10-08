@@ -84,13 +84,12 @@ function Sobre(){
             <br />
             <br />
 
-        <div>
-
+        
 
 
 
             <Footer/>
-            </div>
+            
         </div>
     )
 }
