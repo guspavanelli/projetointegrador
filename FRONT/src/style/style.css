@@ -653,7 +653,9 @@ text-align: left;
 /* SOBRE */
 
 .container_sobre_{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: auto;
     height: auto;
     
@@ -665,7 +667,7 @@ text-align: left;
 }
 
 .sobre_doacao_{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     width: auto;
     height: auto;
 }
