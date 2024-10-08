@@ -17,9 +17,9 @@ import { ModuloApi } from "../api";
 
 
 function Home() {
-
-
     TabTitle('Home - Sangue Bom');
+
+    
 
     const questions = [
         {
@@ -319,7 +319,6 @@ function Home() {
     }
     return (
         <div className='home_container'>
-            {/* <Cabecalho /> */}
             <div className="home_posso_doar">
             <Cabecalho/>
 
@@ -343,6 +342,7 @@ function Home() {
             name="Hemonucleo Hospital de Base"
             endereco="Endereço: R. Monsenhor Claro, 8-88 - Centro, Bauru - SP"
             phone="Contato: (14) 3231-4771"
+            descricao="Email: sau.hb@famesp.org.br. Horário de funcionamento: segunda a sexta, das 7h às 11h30 e das 13h às 15h30. Sabádo das 7h às 12h."
             imageUrl={hemonucleob} 
             mapUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14762.518845994719!2d-49.0769005!3d-22.3298397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67abe122bd7d%3A0xafb31e84daef97ab!2sHemon%C3%BAcleo!5e0!3m2!1sen!2sbr!4v1724718310355!5m2!1sen!2sbr"
             />
@@ -351,6 +351,7 @@ function Home() {
             endereco="Endereço: Rua Rio Branco, 13-83 Centro Bauru, SP"
             phone="Contato: (14)3223-6933 "
             imageUrl={hemonucleop} 
+            descricao="Email: contato@benebauru.com.br. Horário de funcionamento: segunda a sexta, das 7h às 12h ou das 13h30 às 16h."
             mapUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14762.747965015958!2d-49.0702758!3d-22.3276746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67b725476f9f%3A0x4406c4303c47f58a!2sHospital%20Benefic%C3%AAncia%20Portuguesa%20de%20Bauru!5e0!3m2!1sen!2sbr!4v1724798494191!5m2!1sen!2sbr"
             />
             <h2>Confira se você está apto a doar</h2>
