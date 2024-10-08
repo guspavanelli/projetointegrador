@@ -6,11 +6,7 @@ import ExpandablePopup from "../components/buttons/botaoajuda";
 import React from "react";
 import Carousel from "../components/carrossel";
 
-
-
-
-function Erro404(){
-    TabTitle('Erro 404 - Not Found')
+function Erro404(){    
   return (
     <div>
       <Cabecalho/>

@@ -122,7 +122,7 @@ const questions = [
 
     return(
         <div>
-            <Cabecalho/>
+            
             <p>Página Teste</p>
             <div className="quiz-container">
                 {modalVisible && (
@@ -172,7 +172,7 @@ const questions = [
                     
                     <br />
                     <br />
-                    <Footer/>
+                  
                     </div>
                 )
 }
