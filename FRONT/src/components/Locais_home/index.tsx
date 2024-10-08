@@ -6,10 +6,11 @@ interface LocationProps {
   phone: string;
   imageUrl: string; 
   mapUrl: string;
-  endereco: string;   
+  endereco: string;
+  descricao: string   
 }
 
-const DonationLocation: React.FC<LocationProps> = ({ name, endereco, phone, imageUrl, mapUrl }) => {
+const DonationLocation: React.FC<LocationProps> = ({ name, endereco, phone, imageUrl, mapUrl, descricao }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -33,7 +34,7 @@ const DonationLocation: React.FC<LocationProps> = ({ name, endereco, phone, imag
       {isExpanded && (
         <div style={styles.extraInfo}>
           <h3>Mais informações</h3>
-          <p></p>
+          <p>{descricao}</p>
           <iframe
             src={mapUrl}
             width="100%"

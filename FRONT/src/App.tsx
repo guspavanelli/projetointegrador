@@ -15,7 +15,9 @@ import Cabecalho from './components/cabecalho';
 function App() {
   return (
     <div className='container_body'>
-      <Routes>      
+      <Routes>
+        <Route path='*' element={<Erro404/>}>
+        </Route>      
         <Route path='/' element={<Home/>}>
         </Route>
         <Route path='/checkin' element={<Checkin/>}>
