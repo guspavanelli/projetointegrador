@@ -44,9 +44,12 @@ function Sobre(){
                         <br />
                         <br />
                             <div className="pai_qr">
-                                <div className="info_qr"> <h2>CNPJ: XXXXXXXXXXXXXXXXXXXX Nome: XXXXXXXXXXXXXXXXXXXX </h2> </div>
-                                        <div className="sobre_qr_">
-                                            <img className="qr_sb" src={QrCode} alt="qr code" /></div>
+                                <div className="info_qr"> 
+                                    <h2>CNPJ: XXXXXXXXXXXXXXXXXXXX Nome: XXXXXXXXXXXXXXXXXXXX </h2>
+                                </div>
+                                <div className="sobre_qr_">
+                                    <img className="qr_sb" src={QrCode} alt="qr code" />
+                                </div>
                             </div>
                         </div>
                 </ul> 
@@ -54,7 +57,6 @@ function Sobre(){
                 <br />
                 <h2>Email: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
                 <h2>Telefone: xxxxxxxxxxxxxx</h2>
-            <br />
             <br />
             <Footer/>
         </div>
