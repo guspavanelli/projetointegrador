@@ -182,7 +182,7 @@ function Home() {
 
 
     function PageCadastro() {
-        TabTitle('Cadastro - Sangue Bom');
+        TabTitle('Home - Sangue Bom');
         
         const [addNome, setAddNome] = useState('');
         const [addEmail, setAddEmail] = useState('');

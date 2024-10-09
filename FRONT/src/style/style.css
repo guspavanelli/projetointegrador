@@ -14,11 +14,12 @@
 }
 
 .cab_container{
-    padding-top: 30px;
-    width: 80%;
+    padding-top: 10px;
+    width: 100%;
     display:flex;
     align-items:center;
     height: auto;
+    gap: 100px
 }
 
 .cab_logo{
@@ -71,7 +72,7 @@
 
 }
 
-.home_posso_doar, .check_page_title, .info_locais, .sobre_pai{
+.check_page_title, .info_locais, .sobre_pai{
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -81,6 +82,17 @@
     height: auto;
     margin-bottom: 10%;
     
+}
+
+.home_posso_doar{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1037px;
+    gap: 24px;
+    height: auto;
+    margin-bottom: 10%;
 }
 
 .info_title{
