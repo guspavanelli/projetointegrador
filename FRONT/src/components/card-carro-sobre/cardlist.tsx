@@ -12,7 +12,7 @@ const CardList: React.FC = () => {
   const data = [
     { image: lekos, name: 'Alexandre Angelo', description: '25 anos, Bauru-SP' },
     { image: danis, name: 'Daniel Izidoro', description: '19 anos, Bauru-SP' },
-    { image: gabs, name: 'Gabriel Martielo', description: '20 anos, Agudos-SP' },
+    { image: gabs, name: 'Gabriel Martielo', description: '20 anos, Bauru-SP' },
     { image: hyan, name: 'Hyan Morena', description: '19 anos, Bauru-SP' },
     { image: ivas, name: 'Ivan David', description: '39 anos, Bauru-SP' }
     
