@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Botao from "../../components/buttons/login/index";
 import img_logo from "../../assests/logomarca-sanguebom.png"; 
-
+import '../../style/style.css'
 
 function Cabecalho(){
     

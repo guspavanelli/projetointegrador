@@ -182,7 +182,7 @@ function Home() {
 
 
     function PageCadastro() {
-        TabTitle('Cadastro - Sangue Bom');
+        TabTitle('Home - Sangue Bom');
         
         const [addNome, setAddNome] = useState('');
         const [addEmail, setAddEmail] = useState('');
@@ -333,7 +333,7 @@ function Home() {
                         <p>Teste</p>
                     </div>
                 </Link>
-            </div>
+            
             <h2>Veja os Locais de Doação em Bauru-SP:</h2>
             <DonationLocation
             name="Hemonucleo Hospital de Base"
@@ -358,6 +358,7 @@ function Home() {
             <Footer />
             <BloodTypeSelector />
             <ExpandablePopup />
+            </div>
         </div>
     );
 }
