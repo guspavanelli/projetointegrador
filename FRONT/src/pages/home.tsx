@@ -15,6 +15,7 @@ import { ModuloApi } from "../api";
 import Teste from "./teste";
 import PageCadastro from "./page_cadastro";
 import Carousel from "../components/carrossel";
+import FAQ from "../components/FAQ";
 
 function Home() {
     TabTitle('Home - Sangue Bom');
@@ -319,9 +320,7 @@ function Home() {
         <div className='home_container'>
             <div className="home_posso_doar">
             <Cabecalho/>
-            <div >
-            <Carousel/>
-            </div>
+            
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>
@@ -333,8 +332,10 @@ function Home() {
                         <p>Teste</p>
                     </div>
                 </Link>
-            
-            <h2>Veja os Locais de Doação em Bauru-SP:</h2>
+                <div className="div_carrosel">
+            <Carousel/>
+            </div>
+            <h2 className="vejalocais_home">Veja os Locais de Doação em Bauru-SP:</h2>
             <DonationLocation
             name="Hemonucleo Hospital de Base"
             endereco="Endereço: R. Monsenhor Claro, 8-88 - Centro, Bauru - SP"
@@ -351,10 +352,11 @@ function Home() {
             descricao="Email: contato@benebauru.com.br. Horário de funcionamento: segunda a sexta, das 7h às 12h ou das 13h30 às 16h."
             mapUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14762.747965015958!2d-49.0702758!3d-22.3276746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67b725476f9f%3A0x4406c4303c47f58a!2sHospital%20Benefic%C3%AAncia%20Portuguesa%20de%20Bauru!5e0!3m2!1sen!2sbr!4v1724798494191!5m2!1sen!2sbr"
             />
-            <h2>Confira se você está apto a doar</h2>
+            <h2 className="vejalocais_home">Confira se você está apto a doar</h2>
             <Teste />
-            <h2>Cadastre-se</h2>
+            <h2 className="vejalocais_home">Cadastre-se</h2>
             <PageCadastro/>
+            <FAQ/>
             <Footer />
             <BloodTypeSelector />
             <ExpandablePopup />

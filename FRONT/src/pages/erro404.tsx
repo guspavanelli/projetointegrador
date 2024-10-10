@@ -5,6 +5,7 @@ import '../style/style.css'
 import ExpandablePopup from "../components/buttons/botaoajuda";
 import React from "react";
 import Carousel from "../components/carrossel";
+import FAQ from "../components/FAQ";
 
 
 function Erro404(){    
