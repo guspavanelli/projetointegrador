@@ -52,7 +52,7 @@ const DonationLocation: React.FC<LocationProps> = ({ name, endereco, phone, imag
 // Estilos inline para o componente
 const styles = {
   container: {
-    width: '800px',
+    width: '1037px',
     marginBottom: '20px',
     borderRadius: '10px',
     backgroundColor: '#f8f8f8',

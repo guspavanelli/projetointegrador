@@ -319,8 +319,9 @@ function Home() {
         <div className='home_container'>
             <div className="home_posso_doar">
             <Cabecalho/>
+            <div >
             <Carousel/>
-
+            </div>
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>
@@ -332,7 +333,7 @@ function Home() {
                         <p>Teste</p>
                     </div>
                 </Link>
-            </div>
+            
             <h2>Veja os Locais de Doação em Bauru-SP:</h2>
             <DonationLocation
             name="Hemonucleo Hospital de Base"
@@ -357,6 +358,7 @@ function Home() {
             <Footer />
             <BloodTypeSelector />
             <ExpandablePopup />
+            </div>
         </div>
     );
 }

@@ -13,9 +13,8 @@
     border-radius: 0px 0px 30px 30px;
 }
 
-.cab_container, .container_sobre_{
-    padding-top: 10px;
-    width: 100%;
+.cab_container{
+    width: 1037px;
     display:flex;
     align-items:center;
     height: auto;
@@ -23,12 +22,13 @@
 }
 
 .container_sobre_{
-    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1037px;
     gap: 24px;
     height: auto;
+    margin-top: 45px;
 }
 
 .cab_logo{
@@ -99,9 +99,7 @@
     flex-direction: column;
     align-items: center;
     width: 1037px;
-    gap: 24px;
     height: auto;
-    margin-bottom: 10%;
 }
 
 .info_title{
@@ -426,13 +424,12 @@ h6{
 /*FOOTER*/
 .footer_principal{
     border-top: 2px solid rgba(72, 70, 70, 0.656);
-    padding-top: 30px;
+    
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 80%; 
-    margin-top: 5%;
-   
+    width: 100%; 
+
 }
 .footer_1{
     display: flex;

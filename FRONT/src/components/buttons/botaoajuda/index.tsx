@@ -29,7 +29,7 @@ const ExpandablePopup: React.FC = () => {
               className="expandable-text-area"
               value={message}
               onChange={handleMessageChange}
-              placeholder="Digite aqui suas dúvidas..."
+              placeholder="Digite aqui suas dúvidas, reclamações, elogios e sugestões..."
             />
             <button className="expandable-send-button">Enviar</button>
             <button className="expandable-close-popup" onClick={togglePopup}>
