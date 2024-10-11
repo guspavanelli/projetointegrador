@@ -1,43 +1,73 @@
-/* Card.css */
 .card {
-    background-color: #f0f0f0;
-    width: 200px;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: 10px;
-    transition: transform 0.3s;
-  }
+  background-color: #f0f0f0;
+  width: 185px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 1px;
+  transition: transform 0.3s, max-height 0.3s ease;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.card.expanded {
+  max-height: 400px; /* Altura maior para exibir mais conteúdo */
+  transform: scale(1.05);
+}
+
+.card-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+.expand-btn {
+  background-color: #b71c1c85; /* Cor do botão (pode ser alterada) */
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.expand-btn:hover {
+  background-color: #b71c1c; /* Tom mais escuro no hover */
   
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-image img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
-  
-  .card-content h3 {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .card-content p {
-    font-size: 14px;
-    color: #555;
-  }
-/* CardList.css */
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
 .card-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-  }
-  
-  .card-list::-webkit-scrollbar {
-    display: none;
-  }
-    
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  align-items: flex-start; /* Alinha os cards ao topo */
+  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite quebrar para uma nova linha se necessário */
+}
+
+.card-list::-webkit-scrollbar {
+  display: none;
+}

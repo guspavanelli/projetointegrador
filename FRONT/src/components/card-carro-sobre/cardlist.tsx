@@ -1,4 +1,3 @@
-// CardList.tsx
 import React from 'react';
 import Card from './card';
 import './card.css';
@@ -10,12 +9,50 @@ import hyan from '../../assests/fotos.colab/hyan.png'
 
 const CardList: React.FC = () => {
   const data = [
+<<<<<<< HEAD
+    { 
+      image: lekos, 
+      name: 'Alexandre Angelo', 
+      description: '25 anos, Bauru-SP', 
+      linkedin: 'https://www.linkedin.com/in/alexandre-angelo/', 
+      whatsapp: '5511999999999' 
+    },
+    { 
+      image: danis, 
+      name: 'Daniel Izidoro', 
+      description: '19 anos, Bauru-SP', 
+      linkedin: 'https://www.linkedin.com/in/daniel-izidoro/', 
+      whatsapp: '5511999999999' 
+    },
+    { 
+      image: gabs, 
+      name: 'Gabriel Martielo', 
+      description: '20 anos, Agudos-SP', 
+      linkedin: 'https://www.linkedin.com/in/gabriel-martielo/', 
+      whatsapp: '5511999999999' 
+    },
+    { 
+      image: hyan, 
+      name: 'Hyan Morena', 
+      description: '19 anos, Bauru-SP', 
+      linkedin: 'https://www.linkedin.com/in/hyan-morena/', 
+      whatsapp: '5511999999999' 
+    },
+    { 
+      image: ivas, 
+      name: 'Ivan David', 
+      description: '39 anos, Bauru-SP', 
+      linkedin: 'https://www.linkedin.com/in/ivan-david/', 
+      whatsapp: '5511999999999' 
+    }
+=======
     { image: lekos, name: 'Alexandre Angelo', description: '25 anos, Bauru-SP' },
     { image: danis, name: 'Daniel Izidoro', description: '19 anos, Bauru-SP' },
     { image: gabs, name: 'Gabriel Martielo', description: '20 anos, Bauru-SP' },
     { image: hyan, name: 'Hyan Morena', description: '19 anos, Bauru-SP' },
     { image: ivas, name: 'Ivan David', description: '39 anos, Bauru-SP' }
     
+>>>>>>> 25d7cdf02f82cfaeaef4d1ce888a76e3b0006d47
   ];
 
   return (
@@ -26,6 +63,8 @@ const CardList: React.FC = () => {
           image={item.image}
           name={item.name}
           description={item.description}
+          linkedin={item.linkedin}
+          whatsapp={item.whatsapp}
         />
       ))}
     </div>
@@ -33,3 +72,4 @@ const CardList: React.FC = () => {
 };
 
 export default CardList;
+
