@@ -5,6 +5,7 @@ import '../style/style.css'
 import ExpandablePopup from "../components/buttons/botaoajuda";
 import Error404 from "../components/erro404";
 import Footer from "../components/footer";
+import Header from "../components/teste";
 
 
 function Erro404(){  
@@ -12,7 +13,7 @@ function Erro404(){
   return (
     <div>
       <div className="home_posso_doar">
-      <Cabecalho/>
+      <Header/>
           <Error404/>
           <BloodTypeSelector/>
           <ExpandablePopup />
