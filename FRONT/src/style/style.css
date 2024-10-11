@@ -73,6 +73,12 @@
     background-color: #0000;
 }
 
+
+.div_carrosel{
+    padding-top: 70px;
+}
+
+
 /* POSSO DOAR */
 .home_container, .check_container, .info_container, .locais_container{
     display: flex;
@@ -124,11 +130,20 @@ h1{
     height: 30px;
 }
 
+.home_pd_possodoar{
+    padding-top: 50px;
+}
+
 .home_pd_descubra{
     color: #828282;
     text-align: center;
     font-size: 24px;
     font-weight: 400;
+}
+
+.vejalocais_home{
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 /* ULTIMOS CHECKIN */
