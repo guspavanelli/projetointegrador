@@ -13,11 +13,11 @@ function Erro404(){
   return (
     <div>
       <div className="home_posso_doar">
-      <Header/>
-          <Error404/>
-          <BloodTypeSelector/>
-          <ExpandablePopup />
-          <Footer/>
+        <Header/>
+        <Error404/>
+        <BloodTypeSelector/>
+        <ExpandablePopup />
+        <Footer/>
       </div>    
   </div>
   )    
