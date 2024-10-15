@@ -47,8 +47,12 @@ export class DoadoresArmazenados{
             ([chave,valor]) => {
                 if(chave === 'id'){
                     return
+                }else if(chave === 'senha'){
+                    cadastro.trocaSenha(valor)
+                }else{
+                    //caso não seja nenhum campo especial, é feito só a alteração direta do valor do campo com base no valor passado 
+                    cadastro[chave] = valor;
                 }
-                cadastro[chave] = valor;
             }
         )
 
@@ -64,8 +68,8 @@ export class DoadoresArmazenados{
         const possivelCadastro = this.pesquisaEmail(email)
         if (possivelCadastro){
             return {
-                cadastro: possivelCadastro.senha == senha?possivelCadastro:null,
-                status: possivelCadastro.senha == senha
+                cadastro: possivelCadastro.login(senha)?possivelCadastro:null,
+                status: possivelCadastro.login(senha)
             };
         }else{
             return {

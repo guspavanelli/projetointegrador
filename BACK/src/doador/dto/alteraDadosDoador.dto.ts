@@ -1,6 +1,7 @@
 import { IsEmail, IsNotEmpty, IsNumber, IsOptional, IsString, MinLength, IsDateString } from "class-validator";
 import { EmailUnico } from "../validacao/email-unico.validator";
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
+import { SenhaForte } from "../validacao/strongpass.validator";
 
 export class alteraDoadorDTO {
 
@@ -38,6 +39,15 @@ export class alteraDoadorDTO {
         description: 'Data e hora no formato ISO 8601',
     })
     public data?: string;
+
+    @MinLength(8, {message: "senha deve ter no minimo 8 digitos"})
+    @ApiPropertyOptional({
+        example: "Senha@444151241",
+        description: "Senha do usuário, deve ter pelo menos 8 digitos, tendo numeros, letras e caracteres especiais"
+    })
+    @IsOptional()
+    @SenhaForte({message:"Senha deve ter complexidade maior. Está muito fraca"})
+    senha:string;
 
     @IsString()
     @IsOptional()

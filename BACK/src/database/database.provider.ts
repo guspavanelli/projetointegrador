@@ -10,11 +10,11 @@ export const databaseProviders = [
                 port: 3306,
                 username: 'root',
                 password: '',
-                database: 'projetoapi',
+                database: 'db_sanguebom',
                 entities:[
                     __dirname + '/../**/*.entity{.ts,.js}',
                 ],
-                synchronize: false,
+                synchronize: true,
 
             });
             return dataSource.initialize();
