@@ -1,13 +1,27 @@
 import { ListaDoadoresDTO } from "./dto/listaDoadores.dto";
 import * as bcrypt from 'bcrypt';
+import { Column, Entity, JoinColumn, ManyToMany, ManyToOne, PrimaryColumn } from "typeorm";
 
 export class DoadorEntity {
+    @PrimaryColumn()
     id: string;
+
+    @Column({length: 255})
     nome: string;
+
+    @Column({length: 255})
     email: string;
+
+    @Column({length: 255})
     telefone: string;
+
+    @Column({length: 255})
     senha: string;
+
+    @Column({ type: 'date' })
     dataNascimento: Date;
+
+    @Column({length: 255})
     tipoSanguineo: string; 
 
 
