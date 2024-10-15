@@ -5,7 +5,7 @@ import '../style/style.css'
 import ExpandablePopup from "../components/buttons/botaoajuda";
 import Error404 from "../components/erro404";
 import Footer from "../components/footer";
-import Header from "../components/teste";
+import Header from "../components/header";
 
 
 function Erro404(){  

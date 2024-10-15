@@ -4,12 +4,13 @@ import Cabecalho from "../components/cabecalho";
 import QrCode from "../assests/qrcode.webp";
 import '../style/style.css';
 import CardList from "../components/card-carro-sobre/cardlist";
+import Header from "../components/header";
 
 function Sobre(){
     TabTitle('Sobre - Sangue Bom')
     return(
         <div className="container_sobre_">
-            <Cabecalho/> 
+            <Header/>
             <br />
             <br />
             <div className="title_sobre">
