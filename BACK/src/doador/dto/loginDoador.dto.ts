@@ -6,7 +6,7 @@ export class loginDoadorDTO{
     @IsEmail(undefined, {message: "email inválido"})
     email: string;
 
-    @MinLength(6, {message: "senha deve ter no minimo 6 digitos"})
+    @MinLength(8, {message: "senha deve ter no minimo 8 digitos"})
     senha:string;
     
 }
