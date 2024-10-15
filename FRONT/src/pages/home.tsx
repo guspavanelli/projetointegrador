@@ -16,6 +16,7 @@ import Teste from "./teste";
 import PageCadastro from "./page_cadastro";
 import Carousel from "../components/carrossel";
 import FAQ from "../components/FAQ";
+import Header from "../components/header";
 
 function Home() {
     TabTitle('Home - Sangue Bom');
@@ -319,8 +320,8 @@ function Home() {
     return (
         <div className='home_container'>
             <div className="home_posso_doar">
-            <Cabecalho/>
-            
+            {/* <Cabecalho/> */}
+            <Header/>
                 <div className="home_pd_possodoar">
                     <h1>Posso doar?</h1>
                 </div>

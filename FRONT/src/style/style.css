@@ -29,7 +29,7 @@
     width: 1037px;
     gap: 24px;
     height: auto;
-    margin-top: 45px;
+    margin-top: 10px;
 }
 
 .cab_logo{
@@ -101,7 +101,7 @@
 }
 
 .home_posso_doar{
-    margin-top: 45px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -686,6 +686,50 @@ text-align: left;
 
 /* SOBRE */
 
+.title_sobre{
+    background-color: rgba(230, 74, 74, 0.267);
+    padding: 0px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 837px;
+    gap: 25px;
+    height: 200px;
+    
+    
+}
+
+.projeto-box {
+    width: 1080px; /* Altere aqui o tamanho da largura */
+    height: 500px; /* Altere aqui o tamanho da altura */
+    background-color: #f0f0f0; /* Cinza claro */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.projeto-box1 {
+    width: 1080px; /* Altere aqui o tamanho da largura */
+    height: 400px; /* Altere aqui o tamanho da altura */
+    background-color: #f0f0f0; /* Cinza claro */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.projeto-box:hover {
+    transform: translateY(-10px); /* Leva a caixa para frente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+.projeto-box1:hover {
+    transform: translateY(-10px); /* Leva a caixa para frente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+
 .sobre_doacao_{
     
     width: auto;
@@ -693,7 +737,7 @@ text-align: left;
 }
 
 .sobre_qr_{
-text-align: right;
+text-align: center;
 flex: 1;
 
 }
