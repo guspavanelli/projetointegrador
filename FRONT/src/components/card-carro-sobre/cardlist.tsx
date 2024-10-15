@@ -27,7 +27,7 @@ const CardList: React.FC = () => {
     { 
       image: gabs, 
       name: 'Gabriel Martielo', 
-      description: '20 anos, Agudos-SP', 
+      description: '20 anos, Bauru-SP', 
       linkedin: 'http://www.linkedin.com/in/gabriel-martielo-b35151271/', 
       whatsapp: '5514991255559' 
     },
