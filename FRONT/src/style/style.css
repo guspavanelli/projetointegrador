@@ -21,6 +21,15 @@
     gap: 100px
 }
 
+.nav_header{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_header:hover{
+    cursor: pointer;
+}
+
 .container_sobre_{
     display: flex;
     flex-direction: column;
