@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import  Logo  from '../../assests/logomarca-sanguebom.png'
 import { height, padding } from '@mui/system';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 interface User {
   name: string;
@@ -11,6 +11,7 @@ interface User {
 const Header: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   const [user, setUser] = useState<User | null>(null);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -39,19 +40,25 @@ const Header: React.FC = () => {
     setIsLoggedIn(false);
   };
 
+  const handlePerfil = () => {
+    if (isLoggedIn) {
+      navigate('/perfil'); // Redireciona para a página de perfil
+    }
+  };
+
   return (
     <header style={styles.header}>
       {/* Esquerda: Logo */}
       <div style={styles.left}>
-        <img style={styles.logo} src={Logo} alt="logo Sangue Bom" />
+        <Link to='/'><img style={styles.logo} src={Logo} alt="logo Sangue Bom" /></Link>
       </div>
 
       {/* Centro: Links de navegação */}
       <div style={styles.center}>
         <nav>
-          <a href="/" style={styles.navLink}>Home</a>
-          <a href="/about" style={styles.navLink}>Sobre</a>
-          <a href="/donation" style={styles.navLink}>Doação</a>
+          <Link to='/info' style={styles.navLink}>Informações</Link>
+          <Link to='/sobre' style={styles.navLink}>Sobre</Link>
+          <Link to='/locais1' style={styles.navLink}>Locais</Link>
         </nav>
       </div>
 
@@ -59,7 +66,7 @@ const Header: React.FC = () => {
       <div style={styles.right}>
         {isLoggedIn && user ? (
           <div style={styles.profileContainer}>
-            <img src={user.profileImage} alt="Profile" style={styles.profileImage} />
+            <img src={user.profileImage} alt="Profile" style={styles.profileImage} onClick={handlePerfil}/>
             <button style={styles.logoutButton} onClick={handleLogout}>
               Logout
             </button>

@@ -28,7 +28,7 @@
     width: 1037px;
     gap: 24px;
     height: auto;
-    margin-top: 45px;
+    margin-top: 10px;
 }
 
 .cab_logo{
@@ -100,7 +100,7 @@
 }
 
 .home_posso_doar{
-    margin-top: 45px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
