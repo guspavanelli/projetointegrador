@@ -6,13 +6,14 @@ import Footer from "../components/footer";
 import { ChangeEvent, useState } from "react";
 import { Usuarios } from "../types/usuarios";
 import Header from "../components/header";
+import ExpandablePopup from "../components/buttons/botaoajuda";
 
 
 
 function Perfil() {
     TabTitle('Perfil - Sangue Bom')
     return (
-        <div>
+        <div className="container_body">
             <Header/>
             <div className="perfil_pr">
                 <div className="titulo_imagem_botaocertificado">
@@ -23,38 +24,24 @@ function Perfil() {
                     <img className="imgp" src={ftPerfil} alt="foto perfil" /> <br />
                     <div id="Alterarfotodeperfil"> Alterar foto de perfil </div>
                     <br />
-
                     <button id="btcertificado">Gerar Certificado</button>
                 </div>
-
-
                 <div className="inputprincipalpf">
-
-
-
                     <div className="inpf1">
                         <h4>Username</h4>
                         <input type="text" className="inputpf1" placeholder="Username"  />
                     </div>
-
                     <br />
-
-
                     <div className="inpf2">
                         <h4>Email</h4>
                         <input type="text" className="inputpf2" placeholder="Email@domain.com"  />
                     </div>
                     <br />
-
                     <div className="inpf3">
                         <h4>Bio</h4>
                         <input type="text" className="inputpf3" placeholder="Insira sua Bio" />
                     </div>
-
                     <br />
-
-
-
                     <div className="inpf4">
                         <h4>Histórico do Usuário</h4>
                         <input type="text" className="inputpf4" placeholder="Doador desde 2016 fez 17 doações- celo ouro(não gerado)" />
@@ -65,21 +52,13 @@ function Perfil() {
                     <br />
                     <button id="btsalvar" >Salvar</button>
                     <br />
-           
                     <br />
-
-
-
                 </div>
-
             </div>
             <br />
             <br />
-
             <Footer />
-
-
-
+        <ExpandablePopup/>
         </div>
     )
 }
