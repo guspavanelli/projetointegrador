@@ -27,13 +27,13 @@ const CardList: React.FC = () => {
     { 
       image: gabs, 
       name: 'Gabriel Martielo', 
-      description: '20 anos, Agudos-SP', 
+      description: '20 anos, Bauru-SP', 
       linkedin: 'http://www.linkedin.com/in/gabriel-martielo-b35151271/', 
       whatsapp: '5514991255559' 
     },
     { 
       image: hyan, 
-      name: 'Hyan Morena', 
+      name: 'Hyan Moreno', 
       description: '19 anos, Bauru-SP', 
       linkedin: 'https://www.linkedin.com/in/hyanzim-moreno-41230b332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 
       whatsapp: '5514991255559' 

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import  Logo  from '../../assests/logomarca-sanguebom.png'
-import { height, padding } from '@mui/system';
+import { display, height, padding } from '@mui/system';
 import { Link, useNavigate } from 'react-router-dom';
+import { useRef } from "react";
+import '../../style/style.css'
+import ImagemPerfil from '../../assests/fotos.colab/lekos.png'
 
 interface User {
   name: string;
@@ -26,7 +29,7 @@ const Header: React.FC = () => {
   const handleLogin = () => {
     const loggedInUser: User = {
       name: 'John Doe',
-      profileImage: 'https://via.placeholder.com/40', // Simulated profile image
+      profileImage: ImagemPerfil, // Simulated profile image
     };
     
     localStorage.setItem('user', JSON.stringify(loggedInUser));
@@ -46,6 +49,20 @@ const Header: React.FC = () => {
     }
   };
 
+
+  const divOne = useRef<HTMLInputElement | null>(null);
+  const divFive = useRef<HTMLInputElement | null>(null);
+
+  const scrolLWithUseRef = () => {
+    divFive.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+  };
+  
+  const scrollFun = (id: string) => {
+    document
+      .querySelector(`#id${id}`)
+      ?.scrollIntoView({ block: "center", behavior: "smooth" });
+  };
+
   return (
     <header style={styles.header}>
       {/* Esquerda: Logo */}
@@ -55,10 +72,10 @@ const Header: React.FC = () => {
 
       {/* Centro: Links de navegação */}
       <div style={styles.center}>
-        <nav>
-          <Link to='/info' style={styles.navLink}>Informações</Link>
-          <Link to='/sobre' style={styles.navLink}>Sobre</Link>
-          <Link to='/locais1' style={styles.navLink}>Locais</Link>
+        <nav className='nav_header'>
+          <div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div>
+          <div style={styles.navLink} onClick={() => scrollFun("2")}>Locais</div>
+          <div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div>
         </nav>
       </div>
 
