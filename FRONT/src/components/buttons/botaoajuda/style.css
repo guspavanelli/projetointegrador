@@ -98,3 +98,21 @@
     background-color: #9e9e9e;
   }
   
+/*arrumando quiz*/
+  .quiz-container{
+
+width: 1033px; 
+
+}
+.quiz_texto{
+text-align: center;
+margin-top: 90px;
+}
+.form-wrapper{
+  width: 1033px; 
+
+}
+
+.container{
+
+margin-top: -100px;}
