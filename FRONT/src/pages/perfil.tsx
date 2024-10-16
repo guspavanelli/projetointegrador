@@ -5,20 +5,15 @@ import ftPerfil from "../assests/usuario-de-perfil.png"
 import Footer from "../components/footer";
 import { ChangeEvent, useState } from "react";
 import { Usuarios } from "../types/usuarios";
+import Header from "../components/header";
 
 
 
 function Perfil() {
-   
-
-
-
-
-
     TabTitle('Perfil - Sangue Bom')
     return (
         <div>
-            <Cabecalho />
+            <Header/>
             <div className="perfil_pr">
                 <div className="titulo_imagem_botaocertificado">
                     Editar Perfil

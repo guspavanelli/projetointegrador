@@ -4,6 +4,7 @@ import { display, height, padding } from '@mui/system';
 import { Link, useNavigate } from 'react-router-dom';
 import { useRef } from "react";
 import '../../style/style.css'
+import ImagemPerfil from '../../assests/fotos.colab/lekos.png'
 
 interface User {
   name: string;
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
   const handleLogin = () => {
     const loggedInUser: User = {
       name: 'John Doe',
-      profileImage: 'https://via.placeholder.com/40', // Simulated profile image
+      profileImage: ImagemPerfil, // Simulated profile image
     };
     
     localStorage.setItem('user', JSON.stringify(loggedInUser));
