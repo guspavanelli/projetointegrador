@@ -13,7 +13,7 @@ import ExpandablePopup from "../components/buttons/botaoajuda";
 function Perfil() {
     TabTitle('Perfil - Sangue Bom')
     return (
-        <div className="container_body">
+        <div className="home_container1">
             <Header/>
             <div className="perfil_pr">
                 <div className="titulo_imagem_botaocertificado">
