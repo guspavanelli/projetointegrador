@@ -17,7 +17,6 @@ import PageCadastro from "./page_cadastro";
 import Carousel from "../components/carrossel";
 import FAQ from "../components/FAQ";
 import Header from "../components/header";
-import Botaopagedawn from "../components/buttons/botaopagedawn/Scroll";
 
 function Home() {
     TabTitle('Home - Sangue Bom');
