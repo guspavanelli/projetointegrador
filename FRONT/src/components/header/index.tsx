@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import  Logo  from '../../assests/logomarca-sanguebom.png'
-import { height, padding } from '@mui/system';
-
+import { display, height, padding } from '@mui/system';
+import { Link, useNavigate } from 'react-router-dom';
+import { useRef } from "react";
+import '../../style/style.css'
 
 interface User {
   name: string;
@@ -11,6 +13,7 @@ interface User {
 const Header: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   const [user, setUser] = useState<User | null>(null);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -39,19 +42,39 @@ const Header: React.FC = () => {
     setIsLoggedIn(false);
   };
 
+  const handlePerfil = () => {
+    if (isLoggedIn) {
+      navigate('/perfil'); // Redireciona para a página de perfil
+    }
+  };
+
+
+  const divOne = useRef<HTMLInputElement | null>(null);
+  const divFive = useRef<HTMLInputElement | null>(null);
+
+  const scrolLWithUseRef = () => {
+    divFive.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+  };
+  
+  const scrollFun = (id: string) => {
+    document
+      .querySelector(`#id${id}`)
+      ?.scrollIntoView({ block: "center", behavior: "smooth" });
+  };
+
   return (
     <header style={styles.header}>
       {/* Esquerda: Logo */}
       <div style={styles.left}>
-        <img style={styles.logo} src={Logo} alt="logo Sangue Bom" />
+        <Link to='/'><img style={styles.logo} src={Logo} alt="logo Sangue Bom" /></Link>
       </div>
 
       {/* Centro: Links de navegação */}
       <div style={styles.center}>
-        <nav>
-          <a href="/" style={styles.navLink}>Home</a>
-          <a href="/about" style={styles.navLink}>Sobre</a>
-          <a href="/donation" style={styles.navLink}>Doação</a>
+        <nav className='nav_header'>
+          <div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div>
+          <div style={styles.navLink} onClick={() => scrollFun("2")}>Locais</div>
+          <div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div>
         </nav>
       </div>
 
@@ -59,7 +82,7 @@ const Header: React.FC = () => {
       <div style={styles.right}>
         {isLoggedIn && user ? (
           <div style={styles.profileContainer}>
-            <img src={user.profileImage} alt="Profile" style={styles.profileImage} />
+            <img src={user.profileImage} alt="Profile" style={styles.profileImage} onClick={handlePerfil}/>
             <button style={styles.logoutButton} onClick={handleLogout}>
               Logout
             </button>

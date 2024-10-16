@@ -2,7 +2,7 @@ import { DataSource } from "typeorm";
 
 export const databaseProviders = [
     {
-        provide: 'DATA_SOURCE',
+        provide: 'DB_SANGUEBOM',
         useFactory: async () => {
             const dataSource = new DataSource({
                 type: 'mysql',
@@ -15,6 +15,8 @@ export const databaseProviders = [
                     __dirname + '/../**/*.entity{.ts,.js}',
                 ],
                 synchronize: true,
+                logging: true, 
+
 
             });
             return dataSource.initialize();
