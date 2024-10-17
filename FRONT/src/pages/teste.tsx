@@ -93,16 +93,19 @@ const questions = [
     };
   
     const handleSubmit = () => {
-      if (selectedOption === "Não") {
+      const isLastThreeQuestions = currentQuestion >= questions.length - 3;
+     
+      // Exibir o modal se a resposta for "Sim" nas últimas 3 perguntas
+      if ((selectedOption === "Sim" && isLastThreeQuestions) || (selectedOption === "Não" && !isLastThreeQuestions)) {
         setModalVisible(true);
       } else {
         const updatedResponses = [...responses];
         updatedResponses[currentQuestion] = selectedOption;
         setResponses(updatedResponses);
-  
+     
         if (currentQuestion < questions.length - 1) {
           setCurrentQuestion(currentQuestion + 1);
-          setSelectedOption(''); 
+          setSelectedOption('');
         } else {
           setQuizEnded(true);
           if (updatedResponses.every(response => response === "Sim")) {
