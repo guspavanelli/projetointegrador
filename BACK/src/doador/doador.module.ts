@@ -1,11 +1,13 @@
 
 import { Module } from '@nestjs/common';
-import { DoadorController } from './doador.controller';
-import { DoadoresArmazenados } from './doador.dm';
-import { emailUnicoValidator } from './validacao/email-unico.validator';
+import { DoadorController, doadorProviders } from './doador.controller';
+import { DatabaseModule } from 'src/database/database.module';
+import { DoadorService } from './doador.service';
 
-@Module({  
+
+@Module({ 
+  imports:[DatabaseModule],
   controllers: [DoadorController],  
-  providers: [DoadoresArmazenados,emailUnicoValidator],
+  providers: [...doadorProviders,DoadorService],
 })
 export class DoadorModule {}
