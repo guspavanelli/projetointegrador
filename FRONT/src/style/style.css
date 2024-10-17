@@ -664,15 +664,17 @@ h6{
 
 #btcertificado{
 
-    border-radius: 5px;
+    border-radius: 25px;
     width: 250px;
-    height: 25px;
+    height: 50px;
     background-color: rgb(91, 143, 99);
     border: none;
-    font-size: 15px;
+    font-size: 13px;
     color: white;
     text-align: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-block-start: 10px;
 }
 
 .inpf1, .inpf2, .inpf3, .inpf4{
@@ -683,24 +685,42 @@ text-align: left;
 
 .inputpf1,.inputpf2, .inputpf4{
     width: 100%;
-    height: 25px;
+    height: 30px;
+    border: 2px solid #ffe5e5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);;
 }
         
 .inputpf3{
 
     width: 100%;
     height: 150px;
+    border: 2px solid #ffe5e5;;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);;
+
 }
 
-#btsalvar{
 
-    border-radius: 5px;
+
+.inputpf1:focus,.inputpf2:focus,.inputpf4:focus,.inputpf3:focus{
+    border-color: #ffe5e5; 
+    box-shadow: none;
+    outline: none
+}
+
+
+
+#btsalvar{
+    border-radius: 50px;
     width: 700px;
-    height: 30px;
-    background-color: #A60321;
+    height: -100px;
+    background-color: #b71c1c;
     border: none;
     font-size: 15px;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
