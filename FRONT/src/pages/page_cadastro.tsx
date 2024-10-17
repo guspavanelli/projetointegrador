@@ -7,17 +7,22 @@ import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 function PageCadastro() {
     TabTitle('Cadastro - Sangue Bom')
-    const [addNome, setAddNome] = useState('');
-    const [addEmail, setAddEmail] = useState('');
-    const [addTelefone, setAddTelefone] = useState('');
-    const [addSenha, setAddSenha] = useState('');
-    const [addDataNascimento, setAddDataNascimento] = useState('');
-    const [addTipoSanguineo, setAddTipoSanguineo] = useState('');
+    const [addID, setAddID] = useState('');
+    const [addNOME, setAddNome] = useState('');
+    const [addEMAIL, setAddEmail] = useState('');
+    const [addTELEFONE, setAddTelefone] = useState('');
+    const [addSENHA, setAddSenha] = useState('');
+    const [addDATANASCIMENTO, setAddDataNascimento] = useState('');
+    const [addTIPOSANGUINEO, setAddTipoSanguineo] = useState('');
     const [usuarios, setUsuarios] = useState<Usuarios[]>([]);
     const [loading, setLoading] = useState(false);
     const [mensagem, setMensagem] = useState('');
     const [isErro, setIsErro] = useState(false);
     const [mostrarMensagem, setMostrarMensagem] = useState(false);
+
+    const handleChangeID = (e: ChangeEvent<HTMLInputElement>) => {
+        setAddID(e.target.value);
+    }
 
     const handleChangeNome = (e: ChangeEvent<HTMLInputElement>) => {
         setAddNome(e.target.value);
@@ -58,15 +63,16 @@ function PageCadastro() {
     }
 
     const adicionarUsuarios = async () => {
-        if (addNome && addEmail && addTelefone && addSenha && addDataNascimento && addTipoSanguineo) {
+        if (addID && addNOME && addEMAIL && addTELEFONE && addSENHA && addDATANASCIMENTO && addTIPOSANGUINEO) {
             try {
                 const sucesso = await ModuloApi.AdicionarUsuario(
-                    addNome, 
-                    addEmail, 
-                    addTelefone, 
-                    addSenha, 
-                    addDataNascimento, 
-                    addTipoSanguineo
+                    addID,
+                    addNOME, 
+                    addEMAIL, 
+                    addTELEFONE, 
+                    addSENHA, 
+                    addDATANASCIMENTO, 
+                    addTIPOSANGUINEO
                 );
                 console.log(sucesso);
                 if (sucesso) {
@@ -105,15 +111,16 @@ function PageCadastro() {
                     <div className="form">
                         <h3 className="tit_cads">Seja Bem-vindo(a)!<br />Cadastre-se aqui:</h3>
                         <p className="sub_tit_cads">Digite seus dados para criar sua conta:</p>
-                        <input type="text" value={addNome} onChange={handleChangeNome} placeholder="Nome Completo" />
-                        <input type="email" value={addEmail} onChange={handleChangeEmail} placeholder="Informe seu melhor email" />
-                        <input type="text" value={addTelefone} onChange={handleChangeTelefone} placeholder="Informe seu telefone" />
-                        <input type="password" value={addSenha} onChange={handleChangeSenha} placeholder="Crie sua Senha de 8 dígitos" />
+                        <input type="text" value={addID} onChange={handleChangeID} placeholder="ID" />
+                        <input type="text" value={addNOME} onChange={handleChangeNome} placeholder="Nome Completo" />
+                        <input type="email" value={addEMAIL} onChange={handleChangeEmail} placeholder="Informe seu melhor email" />
+                        <input type="text" value={addTELEFONE} onChange={handleChangeTelefone} placeholder="Informe seu telefone" />
+                        <input type="password" value={addSENHA} onChange={handleChangeSenha} placeholder="Crie sua Senha de 8 dígitos" />
                         <div className="date-container">
                             <span>Data de Nascimento</span>
-                            <input type="date" value={addDataNascimento} onChange={handleChangeDataNascimento} />
+                            <input type="date" value={addDATANASCIMENTO} onChange={handleChangeDataNascimento} />
                         </div>
-                        <select value={addTipoSanguineo} onChange={handleChangeTipoSanguineo}>
+                        <select value={addTIPOSANGUINEO} onChange={handleChangeTipoSanguineo}>
                             <option value="">Selecione o Tipo Sanguíneo</option>
                             <option value="A+">A+</option>
                             <option value="A-">A-</option>

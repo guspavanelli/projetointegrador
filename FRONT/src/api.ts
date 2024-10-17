@@ -12,7 +12,7 @@ export const ModuloApi = {
         EMAIL: string,
         TELEFONE: string,
         SENHA: string,
-        data: Date,
+        DATANASCIMENTO: Date,
         TIPOSANGUINEO: string
     ): Promise<boolean> => {
         try {
@@ -24,7 +24,7 @@ export const ModuloApi = {
                     EMAIL,
                     TELEFONE,
                     SENHA,
-                    data,
+                    DATANASCIMENTO,
                     TIPOSANGUINEO
                 }),
                 headers: {
