@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryColumn } from "typeorm";
 import * as bcrypt from 'bcrypt';
 
 @Entity() // Adicione este decorador
-export class DoadorEntity {
+export class DOADOR {
 
     @PrimaryColumn()
     ID: string;

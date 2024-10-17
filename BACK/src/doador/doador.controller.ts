@@ -1,10 +1,10 @@
 import { DataSource } from 'typeorm';
-import { DoadorEntity } from './doador.entity';
+import { DOADOR } from './doador.entity';
  
 export const doadorProviders = [
   {
     provide: 'DOADOR_REPOSITORY',
-    useFactory: (dataSource: DataSource) => dataSource.getRepository(DoadorEntity),
+    useFactory: (dataSource: DataSource) => dataSource.getRepository(DOADOR),
     inject: ['DATA_SOURCE'],
   },
 ];

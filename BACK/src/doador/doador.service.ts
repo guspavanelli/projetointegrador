@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import {v4  as uuid} from 'uuid'
-import { DoadorEntity } from './doador.entity';
+import { DOADOR } from './doador.entity';
 import { criaDoadorDTO } from './dto/Doador.dto';
 import { alteraDoadorDTO } from './dto/alteraDadosDoador.dto';
 import { ListaDoadoresDTO } from './dto/listaDoadores.dto';
@@ -11,7 +11,7 @@ import { RetornoCadastroDTO, RetornoObjDTO } from './dto/retornoDoador.dto';
 export class DoadorService {
   constructor(
     @Inject('DOADOR_REPOSITORY')
-    private doadorRepository: Repository<DoadorEntity>,
+    private doadorRepository: Repository<DOADOR>,
   ) {}
 
   async listar(): Promise<ListaDoadoresDTO[]> {
@@ -24,7 +24,7 @@ export class DoadorService {
       ))
   }
   async inserir(dados: criaDoadorDTO): Promise<RetornoCadastroDTO>{
-    let doador = new DoadorEntity();
+    let doador = new DOADOR();
         doador.ID = uuid();
         doador.NOME = dados.NOME;
         doador.EMAIL = dados.EMAIL;
@@ -48,7 +48,7 @@ export class DoadorService {
     })
   }
 
-  localizarID(ID: string): Promise<DoadorEntity> {
+  localizarID(ID: string): Promise<DOADOR> {
     return this.doadorRepository.findOne({
       where: {
         ID,
