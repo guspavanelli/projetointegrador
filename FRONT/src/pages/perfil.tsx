@@ -17,7 +17,6 @@ function Perfil() {
             <Header/>
             <div className="perfil_pr">
                 <div className="titulo_imagem_botaocertificado">
-                    Editar Perfil
                     <br />
                     <h3>Helena Hills</h3>
                     <br />
@@ -28,23 +27,23 @@ function Perfil() {
                 </div>
                 <div className="inputprincipalpf">
                     <div className="inpf1">
-                        <h4>Username</h4>
-                        <input type="text" className="inputpf1" placeholder="Username"  />
+                        <h4 >Username</h4>
+                        <input type="text" className="inputpf1" placeholder="  Username"  />
                     </div>
                     <br />
                     <div className="inpf2">
                         <h4>Email</h4>
-                        <input type="text" className="inputpf2" placeholder="Email@domain.com"  />
+                        <input type="text" className="inputpf2" placeholder="  Email@domain.com"  />
                     </div>
                     <br />
                     <div className="inpf3">
                         <h4>Bio</h4>
-                        <input type="text" className="inputpf3" placeholder="Insira sua Bio" />
+                        <input type="text" className="inputpf3" placeholder="  Insira sua Bio" />
                     </div>
                     <br />
                     <div className="inpf4">
                         <h4>Histórico do Usuário</h4>
-                        <input type="text" className="inputpf4" placeholder="Doador desde 2016 fez 17 doações- celo ouro(não gerado)" />
+                        <input type="text" className="inputpf4" placeholder="  Doador desde 2016 fez 17 doações- celo ouro(não gerado)" />
                     </div>
                     <br />
                     <br />
