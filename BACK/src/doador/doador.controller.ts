@@ -1,99 +1,85 @@
-import { criaDoadorDTO } from "./dto/Doador.dto";
-import { DoadorEntity } from "./doador.entity";
-import {v4  as uuid} from 'uuid'
-import { DoadoresArmazenados } from "./doador.dm";
-import { RetornoDoadorDTO } from "./dto/retornoDoador.dto";
-import { ListagemDoadoresDTO, ListaDoadoresDTO } from "./dto/listaDoadores.dto";
-import { loginDoadorDTO } from "./dto/loginDoador.dto";
-import { alteraDoadorDTO } from "./dto/alteraDadosDoador.dto";
-import { ApiCreatedResponse, ApiResponse, ApiTags } from "@nestjs/swagger";
-import { promises } from "dns";
+import { DataSource } from 'typeorm';
+import { DoadorEntity } from './doador.entity';
+ 
+export const doadorProviders = [
+  {
+    provide: 'DOADOR_REPOSITORY',
+    useFactory: (dataSource: DataSource) => dataSource.getRepository(DoadorEntity),
+    inject: ['DATA_SOURCE'],
+  },
+];
+ 
 import { Body, Controller, Delete, Get, Param, Post, Put } from "@nestjs/common";
-import Datas from "src/doador/utils/data";
-
+import { ApiCreatedResponse, ApiResponse, ApiTags } from "@nestjs/swagger";
+import { criaDoadorDTO } from "./dto/Doador.dto";
+import { alteraDoadorDTO } from "./dto/alteraDadosDoador.dto";
+import { ListaDoadoresDTO, ListagemDoadoresDTO } from "./dto/listaDoadores.dto";
+import { DoadorService } from "./doador.service";
+import { RetornoCadastroDTO, RetornoObjDTO } from './dto/retornoDoador.dto'; 
 @ApiTags('doador')
+//decorator responsável por definir que essa classe é um controller, dentro do parenteses é necessário informar o URL desse controller
 @Controller('/doadores')
 export class DoadorController{
-
-    objDatas: Datas;
     //controller com injeção de dependencia da classe de usuários armazenados
-    constructor(private Doador : DoadoresArmazenados){
-        this.objDatas = new Datas();
+    constructor(private readonly doadorService: DoadorService){
     }
-    
-    
-    @Post()
+ 
+    //POST - Recebe dados, pode ou não retornar informações, mas em geral recebe dados e retorna uma resposta
+    //GET - Recebe apenas parametros, mas retorna dados variados, normalmente utilizado para consulta de dados
+    //PUT - recebe dados, utilizado para fazer alterações de registros
+    //DELETE - recebe dados, utilizado para remover registros ----
+ 
+ 
+    @Post()//essa linha, seria um decorator para definir que a função é um metodo POST
+    //Para receber dados do body da requisição, deve utilizar o decorator de "Body", especificando depois a variavel
     @ApiCreatedResponse({ description:'Retorna que houve sucesso na inclusão'})
     @ApiResponse({status: 500, description:'Retorna que houve erro na inclusão.'})
     @ApiResponse({status: 400, description:'Retorna que há algum dado inválido na requisição.'})
-    async criaCadastro(@Body() dadosCadastro: criaDoadorDTO): Promise <RetornoDoadorDTO>{       
-        var novoCadastro = new DoadorEntity(uuid(), dadosCadastro.nome, dadosCadastro.email,
-                                            dadosCadastro.telefone, dadosCadastro.senha,this.objDatas.dataAtual(),
-                                            dadosCadastro.tipoSanguineo
-        )
-        this.Doador.AdicionarCadastro(novoCadastro);
-
-        var retorno = new RetornoDoadorDTO('Cadastro criado',novoCadastro);        
+    async criaDoador(@Body() dadosDoador: criaDoadorDTO): Promise <RetornoCadastroDTO>{      
+        //criação do objeto de usuário, aqui é criado um objeto específico desse usuário
+       
+        //gravação do usuário, aqui é inserido no DM o usuário criado anteriormente
+        var retorno = this.doadorService.inserir(dadosDoador);                      
         return retorno        
     }
-
-    @Post('/login')
-    @ApiResponse({status: 201, description:'Retorna que houve sucesso na consulta'})    
-    @ApiResponse({status: 400, description:'Retorna que há algum dado inválido na requisição.'})
-    async fazerLogin(@Body() dadosLogin: loginDoadorDTO){
-        var retornoLogin = this.Doador.Login(dadosLogin.email,dadosLogin.senha)
-
-        var retorno = new RetornoDoadorDTO(retornoLogin.status?'Login efetuado, sucesso':'Email ou senha invalidos!',retornoLogin.cadastro);        
-
-        return retorno;       
-        
-    }
-    @Put('/:id')
+ 
+    @Put('/:id')//linha que define o método vai ser de alteração (put), nesse caso também é especificado um parametro na URL, por onde vai chegar o id do usuário
     @ApiResponse({status: 200, description:'Retorna que houve sucesso na alteração'})
     @ApiResponse({status: 500, description:'Retorna que houve erro na alteração.'})
     @ApiResponse({status: 400, description:'Retorna que há algum dado inválido na requisição.'})
-    async alteraDoador(@Body() dadosNovos: alteraDoadorDTO,@Param('id') id: string){
-        var retornoAlteracao = this.Doador.alteraCadastro(id,dadosNovos)
-        var retorno = new RetornoDoadorDTO('Alteração Efetuada',retornoAlteracao);        
-        return retorno;       
-        
+    async alteraFilme(@Body() dadosNovos: alteraDoadorDTO,@Param('id') id: string){//aqui é definido que vai receber dados tanto do body quanto da URL(param)
+        //aqui é chamada a função de alteração de usuário, onde ja é feita toda a modificação do usuário
+        var retornoAlteracao = this.doadorService.alterar(id,dadosNovos)
+        //criação do padrão de retorno  
+        return retornoAlteracao;      
+       
     }
-
-    @Delete('/:id')
+ 
+    @Delete('/ID:id')//linha que define o método vai ser de exclusão (delete), nesse caso também é especificado um parametro na URL, por onde vai chegar o id do usuário
     @ApiResponse({status: 200, description:'Retorna que houve sucesso na exclusão'})
     @ApiResponse({status: 500, description:'Retorna que houve erro na exclusão.'})
-    async removeCadastro(@Param('id') id: string){
-        var retornoExclusao = await this.Doador.removeCadastro(id)
-        var retorno = new RetornoDoadorDTO('Exclusão Efetuada',retornoExclusao);        
-        return retorno;       
-        
+    async removeFilme(@Param('id') id: string){//aqui é definido que vai receber dados da URL(param)
+        //aqui é chamada a função de exclusão de usuário, onde ja é feita toda a exclusão do usuário
+        var retornoExclusao = await this.doadorService.remover(id)  
+        return retornoExclusao;              
     }
-    @Get('/:ID') 
+ 
+    // @Get('/:ID')//criação de método GET, para retornar usuários filtrados pelo ID, onde é necessário passar o ID do usuário pelo url
+    // @ApiResponse({status: 200, description:'Retorna que houve sucesso na consulta'})
+    // @ApiResponse({status: 500, description:'Retorna que houve erro na consulta.'})
+    // async retornadoadorId(@Param('ID') ID:string){
+    //     //aqui é feita a pesquisa do filme, depois é criado mapeado os dados desse usuário para um retorno padrão (lista filme DTO)
+    //     var doadoresListados = await this.doadorService.Compartilhar(ID);
+    //     return {
+    //             doador: doadoresListados
+    //         };
+    // }
+ 
+    @Get()//aqui é criado um método GET sem nenhum tipo de recepção de dados, onde é retornada uma lista de uusários
     @ApiResponse({status: 200, description:'Retorna que houve sucesso na consulta'})
-    @ApiResponse({status: 500, description:'Retorna que houve erro na consulta.'})
-    async retornaCadastroId(@Param('ID') ID:string){
-        var cadastrosListados = this.Doador.pesquisaId(ID);
-        const ListaRetorno = new ListaDoadoresDTO(cadastrosListados.id,
-                                                cadastrosListados.nome,
-                                                cadastrosListados.email)
-
-        return {
-                Cadastro: ListaRetorno
-            };
-    }
-
-    @Get()
-    @ApiResponse({status: 200, description:'Retorna que houve sucesso na consulta'})
-    async retornaCadastro(): Promise <ListagemDoadoresDTO>{
-        var cadastrosListados = this.Doador.Cadastros;
-        const ListaRetorno = cadastrosListados.map(
-            cadastro => new ListaDoadoresDTO(
-                cadastro.id,
-                cadastro.nome,
-                cadastro.email
-            )
-        );
-        const retorno = new ListagemDoadoresDTO(ListaRetorno);
-        return retorno
+    async retornaDoador(): Promise <ListaDoadoresDTO[]>{
+        //Aqui são pesquisados os usuários a serem listados, depois é feito um mapeamento de dados para retornar as informações no padrão de resposta esperado (listaFilmeDTO)
+        return this.doadorService.listar();
     }
 }
+ 

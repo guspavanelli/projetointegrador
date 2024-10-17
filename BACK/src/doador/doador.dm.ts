@@ -16,7 +16,7 @@ export class DoadoresArmazenados{
         const cadastro = this.pesquisaId(id);
 
         this.#cadastros = this.#cadastros.filter(
-            cadastroSalvo => cadastroSalvo.id !== id
+            cadastroSalvo => cadastroSalvo.ID !== id
         )
 
         return cadastro
@@ -25,13 +25,13 @@ export class DoadoresArmazenados{
 
     pesquisaEmail(email:string){
         const possivelCadastro = this.#cadastros.find(
-            cadastro => cadastro.email == email
+            cadastro => cadastro.EMAIL == email
         )
         return possivelCadastro;
     }    
     pesquisaId(id:string){
         const possivelCadastro = this.#cadastros.find(
-            cadastroSalvo => cadastroSalvo.id === id
+            cadastroSalvo => cadastroSalvo.ID === id
         );
 
         if(!possivelCadastro){

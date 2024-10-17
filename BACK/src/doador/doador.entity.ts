@@ -4,54 +4,35 @@ import { Column, Entity, JoinColumn, ManyToMany, ManyToOne, PrimaryColumn } from
 
 export class DoadorEntity {
     @PrimaryColumn()
-    id: string;
+    ID: string;
 
     @Column({length: 255})
-    nome: string;
+    NOME: string;
 
     @Column({length: 255})
-    email: string;
+    EMAIL: string;
 
     @Column({length: 255})
-    telefone: string;
+    TELEFONE: string;
 
     @Column({length: 255})
-    senha: string;
+    SENHA: string;
 
     @Column({ type: 'date' })
-    dataNascimento: Date;
+    DATANASCIMENTO: Date;
 
     @Column({length: 255})
-    tipoSanguineo: string; 
+    TIPOSANGUINEO: string; 
 
 
-    constructor(
-        id: string,
-        nome: string,
-        email: string,
-        telefone: string,
-        senha: string,
-        dataNascimento: Date,
-        tipoSanguineo: string,
-        
-    ) {
-        const saltOrRounds = 10;
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-        this.senha = bcrypt.hashSync(senha, saltOrRounds);
-        this.dataNascimento = dataNascimento;
-        this.tipoSanguineo = tipoSanguineo;
-    }
-
+ 
     trocaSenha(senha){
         const saltOrRounds = 10;
-        this.senha = bcrypt.hashSync(senha,saltOrRounds)
+        this.SENHA = bcrypt.hashSync(senha,saltOrRounds)
     }
 
     login(senha){
-        return bcrypt.compareSync(senha,this.senha);
+        return bcrypt.compareSync(senha,this.SENHA);
     }
 }
 

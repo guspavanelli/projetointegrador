@@ -1,9 +1,12 @@
 
-import { DoadorEntity } from "../doador.entity";
+import { ApiPropertyOptional } from "@nestjs/swagger";
 
-export class RetornoDoadorDTO{
-    constructor(
-        readonly status: string,
-        readonly cadastro: DoadorEntity
-        ){}
+export class RetornoCadastroDTO{
+    ID: string;
+    message: string;
+}
+
+export class RetornoObjDTO{
+    return: any;
+    message: string;
 }
