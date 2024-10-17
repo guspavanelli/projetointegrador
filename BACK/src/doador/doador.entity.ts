@@ -3,6 +3,7 @@ import * as bcrypt from 'bcrypt';
 import { Column, Entity, JoinColumn, ManyToMany, ManyToOne, PrimaryColumn } from "typeorm";
 
 export class DoadorEntity {
+
     @PrimaryColumn()
     ID: string;
 
@@ -24,8 +25,6 @@ export class DoadorEntity {
     @Column({length: 255})
     TIPOSANGUINEO: string; 
 
-
- 
     trocaSenha(senha){
         const saltOrRounds = 10;
         this.SENHA = bcrypt.hashSync(senha,saltOrRounds)
