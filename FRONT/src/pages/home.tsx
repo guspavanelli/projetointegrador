@@ -157,7 +157,7 @@ function Home() {
                 )}
                 {!modalVisible && !quizEnded && (
                     <div className="quiz">
-                        <h2>{questions[currentQuestion].question}</h2>
+                        <h2 className="quiz_texto">{questions[currentQuestion].question}</h2>
                         <div className="options">
                             {questions[currentQuestion].options.map((option, index) => (
                                 <div key={index} className="option">
