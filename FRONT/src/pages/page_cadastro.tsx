@@ -95,7 +95,7 @@ function PageCadastro() {
     }
 
     return (
-        <div>
+        <div id="scroll1">
             
             <div className="container">
                 <div className="form-wrapper">
