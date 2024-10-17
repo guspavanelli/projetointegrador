@@ -19,7 +19,7 @@ export class DOADOR {
     @Column({ length: 255 })
     SENHA: string;
 
-    @Column({ type: 'date' })
+    @Column({ type: 'datetime' })
     DATANASCIMENTO: Date;
 
     @Column({ length: 255 })
