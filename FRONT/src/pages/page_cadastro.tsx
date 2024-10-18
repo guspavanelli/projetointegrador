@@ -6,7 +6,7 @@ import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import imagemcadastro from "../assests/imagem cadastro.jpg"; 
 
 function PageCadastro() {
-    TabTitle('Cadastro - Sangue Bom')
+    TabTitle('Home - Sangue Bom')
     const [addID, setAddID] = useState('');
     const [addNOME, setAddNome] = useState('');
     const [addEMAIL, setAddEmail] = useState('');
