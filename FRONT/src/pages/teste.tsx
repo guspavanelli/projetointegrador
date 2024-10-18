@@ -3,6 +3,8 @@ import Footer from "../components/footer";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
+import imagemteste from "../assests/imagem login.jpg"; 
+
 
 const questions = [
     {
@@ -78,7 +80,7 @@ const questions = [
   ];
   
   function Teste() {
-    TabTitle('Teste - Sangue Bom')
+    TabTitle('Home - Sangue Bom')
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedOption, setSelectedOption] = useState('');
@@ -125,9 +127,8 @@ const questions = [
 
     return(
         <div>
-            
-            <p>Página Teste</p>
             <div className="quiz-container">
+             <img style={{padding: '0px', width:'50%'}}  src={imagemteste} alt="img doação SangueBom" />
                 {modalVisible && (
                     <div className="modal">
                     <div className="modal-content">
