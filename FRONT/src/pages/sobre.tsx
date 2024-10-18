@@ -12,7 +12,6 @@ function Sobre(){
         <div className="container_sobre_">
             <Header/>
             <br />
-            <br />
             <div className="title_sobre">
             <h1>Sobre o sangue bom</h1>
             </div>            
@@ -34,8 +33,6 @@ function Sobre(){
             
             
                         <br />
-                        <br />
-
 
                         <div className="projeto-box1">
                         <br />
