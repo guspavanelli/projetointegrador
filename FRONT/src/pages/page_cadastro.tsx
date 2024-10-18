@@ -12,7 +12,7 @@ function PageCadastro() {
     const [addEMAIL, setAddEmail] = useState('');
     const [addTELEFONE, setAddTelefone] = useState('');
     const [addSENHA, setAddSenha] = useState('');
-    const [addDATANASCIMENTO, setAddDataNascimento] = useState('');
+    const [addDATANASCIMENTO, setAddDataNascimento] = useState(new Date());
     const [addTIPOSANGUINEO, setAddTipoSanguineo] = useState('');
     const [usuarios, setUsuarios] = useState<Usuarios[]>([]);
     const [loading, setLoading] = useState(false);
