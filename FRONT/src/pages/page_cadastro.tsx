@@ -4,6 +4,7 @@ import { Usuarios } from "../types/usuarios";
 import { ModuloApi } from "../api";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import imagemcadastro from "../assests/imagem cadastro.jpg"; 
+import '../style/style.css'
 
 function PageCadastro() {
     TabTitle('Home - Sangue Bom')
@@ -106,9 +107,9 @@ function PageCadastro() {
             <div className="container">
                 <div className="form-wrapper">
                     <div className="image">
-                        <img src={imagemcadastro} alt="img doação SangueBom" />
+                        <img style={{padding: '0px', width:'100%', height: '80%'}} src={imagemcadastro} alt="img doação SangueBom" />
                     </div>
-                    <div className="form">
+                    <div style={{padding: '0px', width:'60%', height: 'auto'}} className="form">
                         <h3 className="tit_cads">Seja Bem-vindo(a)!<br />Cadastre-se aqui:</h3>
                         <p className="sub_tit_cads">Digite seus dados para criar sua conta:</p>
                         <input type="text" value={addID} onChange={handleChangeID} placeholder="ID" />
