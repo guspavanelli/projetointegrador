@@ -80,7 +80,7 @@ const questions = [
   ];
   
   function Teste() {
-    TabTitle('Teste - Sangue Bom')
+    TabTitle('Home - Sangue Bom')
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedOption, setSelectedOption] = useState('');

@@ -118,7 +118,7 @@ function PageCadastro() {
                         <input type="password" value={addSENHA} onChange={handleChangeSenha} placeholder="Crie sua Senha de 8 dígitos" />
                         <div className="date-container">
                             <span>Data de Nascimento</span>
-                            <input type="date" value={addDATANASCIMENTO} onChange={handleChangeDataNascimento} />
+                            <input type="datetime" value={addDATANASCIMENTO} onChange={handleChangeDataNascimento} />
                         </div>
                         <select value={addTIPOSANGUINEO} onChange={handleChangeTipoSanguineo}>
                             <option value="">Selecione o Tipo Sanguíneo</option>
