@@ -3,6 +3,8 @@ import Footer from "../components/footer";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
+import imagemteste from "../assests/imagem login.jpg"; 
+
 
 const questions = [
     {
@@ -128,6 +130,7 @@ const questions = [
             
             <p>Página Teste</p>
             <div className="quiz-container">
+             <img style={{padding: '0px', width:'50%'}}  src={imagemteste} alt="img doação SangueBom" />
                 {modalVisible && (
                     <div className="modal">
                     <div className="modal-content">
