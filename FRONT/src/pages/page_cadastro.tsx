@@ -6,7 +6,7 @@ import { ModuloApi } from "../api";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 
 function PageCadastro() {
-    TabTitle('Cadastro - Sangue Bom')
+    TabTitle('Home - Sangue Bom')
     const [addID, setAddID] = useState('');
     const [addNOME, setAddNome] = useState('');
     const [addEMAIL, setAddEmail] = useState('');
