@@ -12,7 +12,7 @@ export class alteraDoadorDTO {
         example: "Felipe",
         description: "Nome do usuário, deve ser informado um texto contendo o nome"
     })
-    public nome: string;
+    public NOME: string;
 
     @EmailUnico({ message: "Email repetido" })
     @IsEmail(undefined, { message: "email inválido" })
@@ -21,7 +21,7 @@ export class alteraDoadorDTO {
         example: "felipe@teste.com",
         description: "Email do usuário, deve ser informado um email válido e que não se repita"
     })
-    public email: string;
+    public EMAIL: string;
 
     @IsString()
     @IsOptional()
@@ -29,7 +29,7 @@ export class alteraDoadorDTO {
         example: "1999999-9999",
         description: "Telefone do usuário, deve ser informado um texto apenas com os números do telefone"
     })
-    public telefone: string;
+    public TELEFONE: string;
 
     @IsOptional()
     @IsDateString({}, { message: 'Data deve estar no formato ISO 8601' })
@@ -38,7 +38,7 @@ export class alteraDoadorDTO {
         example: '2023-09-05T12:00:00Z',
         description: 'Data e hora no formato ISO 8601',
     })
-    public data?: string;
+    public DATA: string;
 
     @MinLength(8, {message: "senha deve ter no minimo 8 digitos"})
     @ApiPropertyOptional({
@@ -47,7 +47,7 @@ export class alteraDoadorDTO {
     })
     @IsOptional()
     @SenhaForte({message:"Senha deve ter complexidade maior. Está muito fraca"})
-    senha:string;
+    SENHA:string;
 
     @IsString()
     @IsOptional()
@@ -55,5 +55,5 @@ export class alteraDoadorDTO {
         example: "A+, A-, B+, B-, AB+, AB-, O+, O-",
         description: "Tipo sanguíneo deve ser informado"
     })
-    public tipoSanguineo: string;
+    public TIPOSANGUINEO: string;
 }

@@ -7,7 +7,6 @@ export const ModuloApi = {
     },
 
     AdicionarUsuario: async (
-        ID: string,
         NOME: string,
         EMAIL: string,
         TELEFONE: string,
@@ -19,7 +18,6 @@ export const ModuloApi = {
             let response = await fetch('http://localhost:3001/doadores', {
                 method: 'POST',
                 body: JSON.stringify({
-                    ID,
                     NOME,
                     EMAIL,
                     TELEFONE,
