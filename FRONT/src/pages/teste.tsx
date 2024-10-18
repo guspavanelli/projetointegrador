@@ -112,6 +112,7 @@ const questions = [
           setQuizEnded(true);
           if (updatedResponses.every(response => response === "Sim")) {
             navigate('/pagecadastro');
+            
           }
         }
       }

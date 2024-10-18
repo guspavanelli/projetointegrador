@@ -20,6 +20,12 @@ import Header from "../components/header";
 
 function Home() {
     TabTitle('Home - Sangue Bom');
+
+    const scrollFun = (id: string) => {
+        document
+          .querySelector(`#id${id}`)
+          ?.scrollIntoView({ block: "center", behavior: "smooth" });
+      };
     return (
         <div className='home_container'>
             <div className="home_posso_doar">
@@ -30,11 +36,11 @@ function Home() {
                 <div className="home_pd_descubra">
                     <p>Faça o teste e descubra se você está apto para doação.</p>
                 </div>
-                <Link className="home_pd_teste" to="/teste">
+                <button onClick={() => scrollFun("3")} className="home_pd_teste">
                     <div>
                         <p>Teste</p>
                     </div>
-                </Link>
+                </button>
                 <div className="div_carrosel">
             <Carousel/>
             </div>
