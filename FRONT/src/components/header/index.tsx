@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useRef } from "react";
 import '../../style/style.css'
 import ImagemPerfil from '../../assests/fotos.colab/lekos.png'
+import Sobre from '../../pages/sobre';
 
 interface User {
   name: string;
@@ -76,6 +77,7 @@ const Header: React.FC = () => {
           <div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div>
           <div style={styles.navLink} onClick={() => scrollFun("2")}>Locais</div>
           <div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div>
+          <Link style= {styles.navLink}to='/sobre'><div>Sobre</div></Link>
         </nav>
       </div>
 

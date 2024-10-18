@@ -7,23 +7,25 @@ export const ModuloApi = {
     },
 
     AdicionarUsuario: async (
-        nome: string,
-        email: string,
-        telefone: string,
-        senha: string,
-        data: string,
-        tipoSanguineo: string
+        ID: string,
+        NOME: string,
+        EMAIL: string,
+        TELEFONE: string,
+        SENHA: string,
+        DATANASCIMENTO: string,
+        TIPOSANGUINEO: string
     ): Promise<boolean> => {
         try {
             let response = await fetch('http://localhost:3001/doadores', {
                 method: 'POST',
                 body: JSON.stringify({
-                    nome,
-                    email,
-                    telefone,
-                    senha,
-                    data,
-                    tipoSanguineo
+                    ID,
+                    NOME,
+                    EMAIL,
+                    TELEFONE,
+                    SENHA,
+                    DATANASCIMENTO,
+                    TIPOSANGUINEO
                 }),
                 headers: {
                     'Content-Type': 'application/json; charset=UTF-8'

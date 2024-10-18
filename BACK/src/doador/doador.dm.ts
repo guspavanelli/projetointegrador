@@ -1,14 +1,13 @@
 import { Injectable } from "@nestjs/common";
-import { DoadorEntity } from "./doador.entity";
+import { DOADOR } from "./doador.entity";
 import { alteraDoadorDTO } from "./dto/alteraDadosDoador.dto";
 import Datas from "src/doador/utils/data";
 
-
 @Injectable()
 export class DoadoresArmazenados{
-    #cadastros: DoadorEntity[] = []; 
+    #cadastros: DOADOR[] = []; 
     objDatas: Datas;  
-    AdicionarCadastro(cadastro: DoadorEntity){
+    AdicionarCadastro(cadastro: DOADOR){
         this.#cadastros.push(cadastro);
         this.objDatas = new Datas();
     }
@@ -21,8 +20,6 @@ export class DoadoresArmazenados{
 
         return cadastro
     }
-
-
     pesquisaEmail(email:string){
         const possivelCadastro = this.#cadastros.find(
             cadastro => cadastro.EMAIL == email

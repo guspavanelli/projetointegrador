@@ -3,6 +3,8 @@ import Footer from "../components/footer";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
+import imagemteste from "../assests/imagem login.jpg"; 
+
 
 const questions = [
     {
@@ -78,7 +80,7 @@ const questions = [
   ];
   
   function Teste() {
-    TabTitle('Teste - Sangue Bom')
+    TabTitle('Home - Sangue Bom')
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedOption, setSelectedOption] = useState('');
@@ -93,16 +95,19 @@ const questions = [
     };
   
     const handleSubmit = () => {
-      if (selectedOption === "Não") {
+      const isLastThreeQuestions = currentQuestion >= questions.length - 3;
+     
+      // Exibir o modal se a resposta for "Sim" nas últimas 3 perguntas
+      if ((selectedOption === "Sim" && isLastThreeQuestions) || (selectedOption === "Não" && !isLastThreeQuestions)) {
         setModalVisible(true);
       } else {
         const updatedResponses = [...responses];
         updatedResponses[currentQuestion] = selectedOption;
         setResponses(updatedResponses);
-  
+     
         if (currentQuestion < questions.length - 1) {
           setCurrentQuestion(currentQuestion + 1);
-          setSelectedOption(''); 
+          setSelectedOption('');
         } else {
           setQuizEnded(true);
           if (updatedResponses.every(response => response === "Sim")) {
@@ -122,9 +127,8 @@ const questions = [
 
     return(
         <div>
-            
-            <p>Página Teste</p>
             <div className="quiz-container">
+             <img style={{padding: '0px', width:'50%'}}  src={imagemteste} alt="img doação SangueBom" />
                 {modalVisible && (
                     <div className="modal">
                     <div className="modal-content">

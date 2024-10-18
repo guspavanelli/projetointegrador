@@ -1,11 +1,12 @@
 import { registerDecorator, ValidationArguments, ValidationOptions, ValidatorConstraint, ValidatorConstraintInterface } from "class-validator";
 import { DoadoresArmazenados } from "../doador.dm";
 import { Injectable } from "@nestjs/common";
+import { DoadorService } from "../doador.service";
 
 @Injectable()
 @ValidatorConstraint({async:true})
 export class emailUnicoValidator implements ValidatorConstraintInterface{
-    constructor(private Cadastros : DoadoresArmazenados){
+    constructor(private Cadastros : DoadorService){
 
     }
     async validate(value: any, validationArguments?: ValidationArguments): Promise<boolean> {
