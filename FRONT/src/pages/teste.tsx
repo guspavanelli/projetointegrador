@@ -127,8 +127,6 @@ const questions = [
 
     return(
         <div>
-            
-            <p>Página Teste</p>
             <div className="quiz-container">
              <img style={{padding: '0px', width:'50%'}}  src={imagemteste} alt="img doação SangueBom" />
                 {modalVisible && (
