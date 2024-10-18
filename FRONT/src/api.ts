@@ -12,7 +12,7 @@ export const ModuloApi = {
         EMAIL: string,
         TELEFONE: string,
         SENHA: string,
-        DATANASCIMENTO: Date,
+        DATANASCIMENTO: string,
         TIPOSANGUINEO: string
     ): Promise<boolean> => {
         try {

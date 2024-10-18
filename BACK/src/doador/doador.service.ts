@@ -73,7 +73,30 @@ export class DoadorService {
       };
     });  
   }
-
+  async localizarEmail(EMAIL: string): Promise<DOADOR> {
+    return this.doadorRepository.findOne({
+      where: {
+        EMAIL,
+      },
+    });
+  }
+ 
+  async Login(email: string, senha: string) {
+    //primeiro é pesquisado o usuário por meio do email
+    const possivelUsuario = await this.localizarEmail(email)
+ 
+    return {
+      //aqui é validada a senha, caso a senha esteja correta, é retornado os dados do usuário e também o status (true para correto, false para incorreto)
+      usuario: possivelUsuario ? (possivelUsuario.login(senha) ? possivelUsuario : null) : null,
+      status: possivelUsuario ? possivelUsuario.login(senha): false
+    };
+  }
+ 
+  async validaEmail(emailNovo: string) {
+    const possivelUsuario = await this.localizarEmail(emailNovo)
+ 
+    return (possivelUsuario == null)
+  }
   async alterar(ID: string, dados: alteraDoadorDTO): Promise<RetornoCadastroDTO> {
     const doador = await this.localizarID(ID);
     Object.entries(dados).forEach(
