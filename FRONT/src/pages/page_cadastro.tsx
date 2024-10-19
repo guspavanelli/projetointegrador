@@ -14,7 +14,7 @@ function PageCadastro() {
     const [addSENHA, setAddSenha] = useState('');
     const [addDATANASCIMENTO, setAddDataNascimento] = useState('');
     const [addTIPOSANGUINEO, setAddTipoSanguineo] = useState('');
-    const [usuarios, setUsuarios] = useState<Usuarios[]>([]);
+    // const [usuarios, setUsuarios] = useState<Usuarios[]>([]);
     const [loading, setLoading] = useState(false);
     const [mensagem, setMensagem] = useState('');
     const [isErro, setIsErro] = useState(false);
@@ -46,19 +46,19 @@ function PageCadastro() {
         setAddTipoSanguineo(e.target.value);
     }
 
-    const carregarUsuarios = async () => {
-        setLoading(true);
-        setUsuarios([]);
-        try {
-            const json = await ModuloApi.CarregarUsuarios();
-            const dataArray = Array.isArray(json) ? json : [json];
-            setUsuarios(dataArray); 
-        } catch (error) {
-            console.error("Erro ao carregar usuários:", error);
-        } finally {
-            setLoading(false);
-        }
-    }
+    // const carregarUsuarios = async () => {
+    //     setLoading(true);
+    //     setUsuarios([]);
+    //     try {
+    //         const json = await ModuloApi.CarregarUsuarios();
+    //         const dataArray = Array.isArray(json) ? json : [json];
+    //         setUsuarios(dataArray); 
+    //     } catch (error) {
+    //         console.error("Erro ao carregar usuários:", error);
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // }
 
     const adicionarUsuarios = async () => {
         if (addNOME && addEMAIL && addTELEFONE && addSENHA && addDATANASCIMENTO && addTIPOSANGUINEO) {
