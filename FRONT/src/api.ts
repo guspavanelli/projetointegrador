@@ -12,7 +12,7 @@ export const ModuloApi = {
         TELEFONE: string,
         SENHA: string,
         DATANASCIMENTO: string,
-        TIPOSANGUINEO: string
+        TIPOSANGUINEO: string      
     ): Promise<boolean> => {
         try {
             let response = await fetch('http://localhost:3001/doadores', {
@@ -24,6 +24,7 @@ export const ModuloApi = {
                     SENHA,
                     DATANASCIMENTO,
                     TIPOSANGUINEO
+
                 }),
                 headers: {
                     'Content-Type': 'application/json; charset=UTF-8'
