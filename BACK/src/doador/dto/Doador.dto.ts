@@ -35,7 +35,7 @@ export class criaDoadorDTO{
         example: '2023-09-05T12:00:00Z',
         description: 'Data e hora no formato ISO 8601',
     })
-    data?: Date;
+    DATA: string;
 
     @MinLength(8, {message: "senha deve ter no minimo 8 digitos"})
     @ApiProperty({

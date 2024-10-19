@@ -19,8 +19,8 @@ export class DOADOR {
     @Column({ length: 255 })
     SENHA: string;
 
-    @Column({ type: 'datetime' })
-    DATANASCIMENTO: Date;
+    @Column({length: 50})
+    DATANASCIMENTO: string;
 
     @Column({ length: 255 })
     TIPOSANGUINEO: string;

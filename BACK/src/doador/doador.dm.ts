@@ -11,24 +11,24 @@ export class DoadoresArmazenados{
         this.#cadastros.push(cadastro);
         this.objDatas = new Datas();
     }
-    async removeCadastro(id:string){
-        const cadastro = this.pesquisaId(id);
+    async removeCadastro(ID:string){
+        const cadastro = this.pesquisaId(ID);
 
         this.#cadastros = this.#cadastros.filter(
-            cadastroSalvo => cadastroSalvo.ID !== id
+            cadastroSalvo => cadastroSalvo.ID !== ID
         )
 
         return cadastro
     }
-    pesquisaEmail(email:string){
+    pesquisaEmail(EMAIL:string){
         const possivelCadastro = this.#cadastros.find(
-            cadastro => cadastro.EMAIL == email
+            cadastro => cadastro.EMAIL == EMAIL
         )
         return possivelCadastro;
     }    
-    pesquisaId(id:string){
+    pesquisaId(ID:string){
         const possivelCadastro = this.#cadastros.find(
-            cadastroSalvo => cadastroSalvo.ID === id
+            cadastroSalvo => cadastroSalvo.ID === ID
         );
 
         if(!possivelCadastro){

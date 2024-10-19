@@ -8,22 +8,19 @@ import '../style/style.css'
 
 function PageCadastro() {
     TabTitle('Home - Sangue Bom')
-    const [addID, setAddID] = useState('');
     const [addNOME, setAddNome] = useState('');
     const [addEMAIL, setAddEmail] = useState('');
     const [addTELEFONE, setAddTelefone] = useState('');
     const [addSENHA, setAddSenha] = useState('');
     const [addDATANASCIMENTO, setAddDataNascimento] = useState('');
     const [addTIPOSANGUINEO, setAddTipoSanguineo] = useState('');
-    const [usuarios, setUsuarios] = useState<Usuarios[]>([]);
+    // const [usuarios, setUsuarios] = useState<Usuarios[]>([]);
     const [loading, setLoading] = useState(false);
     const [mensagem, setMensagem] = useState('');
     const [isErro, setIsErro] = useState(false);
     const [mostrarMensagem, setMostrarMensagem] = useState(false);
 
-    const handleChangeID = (e: ChangeEvent<HTMLInputElement>) => {
-        setAddID(e.target.value);
-    }
+ 
 
     const handleChangeNome = (e: ChangeEvent<HTMLInputElement>) => {
         setAddNome(e.target.value);
@@ -49,25 +46,24 @@ function PageCadastro() {
         setAddTipoSanguineo(e.target.value);
     }
 
-    const carregarUsuarios = async () => {
-        setLoading(true);
-        setUsuarios([]);
-        try {
-            const json = await ModuloApi.CarregarUsuarios();
-            const dataArray = Array.isArray(json) ? json : [json];
-            setUsuarios(dataArray); 
-        } catch (error) {
-            console.error("Erro ao carregar usuários:", error);
-        } finally {
-            setLoading(false);
-        }
-    }
+    // const carregarUsuarios = async () => {
+    //     setLoading(true);
+    //     setUsuarios([]);
+    //     try {
+    //         const json = await ModuloApi.CarregarUsuarios();
+    //         const dataArray = Array.isArray(json) ? json : [json];
+    //         setUsuarios(dataArray); 
+    //     } catch (error) {
+    //         console.error("Erro ao carregar usuários:", error);
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // }
 
     const adicionarUsuarios = async () => {
-        if (addID && addNOME && addEMAIL && addTELEFONE && addSENHA && addDATANASCIMENTO && addTIPOSANGUINEO) {
+        if (addNOME && addEMAIL && addTELEFONE && addSENHA && addDATANASCIMENTO && addTIPOSANGUINEO) {
             try {
                 const sucesso = await ModuloApi.AdicionarUsuario(
-                    addID,
                     addNOME, 
                     addEMAIL, 
                     addTELEFONE, 
@@ -112,7 +108,6 @@ function PageCadastro() {
                     <div style={{padding: '0px', width:'60%', height: 'auto'}} className="form">
                         <h3 className="tit_cads">Seja Bem-vindo(a)!<br />Cadastre-se aqui:</h3>
                         <p className="sub_tit_cads">Digite seus dados para criar sua conta:</p>
-                        <input type="text" value={addID} onChange={handleChangeID} placeholder="ID" />
                         <input type="text" value={addNOME} onChange={handleChangeNome} placeholder="Nome Completo" />
                         <input type="email" value={addEMAIL} onChange={handleChangeEmail} placeholder="Informe seu melhor email" />
                         <input type="text" value={addTELEFONE} onChange={handleChangeTelefone} placeholder="Informe seu telefone" />
