@@ -651,10 +651,11 @@ h6{
 }
 
 .imgp{
-
+    object-fit: cover;
     align-items: center;
     width: 100px;
     height: 100px;
+    border-radius: 100%;
 }
 
 #Alterarfotodeperfil{
