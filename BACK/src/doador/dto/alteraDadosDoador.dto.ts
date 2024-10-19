@@ -32,7 +32,7 @@ export class alteraDoadorDTO {
     public TELEFONE: string;
 
     @IsOptional()
-    @IsDateString({}, { message: 'Data deve estar no formato ISO 8601' })
+    @IsDateString({}, { message: 'Data deve estar' })
     @ApiPropertyOptional({
         example: '2023-09-05T12:00:00Z',
         description: 'Data e hora no formato ISO 8601',
