@@ -26,9 +26,9 @@ export class DoadoresArmazenados{
         )
         return possivelCadastro;
     }    
-    pesquisaId(id:string){
+    pesquisaId(ID:string){
         const possivelCadastro = this.#cadastros.find(
-            cadastroSalvo => cadastroSalvo.ID === id
+            cadastroSalvo => cadastroSalvo.ID === ID
         );
 
         if(!possivelCadastro){
