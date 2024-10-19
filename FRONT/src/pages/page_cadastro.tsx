@@ -20,9 +20,7 @@ function PageCadastro() {
     const [isErro, setIsErro] = useState(false);
     const [mostrarMensagem, setMostrarMensagem] = useState(false);
 
-    const handleChangeID = (e: ChangeEvent<HTMLInputElement>) => {
-        setAddID(e.target.value);
-    }
+ 
 
     const handleChangeNome = (e: ChangeEvent<HTMLInputElement>) => {
         setAddNome(e.target.value);
@@ -110,7 +108,6 @@ function PageCadastro() {
                     <div style={{padding: '0px', width:'60%', height: 'auto'}} className="form">
                         <h3 className="tit_cads">Seja Bem-vindo(a)!<br />Cadastre-se aqui:</h3>
                         <p className="sub_tit_cads">Digite seus dados para criar sua conta:</p>
-                        <input type="text" value={addID} onChange={handleChangeID} placeholder="ID" />
                         <input type="text" value={addNOME} onChange={handleChangeNome} placeholder="Nome Completo" />
                         <input type="email" value={addEMAIL} onChange={handleChangeEmail} placeholder="Informe seu melhor email" />
                         <input type="text" value={addTELEFONE} onChange={handleChangeTelefone} placeholder="Informe seu telefone" />
