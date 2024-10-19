@@ -7,7 +7,7 @@ import { ChangeEvent, useState } from "react";
 import { Usuarios } from "../types/usuarios";
 import Header from "../components/header";
 import ExpandablePopup from "../components/buttons/botaoajuda";
-
+import Ale from '../assests/fotos.colab/lekos.png'
 
 
 function Perfil() {
@@ -20,7 +20,7 @@ function Perfil() {
                     <br />
                     <h3>Helena Hills</h3>
                     <br />
-                    <img className="imgp" src={ftPerfil} alt="foto perfil" /> <br />
+                    <img className="imgp" src={Ale} alt="foto perfil" /> <br />
                     <div id="Alterarfotodeperfil"> Alterar foto de perfil </div>
                     <br />
                     <button id="btcertificado">Gerar Certificado</button>
