@@ -30,7 +30,7 @@ export class DoadorService {
         doador.EMAIL = dados.EMAIL;
         doador.TELEFONE = dados.TELEFONE;
         doador.trocaSenha(dados.SENHA);
-        doador.DATANASCIMENTO = dados.data;
+        doador.DATANASCIMENTO = dados.DATA;
         doador.TIPOSANGUINEO = dados.TIPOSANGUINEO;
 
     return this.doadorRepository.save(doador)
