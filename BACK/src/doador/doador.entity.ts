@@ -19,7 +19,7 @@ export class DOADOR {
     @Column({ length: 255 })
     SENHA: string;
 
-    @Column({length: 255})
+    @Column({ length: 255 })
     DATANASCIMENTO: string;
 
     @Column({ length: 255 })
