@@ -14,13 +14,12 @@ function PageCadastro() {
     const [addSENHA, setAddSenha] = useState('');
     const [addDATANASCIMENTO, setAddDataNascimento] = useState('');
     const [addTIPOSANGUINEO, setAddTipoSanguineo] = useState('');
-    // const [usuarios, setUsuarios] = useState<Usuarios[]>([]);
     const [loading, setLoading] = useState(false);
     const [mensagem, setMensagem] = useState('');
     const [isErro, setIsErro] = useState(false);
     const [mostrarMensagem, setMostrarMensagem] = useState(false);
 
- 
+  
 
     const handleChangeNome = (e: ChangeEvent<HTMLInputElement>) => {
         setAddNome(e.target.value);
@@ -114,7 +113,7 @@ function PageCadastro() {
                         <input type="password" value={addSENHA} onChange={handleChangeSenha} placeholder="Crie sua Senha de 8 dígitos" />
                         <div className="date-container">
                             <span>Data de Nascimento</span>
-                            <input type="date" value={addDATANASCIMENTO} onChange={handleChangeDataNascimento} />
+                            <input type="datetime" value={addDATANASCIMENTO} onChange={handleChangeDataNascimento} />
                         </div>
                         <select value={addTIPOSANGUINEO} onChange={handleChangeTipoSanguineo}>
                             <option value="">Selecione o Tipo Sanguíneo</option>
