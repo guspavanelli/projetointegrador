@@ -9,6 +9,11 @@ const ExpandablePopup: React.FC = () => {
     setIsPopupVisible(!isPopupVisible);
   };
 
+  const AlertaEnvio = () => {
+    alert('Email enviado!');
+    setIsPopupVisible(!isPopupVisible);
+  };
+
   const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(e.target.value);
   };
@@ -31,7 +36,7 @@ const ExpandablePopup: React.FC = () => {
               onChange={handleMessageChange}
               placeholder="Digite aqui suas dúvidas, reclamações, elogios e sugestões..."
             />
-            <button className="expandable-send-button">Enviar</button>
+            <button className="expandable-send-button" onClick={AlertaEnvio}>Enviar</button>
             <button className="expandable-close-popup" onClick={togglePopup}>
               Fechar
             </button>
