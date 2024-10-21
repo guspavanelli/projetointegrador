@@ -46,7 +46,7 @@ const Header: React.FC = () => {
 
   const handlePerfil = () => {
     if (isLoggedIn) {
-      navigate('/perfil'); // Redireciona para a página de perfil
+      scrollFun("4"); // Redireciona para a página de perfil
     }
   };
 
@@ -54,8 +54,9 @@ const Header: React.FC = () => {
   const divOne = useRef<HTMLInputElement | null>(null);
   const divFive = useRef<HTMLInputElement | null>(null);
 
-  const scrolLWithUseRef = () => {
-    divFive.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+  const botaoLogin = () => {
+    scrollFun("4")
+    handleLogin()
   };
   
   const scrollFun = (id: string) => {
@@ -91,7 +92,7 @@ const Header: React.FC = () => {
             </button>
           </div>
         ) : (
-          <button style={styles.loginButton} onClick={handleLogin}>
+          <button  style={styles.loginButton} onClick={botaoLogin}>
             Login
           </button>
         )}
