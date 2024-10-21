@@ -101,7 +101,7 @@ function PageCadastro() {
             
             <div className="container">
                 <div className="form-wrapper">
-                    <div className="image">
+                    <div>
                         <img style={{padding: '0px', width:'100%', height: '80%'}} src={imagemcadastro} alt="img doação SangueBom" />
                     </div>
                     <div style={{padding: '0px', width:'60%', height: 'auto'}} className="form">
