@@ -98,13 +98,10 @@ function PageCadastro() {
 
     return (
         <div id="scroll1">
-            
             <div className="container">
                 <div className="form-wrapper">
-                    <div>
-                        <img style={{padding: '0px', width:'100%', height: '80%'}} src={imagemcadastro} alt="img doação SangueBom" />
-                    </div>
-                    <div style={{padding: '0px', width:'60%', height: 'auto'}} className="form">
+                        <img style={{padding: '0px', width:'50%'}} src={imagemcadastro} alt="img doação SangueBom" />
+                    <div style={{padding: '0px', width:'50%', height: 'auto'}} className="form">
                         <h3 className="tit_cads">Seja Bem-vindo(a)!<br />Cadastre-se aqui:</h3>
                         <p className="sub_tit_cads">Digite seus dados para criar sua conta:</p>
                         <input type="text" value={addNOME} onChange={handleChangeNome} placeholder="Nome Completo" />
@@ -113,7 +110,7 @@ function PageCadastro() {
                         <input type="password" value={addSENHA} onChange={handleChangeSenha} placeholder="Crie sua Senha de 8 dígitos" />
                         <div className="date-container">
                             <span>Data de Nascimento</span>
-                            <input type="datetime" value={addDATANASCIMENTO} onChange={handleChangeDataNascimento} />
+                            <input type="date" value={addDATANASCIMENTO} onChange={handleChangeDataNascimento} />
                         </div>
                         <select value={addTIPOSANGUINEO} onChange={handleChangeTipoSanguineo}>
                             <option value="">Selecione o Tipo Sanguíneo</option>
