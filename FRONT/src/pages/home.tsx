@@ -68,7 +68,9 @@ function Home() {
                 <Teste />
             </div>
             <h2 className="vejalocais_home">Cadastre-se</h2>
-            <PageCadastro/>
+            <div id="id4">
+                <PageCadastro/>
+            </div>
             <div id="id1"><FAQ/></div>
             <Footer />
             <BloodTypeSelector />
