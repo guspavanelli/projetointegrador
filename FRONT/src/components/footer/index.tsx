@@ -1,7 +1,7 @@
 import Instagram from "../../assests/footer/instagram (2).png"
 import Facebook from "../../assests/footer/facebook.png"
 import Linkedin from "../../assests/footer/linkedin.png"
-import Youtube from "../../assests/footer/youtube.png"
+import Gmail from "../../assests/footer/gmail.png"
 import { Link } from "react-router-dom"
 
 function Footer(){
@@ -16,7 +16,7 @@ function Footer(){
             <Link to='https://www.instagram.com/'><img src = {Instagram} alt="Instagram"/></Link>
             <Link to='https://www.facebook.com/'><img src = {Facebook} alt="Facebook" /></Link>
             <Link to='https://www.linkedin.com/'><img src= {Linkedin} alt="Linkedin" /></Link>
-            <Link to='https://www.youtube.com/'><img src= {Youtube} alt="Youtube" /></Link>
+            <a href="mailto:sacsanguebom@gmail.com?subject=Contato&body=Olá, estou entrando em contato porque..."><img src= {Gmail} alt="Email" /></a>
         </div>
         </div>
         <div className="footer_2">
