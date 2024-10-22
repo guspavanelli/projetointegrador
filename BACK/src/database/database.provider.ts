@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-
+ 
 export const databaseProviders = [
     {
         provide: 'DATA_SOURCE',
@@ -15,9 +15,9 @@ export const databaseProviders = [
                     __dirname + '/../**/*.entity{.ts,.js}',
                 ],
                 synchronize: false,
-                
-
-
+               
+ 
+ 
             });
             return dataSource.initialize();
         },
