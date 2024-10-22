@@ -1,0 +1,137 @@
+/* Container principal */
+.home_container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: none; /* Cor suave para o fundo */
+    padding: 20px;
+}
+
+/* Card principal do perfil */
+.perfil_pr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Nome e imagem do perfil */
+.titulo_imagem_botaocertificado h3 {
+    font-size: 26px;
+    color: #333; /* Cor neutra */
+    margin-bottom: 15px;
+}
+
+.imgp {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover;
+    border: 3px solid #4caf50; /* Mantém o contorno verde */
+    margin-bottom: 10px;
+}
+
+/* Botão de certificado */
+#btcertificado {
+    background-color: #b71c1c; /* Verde escuro */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#btcertificado:hover {
+    background-color:#b71c1c; /* Verde mais escuro no hover */
+}
+
+/* Área de inputs */
+.inputprincipalpf {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inputprincipalpf h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilo dos inputs */
+.inputprincipalpf input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.inputprincipalpf input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Efeito de foco */
+}
+
+/* Link para alterar foto de perfil */
+#Alterarfotodeperfil {
+    color: #2196f3;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 8px;
+}
+
+/* Botão de salvar */
+#btsalvar {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btsalvar:hover {
+    background-color: #388e3c;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+/* Expandable Popup */
+.expandable-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2196f3;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.expandable-popup:hover {
+    background-color: #1976d2;
+}
