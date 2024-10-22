@@ -93,6 +93,12 @@ const questions = [
       setSelectedOption(option);
     };
   
+    const scrollFun = (id: string) => {
+      document
+        .querySelector(`#id${id}`)
+        ?.scrollIntoView({ block: "center", behavior: "smooth" });
+    };
+
     const handleSubmit = (event: React.MouseEvent) => {
       event.preventDefault(); // Evita o comportamento padrão do botão
     
@@ -114,9 +120,11 @@ const questions = [
     
           // Se a resposta for "Não" na última pergunta, redireciona para a página de cadastro
           if (selectedOption === "Não") {
-            navigate('/pagecadastro'); // Redireciona para a página de cadastro
+            scrollFun("4"); // Redireciona para a página de cadastro
+            handleRestart()
           } else if (updatedResponses.every(response => response === "Sim")) {
-            navigate('/pagecadastro'); // Também redireciona se todas as respostas forem "Sim"
+            scrollFun("4"); // Também redireciona se todas as respostas forem "Sim"
+            handleRestart()
           } else {
             setModalVisible(true); // Mostra o modal se não estiver apto
           }
