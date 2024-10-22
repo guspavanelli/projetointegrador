@@ -71,7 +71,7 @@ const questions = [
             <>
               <ul>
                 <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Você confirma que não estava em outro pais (e/ou regiões com surto de febre amarela) nos últimos 30 dias? </li>
-                <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Ou não morou na Europa após 1980?</li>
+                <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Ou não morou na Europa após 1980??</li>
               </ul>
             </>
           ),
