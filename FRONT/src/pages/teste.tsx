@@ -168,4 +168,4 @@ const questions = [
     }
 
 
-    
+    export default Teste;
