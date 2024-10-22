@@ -1,11 +1,9 @@
-import Cabecalho from "../components/cabecalho";
-import Footer from "../components/footer";
-import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import imagemteste from "../assests/imagem login.jpg";
- 
- 
+import { useNavigate } from 'react-router-dom'; 
+import imagemteste from "../assests/imagem login.jpg"; 
+import { TabTitle } from '../components/GeneralFunctions/GeneralFunctions';
+
+
 const questions = [
     {
       question: (

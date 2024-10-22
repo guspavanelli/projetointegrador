@@ -45,20 +45,6 @@ function PageCadastro() {
         setAddTipoSanguineo(e.target.value);
     }
 
-    // const carregarUsuarios = async () => {
-    //     setLoading(true);
-    //     setUsuarios([]);
-    //     try {
-    //         const json = await ModuloApi.CarregarUsuarios();
-    //         const dataArray = Array.isArray(json) ? json : [json];
-    //         setUsuarios(dataArray); 
-    //     } catch (error) {
-    //         console.error("Erro ao carregar usuários:", error);
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // }
-
     const adicionarUsuarios = async () => {
         if (addNOME && addEMAIL && addTELEFONE && addSENHA && addDATANASCIMENTO && addTIPOSANGUINEO) {
             try {

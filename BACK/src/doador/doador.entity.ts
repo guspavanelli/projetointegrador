@@ -4,6 +4,8 @@ import * as bcrypt from 'bcrypt';
 @Entity() // Adicione este decorador
 export class DOADOR {
 
+    
+
     @PrimaryColumn()
     ID: string;
 
