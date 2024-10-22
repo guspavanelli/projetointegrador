@@ -88,6 +88,12 @@ const questions = [
             setSelectedOption(option);
         };
 
+        const scrollFun = (id: string) => {
+          document
+            .querySelector(`#id${id}`)
+            ?.scrollIntoView({ block: "center", behavior: "smooth" });
+        };
+
         const handleSubmit = () => {
             if (!selectedOption) {
                 setModalVisible(true);
@@ -107,7 +113,7 @@ const questions = [
                 } else {
                     setQuizEnded(true);
                     if (updatedResponses.every(response => response === "Sim")) {
-                        navigate('/pagecadastro');
+                        scrollFun("4");
                     }
                 }
             }
