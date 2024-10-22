@@ -30,6 +30,10 @@ export class DoadorController{
     //DELETE - recebe dados, utilizado para remover registros ----
  
  
+    
+
+
+
     @Post()//essa linha, seria um decorator para definir que a função é um metodo POST
     //Para receber dados do body da requisição, deve utilizar o decorator de "Body", especificando depois a variavel
     @ApiCreatedResponse({ description:'Retorna que houve sucesso na inclusão'})
@@ -55,13 +59,17 @@ export class DoadorController{
        
     }
  
+   
+    
+
+
     @Delete('/ID:id')//linha que define o método vai ser de exclusão (delete), nesse caso também é especificado um parametro na URL, por onde vai chegar o id do usuário
     @ApiResponse({status: 200, description:'Retorna que houve sucesso na exclusão'})
     @ApiResponse({status: 500, description:'Retorna que houve erro na exclusão.'})
     async removeFilme(@Param('id') id: string){//aqui é definido que vai receber dados da URL(param)
         //aqui é chamada a função de exclusão de usuário, onde ja é feita toda a exclusão do usuário
         var retornoExclusao = await this.doadorService.remover(id)  
-        return retornoExclusao;              
+        return retornoExclusao;
     }
  
     // @Get('/:ID')//criação de método GET, para retornar usuários filtrados pelo ID, onde é necessário passar o ID do usuário pelo url
