@@ -64,7 +64,7 @@ function Home() {
                 />
             </div>
             <div id="id3">
-                <h2 className="vejalocais_home">Confira se você está apto a doar</h2>
+                <h2 className="vejalocais_home">Confira se você está apto a doar!</h2>
                 <Teste />
             </div>
             <h2 className="vejalocais_home">Cadastre-se</h2>
