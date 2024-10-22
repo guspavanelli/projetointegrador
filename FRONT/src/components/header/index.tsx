@@ -75,9 +75,9 @@ const Header: React.FC = () => {
       {/* Centro: Links de navegação */}
       <div style={styles.center}>
         <nav className='nav_header'>
-          <div style={styles.navLink} onClick={() => scrollFun("2")}> Locais</div>
-          <div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div>
-          <div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div>
+        <Link to="/" style={styles.navLink}><div style={styles.navLink} onClick={() => scrollFun("2")}>Locais</div></Link>
+        <Link to="/" style={styles.navLink}><div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div></Link>
+        <Link to="/" style={styles.navLink} ><div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div></Link>
           <Link style= {styles.navLink}to='/sobre'><div>Sobre</div></Link>
         </nav>
       </div>
