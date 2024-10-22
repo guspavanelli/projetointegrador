@@ -142,24 +142,25 @@ const questions = [
                 )}
                 {!modalVisible && !quizEnded && (
                     <div className="quiz">
-                        <h2>{questions[currentQuestion].question}</h2>
-                        <div className="options">
-                            {questions[currentQuestion].options.map((option, index) => (
-                                <div key={index} className="option">
-                                    <input
-                                        type="radio"
-                                        id={option}
-                                        name="option"
-                                        value={option}
-                                        checked={selectedOption === option}
-                                        onChange={() => handleOptionChange(option)}
-                                    />
-                                    <label htmlFor={option}>{option}</label>
-                                </div>
-                            ))}
+                    <h2>{questions[currentQuestion].question}</h2>
+                    <div className="options">
+                        {questions[currentQuestion].options.map((option, index) => (
+                        <div key={index} className="option">
+                            <input
+                            type="radio"
+                            id={option}
+                            name="option"
+                            value={option}
+                            checked={selectedOption === option}
+                            onChange={() => handleOptionChange(option)}
+                            />
+                            <label htmlFor={option}>{option}</label>
                         </div>
-                        <button className="btn_quiz" onClick={handleSubmit}>
-                            <span style={{ color: 'white' }}>Posso Doar?</span>
+                        ))}
+                    </div>
+                    <div className="wrapper">
+                        <a className="cta" href="#">
+                        <button className="btn_quiz" onClick={handleSubmit}><span style={{ color: 'white' }}>Posso Doar?</span>
                         </button>
                     </div>
                 )}
