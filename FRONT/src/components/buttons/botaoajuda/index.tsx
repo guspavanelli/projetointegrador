@@ -10,9 +10,12 @@ const ExpandablePopup: React.FC = () => {
   };
 
   const AlertaEnvio = () => {
-    alert('Email enviado!');
+    alert('Você será redirecionado para enviar seu Email!');
     setIsPopupVisible(!isPopupVisible);
   };
+
+  const recipientEmail = "sacsanguebom@gmail.com";
+  const mailtoLink = `mailto:${recipientEmail}?subject=Contato&body=${encodeURIComponent(message)}`;
 
   const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(e.target.value);
@@ -36,7 +39,7 @@ const ExpandablePopup: React.FC = () => {
               onChange={handleMessageChange}
               placeholder="Digite aqui suas dúvidas, reclamações, elogios e sugestões..."
             />
-            <button className="expandable-send-button" onClick={AlertaEnvio}>Enviar</button>
+            <a className='tirarrisco' href={mailtoLink}><button className="expandable-send-button" onClick={AlertaEnvio}>Enviar</button></a>
             <button className="expandable-close-popup" onClick={togglePopup}>
               Fechar
             </button>

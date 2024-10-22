@@ -163,6 +163,6 @@ const questions = [
             </div>
         );
     }
-export default Teste;
+
 
     
