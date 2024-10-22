@@ -46,7 +46,7 @@ const Header: React.FC = () => {
 
   const handlePerfil = () => {
     if (isLoggedIn) {
-      scrollFun("4"); // Redireciona para a página de perfil
+      navigate('/perfil'); // Redireciona para a página de perfil
     }
   };
 
@@ -111,7 +111,7 @@ const styles = {
     backgroundColor: '#fff',
     borderBottom: '2px solid #d32f2f',
     width: '100%', // Ocupa a largura completa da div pai
-    gap: '50px'
+    gap: '20px'
   },
   left: {
     flex: 1,
