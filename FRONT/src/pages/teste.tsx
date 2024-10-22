@@ -118,6 +118,17 @@ const questions = [
       }
     };
   
+    const scrollFun = (id: string) => {
+      document
+        .querySelector(`#id${id}`)
+        ?.scrollIntoView({ block: "center", behavior: "smooth" });
+    };
+
+    const PossoDoarBotao = () =>{
+      handleSubmit();
+      scrollFun("3")
+    }
+
     const handleRestart = () => {
       setCurrentQuestion(0);
       setSelectedOption('');
@@ -158,7 +169,7 @@ const questions = [
                     </div>
                     <div className="wrapper">
                         <a className="cta" href="#">
-                        <button className="btn_quiz" onClick={handleSubmit}><span style={{ color: 'white' }}>Posso Doar?</span>
+                        <button className="btn_quiz" onClick={PossoDoarBotao}><span style={{ color: 'white' }}>Posso Doar?</span>
                         </button>
                         <span>
                             <svg width="33px" height="22px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
