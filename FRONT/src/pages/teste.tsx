@@ -33,10 +33,10 @@ const questions = [
       question: (
         <>
           <ul>
-            {/* <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Você pesa mais de 50kg?</li> */}
-            <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Não tomou vacina contra Dengue nos últimos 28 dias?</li>
-            <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Não se vacinou contra a gripe nas últimas 48 horas?</li>
-            <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Não realizou qualquer procedimento endoscópico nos últimos 6 meses?</li>
+            <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Você pesa mais de 50kg?</li>
+            <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Você confirma que não tomou vacina contra Dengue nos últimos 28 dias?</li>
+            <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Você confirma que não se vacinou contra a gripe nas últimas 48 horas?</li>
+            <li><svg className='arrow' viewBox="0 0 24 24"><path d="M7 4l6 6-6 6V4z" fill="red"/></svg> Você confirma que não realizou qualquer procedimento endoscópico nos últimos 6 meses?</li>
           </ul>
         </>
       ),
