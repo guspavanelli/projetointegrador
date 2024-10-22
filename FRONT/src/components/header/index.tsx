@@ -46,7 +46,7 @@ const Header: React.FC = () => {
 
   const handlePerfil = () => {
     if (isLoggedIn) {
-      scrollFun("4"); // Redireciona para a página de perfil
+      navigate('/perfil'); // Redireciona para a página de perfil
     }
   };
 
@@ -75,9 +75,9 @@ const Header: React.FC = () => {
       {/* Centro: Links de navegação */}
       <div style={styles.center}>
         <nav className='nav_header'>
-          <div style={styles.navLink} onClick={() => scrollFun("2")}> Locais</div>
-          <div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div>
-          <div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div>
+        <Link to="/" style={styles.navLink}><div style={styles.navLink} onClick={() => scrollFun("2")}>Locais</div></Link>
+        <Link to="/" style={styles.navLink}><div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div></Link>
+        <Link to="/" style={styles.navLink} ><div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div></Link>
           <Link style= {styles.navLink}to='/sobre'><div>Sobre</div></Link>
         </nav>
       </div>
@@ -111,7 +111,7 @@ const styles = {
     backgroundColor: '#fff',
     borderBottom: '2px solid #d32f2f',
     width: '100%', // Ocupa a largura completa da div pai
-    gap: '50px'
+    gap: '20px'
   },
   left: {
     flex: 1,

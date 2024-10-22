@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import imagemteste from "../assests/imagem login.jpg"; 
+import { TabTitle } from '../components/GeneralFunctions/GeneralFunctions';
 
 
 const questions = [
@@ -116,7 +117,7 @@ const questions = [
         const handleRestart = () => {
             setCurrentQuestion(0);
             setSelectedOption('');
-            setQuizEnded();
+            setQuizEnded(false);
             setModalVisible(false);
             navigate('/'); 
         };
@@ -128,7 +129,9 @@ const questions = [
                     <div className="modal">
                         <div className="modal-content">
                         <h2>
-                            {selectedOption === '' ? "Por favor, selecione uma opção." : "Infelizmente você ainda não está apto para doar sangue."
+                            {selectedOption === '' 
+                                ? "Por favor, selecione uma opção." 
+                                : "Infelizmente você ainda não está apto para doar sangue."
                             }
                         </h2>
                             <button onClick={handleRestart}>Fechar</button>
