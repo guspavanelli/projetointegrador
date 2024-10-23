@@ -40,7 +40,7 @@
 
 /* Botão de certificado */
 #btcertificado {
-    background-color: #b71c1c; /* Verde escuro */
+    background-color: #b71c1c;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -52,7 +52,7 @@
 }
 
 #btcertificado:hover {
-    background-color:#b71c1c; 
+    background-color:#be5252; 
 }
 
 /* Área de inputs */
@@ -79,13 +79,13 @@
 
 .inputprincipalpf input:focus {
     outline: none;
-    border-color: #4caf50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Efeito de foco */
+    border-color: rgb(255, 229, 229);
+    box-shadow: 0 0 5px rgb(248, 195, 195); /* Efeito de foco */
 }
 
 /* Link para alterar foto de perfil */
 #Alterarfotodeperfil {
-    color: #2196f3;
+    color: #000000;
     cursor: pointer;
     text-decoration: underline;
     margin-top: 8px;
@@ -93,7 +93,7 @@
 
 /* Botão de salvar */
 #btsalvar {
-    background-color: #4caf50;
+    background-color: #b71c1c;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -104,7 +104,7 @@
 }
 
 #btsalvar:hover {
-    background-color: #388e3c;
+    background-color: #be5252;
 }
 
 /* Footer */
@@ -134,3 +134,9 @@ footer {
 .expandable-popup:hover {
     background-color: #1976d2;
 }
+
+#Alterarfotodeperfil:hover{
+ color: #b71c1c ;  
+}
+
+/*rgb(255, 229, 229)*/
