@@ -53,8 +53,9 @@ const Header: React.FC = () => {
   const divOne = useRef<HTMLInputElement | null>(null);
   const divFive = useRef<HTMLInputElement | null>(null);
 
-  const scrolLWithUseRef = () => {
-    divFive.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+  const botaoLogin = () => {
+    scrollFun("4")
+    handleLogin()
   };
   
   const scrollFun = (id: string) => {
@@ -73,9 +74,9 @@ const Header: React.FC = () => {
       {/* Centro: Links de navegação */}
       <div style={styles.center}>
         <nav className='nav_header'>
-          <div style={styles.navLink} onClick={() => scrollFun("2")}> Locais</div>
-          <div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div>
-          <div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div>
+        <Link to="/" style={styles.navLink}><div style={styles.navLink} onClick={() => scrollFun("2")}>Locais</div></Link>
+        <Link to="/" style={styles.navLink}><div style={styles.navLink} onClick={() => scrollFun("3")}>Teste</div></Link>
+        <Link to="/" style={styles.navLink} ><div style={styles.navLink} onClick={() => scrollFun("1")}>Informações</div></Link>
           <Link style= {styles.navLink}to='/sobre'><div>Sobre</div></Link>
         </nav>
       </div>
@@ -90,7 +91,7 @@ const Header: React.FC = () => {
             </button>
           </div>
         ) : (
-          <button style={styles.loginButton} onClick={handleLogin}>
+          <button  style={styles.loginButton} onClick={botaoLogin}>
             Login
           </button>
         )}
@@ -109,7 +110,7 @@ const styles = {
     backgroundColor: '#fff',
     borderBottom: '2px solid #d32f2f',
     width: '100%', // Ocupa a largura completa da div pai
-    gap: '50px'
+    gap: '20px'
   },
   left: {
     flex: 1,

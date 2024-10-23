@@ -10,6 +10,7 @@ import Perfil from './pages/perfil';
 import Sobre from './pages/sobre';
 import Teste from './pages/teste';
 import Cabecalho from './components/cabecalho';
+import Form_teste from './pages/teste_iv';
 
 
 function App() {
@@ -35,7 +36,9 @@ function App() {
         <Route path='/sobre' element={<Sobre/>}>
         </Route>
         <Route path='/teste' element={<Teste/>}>
-        </Route>      
+        </Route> 
+        <Route path='/form_teste' element={<Form_teste/>}>
+        </Route>     
       </Routes> 
     </div>
   );

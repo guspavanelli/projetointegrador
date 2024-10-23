@@ -478,6 +478,7 @@ h6{
     flex-direction: column;
     flex: 1;
     color: #333333ca;
+    align-items: flex-end;
 }
 .footer_3{
     display: flex;

@@ -1,10 +1,11 @@
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import Footer from "../components/footer";
-import Cabecalho from "../components/cabecalho";
+import Header from "../components/header";
 import QrCode from "../assests/qrcode.webp";
 import '../style/style.css';
 import CardList from "../components/card-carro-sobre/cardlist";
-import Header from "../components/header";
+import ExpandablePopup from "../components/buttons/botaoajuda";
+import BloodTypeSelector from "../components/buttons/botaoflutuante";
 
 function Sobre(){
     TabTitle('Sobre - Sangue Bom')
@@ -53,7 +54,8 @@ function Sobre(){
             
             <br />
             <br />
-
+            <BloodTypeSelector />
+            <ExpandablePopup />
             <Footer/>
         </div>
     )
