@@ -28,7 +28,7 @@ function Footer(){
         </div>
         </div>
         <div className="footer_2">
-           <Link className="subtitle_footer" to = '/sobre'>Sobre nós</Link>
+           <Link className="subtitle_footer" to ='/sobre'>Sobre nós</Link>
             <Link className="subtitle_footer" to='/sobre'>Contatos</Link>
             <Link className="subtitle_footer" to='/sobre'>Nossa História</Link>
         </div>
