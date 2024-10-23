@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: none; /* Cor suave para o fundo */
     padding: 20px;
 }
 
@@ -35,7 +34,7 @@
     height: 160px;
     border-radius: 50%; /* Torna a imagem circular */
     object-fit: cover;
-    border: 3px solid #4caf50; /* Mantém o contorno verde */
+    border: 3px solid #b71c1c; /* Mantém o contorno verde */
     margin-bottom: 10px;
 }
 
@@ -53,7 +52,7 @@
 }
 
 #btcertificado:hover {
-    background-color:#b71c1c; /* Verde mais escuro no hover */
+    background-color:#b71c1c; 
 }
 
 /* Área de inputs */

@@ -36,7 +36,7 @@ const CardList: React.FC = () => {
       name: 'Hyan Moreno', 
       description: '19 anos, Bauru-SP', 
       linkedin: 'https://www.linkedin.com/in/hyanzim-moreno-41230b332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 
-      whatsapp: '5514991255559' 
+      whatsapp: '5514997178079' 
     },
     { 
       image: ivas, 
