@@ -234,12 +234,10 @@ function Form_teste() {
       right: 0;
     }
 
-    .container-autenticacao.active .toggle-left, .toggle-right {
-      transform: translateX(0);
-    }
+  
 
     .toggle {
-      background: linear-gradient(90deg,#53a3ff,#2968b1);
+      background: linear-gradient(90deg, #ff5252, #b71c1c);
       color: #fff;
       height: 100%;
       left: -100%;
@@ -247,8 +245,7 @@ function Form_teste() {
       transform: translateX(0);
       transition: all .6s ease-in-out;
       width: 200%;
-    }
-
+  }
     .toggle-container {
       border-radius: 150px 0 0 100px;
       height: 100%;
@@ -261,24 +258,42 @@ function Form_teste() {
       z-index: 1000;
     }
 
-    .container, .container-img {
-      min-height: 100vh;
-    }
-
-    /* CELULAR */
-    @media only screen and (max-width: 600px) {
-      /* HOME */
-      .home-container {
-        width: 100%;
-      }
-
-      /* LOGIN */
-      .form-container img {
-        width: 200px;
-      }
-
-      /* ... (o resto do seu CSS para mobile) ... */
-    }
+    .container-autenticacao {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0003;
+      margin: 8px auto;
+      max-width: 100%;
+      min-height: 480px;
+      overflow: hidden;
+      position: relative;
+      width: 768px;
+      transition: transform 0.6s ease-in-out; /* Suaviza a transição */
+  }
+  
+  .logar-conta,
+  .criar-conta {
+      left: 0;
+      width: 50%;
+      position: absolute;
+      transition: opacity 0.6s ease-in-out; /* Suaviza a transição da opacidade */
+  }
+  
+  .logar-conta {
+      z-index: 2;
+  }
+  
+  .criar-conta {
+      opacity: 0; /* Inicialmente oculto */
+      z-index: 1;
+  }
+  
+  .form-container {
+      height: 100%;
+      top: 0;
+      transition: all 0.6s ease-in-out;
+  }
+  
     `}
 </style>
 
@@ -353,7 +368,7 @@ function Form_teste() {
               <h1>Login</h1>
               <p>Se mantenha conectado fazendo login com suas informações</p>
             </div>
-            <div className="toggle-panel toggle-right"><h1>Criar Sua Conta</h1><p> Crie sua conta, e venha fazer parte da nossa Familia !</p><button type="button" className="hidden"> Criar Uma Conta </button></div>
+            <div className="toggle-panel toggle-right"><h3>Criar Sua Conta</h3><button type="button" className="hidden"> Criar Uma Conta </button></div>
           </div>
         </div>
       </div>
@@ -364,234 +379,3 @@ function Form_teste() {
 export default Form_teste;
 
 
-// import React, { useState } from "react";
-
-// function Form_teste() {
-//   const [activePanel, setActivePanel] = useState<"login" | "criarConta">("login");
-
-//   const handleToggle = (panel: "login" | "criarConta"): void => {
-//     setActivePanel(panel);
-//   };
-
-//   return (
-//     <div className="container">
-//         <style>
-//       {`
-//     .container-autenticacao {
-//       background-color: #fff;
-//       border-radius: 10px;
-//       box-shadow: 0 0 10px #0003;
-//       margin: 8px auto;
-//       max-width: 100%;
-//       min-height: 480px;
-//       overflow: hidden;
-//       position: relative;
-//       width: 768px;
-//     }
-    
-//     .form-container {
-//       position: absolute;
-//       width: 50%;
-//       height: 100%;
-//       top: 0;
-//       transition: transform 0.6s ease-in-out;
-//     }
-    
-//     container-autenticacao {
-//       background-color: #fff;
-//       border-radius: 10px;
-//       box-shadow: 0 0 10px #0003;
-//       margin: 8px auto;
-//       max-width: 100%;
-//       min-height: 480px;
-//       overflow: hidden;
-//       position: relative;
-//       width: 768px;
-//     }
-    
-//     .form-container {
-//       position: absolute;
-//       width: 50%;
-//       height: 100%;
-//       top: 0;
-//       transition: transform 0.6s ease-in-out;
-//     }
-    
-//     .logar-conta {
-//       left: 0;
-//       z-index: 2;
-//       transform: translateX(0); /* Posição inicial do painel de login */
-//     }
-    
-//     .criar-conta {
-//       right: 0;
-//       z-index: 1;
-//       transform: translateX(100%); /* Ocultar por padrão */
-//     }
-    
-//     .active {
-//       transform: translateX(0); /* Exibir quando ativo */
-//     }
-    
-//     .active.logar-conta {
-//       transform: translateX(0); /* Login visível */
-//     }
-    
-//     .active.criar-conta {
-//       transform: translateX(0); /* Cadastro visível */
-//     }
-    
-//     .toggle-container {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-//       display: flex;
-//     }
-    
-//     .toggle-panel {
-//       width: 50%;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       justify-content: center;
-//       cursor: pointer;
-//     }
-    
-//     .toggle-left {
-//       background: #53a3ff; /* cor de fundo para o painel de login */
-//     }
-    
-//     .toggle-right {
-//       background: #53a3ff; /* cor de fundo para o painel de criar conta */
-//     }
-//     .container-autenticacao form {
-//       align-items: center;
-//       background-color: #fff;
-//       display: flex;
-//       flex-direction: column;
-//       height: 100%;
-//       justify-content: center;
-//       padding: 0 20px;
-//     }
-    
-//     .container-autenticacao input {
-//       background-color: #eee;
-//       border: 1px solid #0000;
-//       border-radius: 8px;
-//       font-size: 13px;
-//       margin: 3px 0;
-//       outline: none;
-//       padding: 10px 4px;
-//       width: 100%;
-//     }
-    
-//     .container-autenticacao button {
-//       background-color: #4b8a40;
-//       border: 1px solid #0000;
-//       border-radius: 10px;
-//       color: #fff;
-//       cursor: pointer;
-//       font-size: 12px;
-//       font-weight: 700;
-//       letter-spacing: 0.5px;
-//       margin-top: 10px;
-//       padding: 10px 45px;
-//       text-transform: uppercase;
-//     }
-    
-//     .message-erro,
-//     .message-ok {
-//       font-size: x-small;
-//       margin-top: 2px;
-//     }
-    
-//     a {
-//       color: inherit;
-//       text-decoration: none;
-//     }
-    
-//     .message-ok {
-//       color: #4b8a40;
-//       font-weight: 700;
-//     }
-    
-//     .container-input {
-//       position: relative;
-//     }
-    
-//     .container-input img {
-//       cursor: pointer;
-//       left: 90%;
-//       position: absolute;
-//       top: 65%;
-//       width: 20px;
-//     }
-    
-//     .aceitar-termos {
-//       display: flex;
-//       align-items: center;
-//       margin: 10px 0;
-//     }
-    
-//     .aceitar-termos label {
-//       margin-left: 5px;
-//     }
-    
-    
-//         `}
-//       </style>
-
-//       <div className="container-autenticacao">
-//       <div className={`form-container logar-conta ${activePanel === "login" ? "active" : ""}`} id="logarConta" style={{ transform: activePanel === "login" ? 'translateX(0)' : 'translateX(-100%)' }}>
-//           <form>
-//             <h1 className="entrar">Entrar</h1>
-//             <div className="container-input">
-//               <input type="text" name="usuario-nome" placeholder="nome@email.com" required />
-//               <input type="password" name="usuario-senha" placeholder="*********" required />
-//             </div>
-//             <button type="button">Entrar</button>
-//             <a href="/esqueceu-senha">
-//               <label className="esqueceu-senha">Esqueceu a Senha?</label>
-//             </a>
-//             <span className="message-erro"></span>
-//             <span className="message-ok"></span>
-//           </form>
-//         </div>
-
-//         <div className={`form-container criar-conta ${activePanel === "criarConta" ? "active" : ""}`} id="criarConta" style={{ transform: activePanel === "criarConta" ? 'translateX(0)' : 'translateX(100%)' }}>
-//           <form>
-//             <h1>CRIE SUA CONTA</h1>
-//             <input type="text" name="user-name" placeholder="Nome Completo" required />
-//             <input type="text" name="user-cpf" placeholder="CPF / CNPJ" required />
-//             <input type="text" name="user-telefone" placeholder="Telefone" required />
-//             <input type="text" name="user-email" placeholder="nome@email.com" required />
-//             <input type="password" name="user-password" placeholder="Crie Sua Senha" required />
-//             <input type="password" name="user-confirm-password" placeholder="Confirme Sua Senha" required />
-//             <div className="aceitar-termos">
-//               <input type="checkbox" name="aceitar-termos-pf" />
-//               <label>aceitar os termos</label>
-//             </div>
-//             <button type="button">Cadastrar-Se</button>
-//             <span className="message-erro"></span>
-//             <span className="message-ok"></span>
-//           </form>
-//         </div>
-
-//         <div className="toggle-container">
-//           <div className="toggle-panel toggle-left" onClick={() => handleToggle("login")}>
-//             <h1>Login</h1>
-//             <p>Se mantenha conectado fazendo login com suas informações</p>
-//           </div>
-//           <div className="toggle-panel toggle-right" onClick={() => handleToggle("criarConta")}>
-//             <h1>Criar Sua Conta</h1>
-//             <p>Crie sua conta, e venha fazer parte da nossa Família!</p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Form_teste;
