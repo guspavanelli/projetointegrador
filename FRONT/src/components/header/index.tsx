@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import  Logo  from '../../assests/logomarca-sanguebom.png'
-import { display, height, padding } from '@mui/system';
 import { Link, useNavigate } from 'react-router-dom';
 import { useRef } from "react";
 import '../../style/style.css'

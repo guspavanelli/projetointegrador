@@ -3,8 +3,16 @@ import Facebook from "../../assests/footer/facebook.png"
 import Linkedin from "../../assests/footer/linkedin.png"
 import Gmail from "../../assests/footer/gmail.png"
 import { Link } from "react-router-dom"
+import '../../style/style.css'
 
 function Footer(){
+    
+    const scrollFun = (id: string) => {
+        document
+          .querySelector(`#id${id}`)
+          ?.scrollIntoView({ block: "center", behavior: "smooth" });
+      };
+
     return (
     <div className="footer_principal">
         <div className="footer_1">
@@ -20,15 +28,15 @@ function Footer(){
         </div>
         </div>
         <div className="footer_2">
-           <Link className="subtitle_footer" to = '/sobre'>Sobre nós</Link>
+           <Link className="subtitle_footer" to ='/sobre'>Sobre nós</Link>
             <Link className="subtitle_footer" to='/sobre'>Contatos</Link>
             <Link className="subtitle_footer" to='/sobre'>Nossa História</Link>
         </div>
-        <div className="footer_3">
+        {/* <div className="footer_3">
             <Link className="subtitle_footer" to='/info'>Dúvidas frequentes</Link>
             <Link className="subtitle_footer" to='/teste'>Teste de Aptidão</Link>
             <Link className="subtitle_footer" to='/checkin'>Checkin</Link>
-        </div>
+        </div> */}
         
     </div>
     )
