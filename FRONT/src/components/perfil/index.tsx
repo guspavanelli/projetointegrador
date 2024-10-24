@@ -28,7 +28,7 @@ function Perfil({ nome, alterarNome }: PerfilProps) {
                     <h3>{nome}</h3> {/* Exibe o nome dinamicamente */}
                     <img className="imgp" src={Ale} alt="foto perfil"/>
                     <div id="Alterarfotodeperfil">Alterar foto de perfil</div>
-                    <button id="btcertificado">Gerar Certificado</button>
+                    <button id="btcertificado">Editar Perfil</button>
                 </div>
 
                 <div className="inputprincipalpf">
