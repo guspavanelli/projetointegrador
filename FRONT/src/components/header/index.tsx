@@ -160,7 +160,7 @@ const styles = {
   },
   logoutButton: {
     padding: '6px 12px',
-    backgroundColor: '#f44336',
+    backgroundColor: '#d32f2f',
     color: '#fff',
     border: 'none',
     borderRadius: '15px',
