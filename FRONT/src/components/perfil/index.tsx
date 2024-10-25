@@ -1,5 +1,5 @@
 import { ChangeEvent } from "react";
-import Ale from '../assests/fotos.colab/lekos.png';
+import Ale from '../../assests/fotos.colab/lekos.png';
 import './perfil.css';
 import Header from "../header";
 import Footer from "../footer";
@@ -22,12 +22,13 @@ function Perfil({ nome, alterarNome }: PerfilProps) {
     return (
         <div className="home_container1">
             <Header/>
+            <h1>Perfil</h1>
             <div className="perfil_pr">
                 <div className="titulo_imagem_botaocertificado">
                     <h3>{nome}</h3> {/* Exibe o nome dinamicamente */}
-                    <img className="imgp"  alt="foto perfil" />
+                    <img className="imgp" src={Ale} alt="foto perfil"/>
                     <div id="Alterarfotodeperfil">Alterar foto de perfil</div>
-                    <button id="btcertificado">Gerar Certificado</button>
+                    <button id="btcertificado">Editar Perfil</button>
                 </div>
 
                 <div className="inputprincipalpf">
