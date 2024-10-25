@@ -69,9 +69,6 @@ export class DoadorController{
         return retorno;       
         
     }
-    
-
-
     @Delete('/ID:id')//linha que define o método vai ser de exclusão (delete), nesse caso também é especificado um parametro na URL, por onde vai chegar o id do usuário
     @ApiResponse({status: 200, description:'Retorna que houve sucesso na exclusão'})
     @ApiResponse({status: 500, description:'Retorna que houve erro na exclusão.'})

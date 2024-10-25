@@ -1390,5 +1390,11 @@ transition: background-color 0.3s;
 background:linear-gradient(180deg, #ff4d4d 0, #c40909);
 color: white;
 }
+
+.form-wrapper.reversed {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
                   
                  
