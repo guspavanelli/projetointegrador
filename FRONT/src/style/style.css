@@ -993,7 +993,7 @@ bg-img{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background: linear-gradient(180deg, #f50002 0, #760101 100%);
+    background: linear-gradient(180deg, #ff4d4d 0, #c40909);
     color: #fff;
     font-weight: 500;
     border-radius: 5px;
