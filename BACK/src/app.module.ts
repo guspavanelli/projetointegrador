@@ -8,7 +8,7 @@ import { FilesModule } from './files/files.module';
 
 
 @Module({
-  imports: [DoadorModule,FilesModule],
+  imports: [DoadorModule],
   controllers: [],
   providers: [],
 })
