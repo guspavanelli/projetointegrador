@@ -15,7 +15,7 @@ import { criaDoadorDTO } from "./dto/Doador.dto";
 import { alteraDoadorDTO } from "./dto/alteraDadosDoador.dto";
 import { ListaDoadoresDTO, ListagemDoadoresDTO } from "./dto/listaDoadores.dto";
 import { DoadorService } from "./doador.service";
-import { RetornoCadastroDTO, RetornoObjDTO } from './dto/retornoDoador.dto'; 
+import { RetornoCadastroDTO, RetornoObjDTO } from '../doador/dto/retornoDoador.dto'; 
 import { loginDoadorDTO } from './dto/loginDoador.dto';
 import { RetornoDoadorDTO } from './dto/retornoDoador1.dto';
 @ApiTags('doador')

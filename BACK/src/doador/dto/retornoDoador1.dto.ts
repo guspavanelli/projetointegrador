@@ -6,3 +6,4 @@ export class RetornoDoadorDTO{
         readonly doador: DOADOR
         ){}
 }
+

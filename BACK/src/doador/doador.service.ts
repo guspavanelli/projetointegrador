@@ -5,7 +5,7 @@ import { DOADOR } from './doador.entity';
 import { criaDoadorDTO } from './dto/Doador.dto';
 import { alteraDoadorDTO } from './dto/alteraDadosDoador.dto';
 import { ListaDoadoresDTO } from './dto/listaDoadores.dto';
-import { RetornoCadastroDTO, RetornoObjDTO } from './dto/retornoDoador.dto';
+import { RetornoCadastroDTO, RetornoObjDTO } from '../doador/dto/retornoDoador.dto';
 
 @Injectable()
 export class DoadorService {
