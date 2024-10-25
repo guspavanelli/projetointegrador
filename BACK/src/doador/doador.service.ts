@@ -83,12 +83,12 @@ export class DoadorService {
  
   async Login(email: string, senha: string) {
     //primeiro é pesquisado o usuário por meio do email
-    const possivelUsuario = await this.localizarEmail(email)
+    const possivelDoador = await this.localizarEmail(email)
  
     return {
       //aqui é validada a senha, caso a senha esteja correta, é retornado os dados do usuário e também o status (true para correto, false para incorreto)
-      usuario: possivelUsuario ? (possivelUsuario.login(senha) ? possivelUsuario : null) : null,
-      status: possivelUsuario ? possivelUsuario.login(senha): false
+      doador: possivelDoador ? (possivelDoador.login(senha) ? possivelDoador : null) : null,
+      status: possivelDoador ? possivelDoador.login(senha): false
     };
   }
  

@@ -28,7 +28,7 @@ export class DOADOR {
     TIPOSANGUINEO: string;
 
     trocaSenha(senha) {
-        const saltOrRounds = 10;
+        const saltOrRounds = 2;
         this.SENHA = bcrypt.hashSync(senha, saltOrRounds);
     }
 

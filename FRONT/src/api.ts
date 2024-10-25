@@ -45,13 +45,32 @@ export const ModuloApi = {
 
 /*MODULO LOGIN */
 
-RealizarLogin: async() => {
-    let response = await
-    fetch('http://localhost:3001/pagelogin');
-    let json = await response.json();
-    return json;
+RealizarLogin: async (EMAIL: string, SENHA: string) => {
+    try {
+        let response = await fetch('http://localhost:3001/doadores/login', {  // Ajuste para a rota correta
+            method: 'POST',
+            body: JSON.stringify({
+                EMAIL,
+                SENHA
+            }),
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        });
 
+        if (response.ok) {
+            let json = await response.json();
+            return json;
+        } else {
+            console.error('Erro ao realizar login');
+            return null;  // Retorna null em caso de falha
+        }
+    } catch (error) {
+        console.error('Erro na requisição de login:', error);
+        return null;  // Retorna null em caso de erro
+    }
 },
+
 
 /*MODULO CHECKIN */
 

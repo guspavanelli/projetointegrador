@@ -9,7 +9,7 @@ export class strongPassValidator implements ValidatorConstraintInterface{
     async validate(value: string, validationArguments?: ValidationArguments): Promise<boolean> {
         if (value){
             const result = zxcvbn(value);
-            var validarSenha = (result.score <= 2) ;
+            var validarSenha = (result.score <= 1) ;
         }
         return !validarSenha;
     }    
