@@ -1367,3 +1367,28 @@ path.two {
     max-width: 90%;
     justify-content: left;
   }
+
+
+.toggle-buttons {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+top:0px;
+
+}
+
+.toggle-buttons button {
+margin: 0 10px;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+background-color: #f0f0f0;
+transition: background-color 0.3s;
+}
+
+.toggle-buttons .active {
+background:linear-gradient(180deg, #ff4d4d 0, #c40909);
+color: white;
+}
+                  
+                 

@@ -215,32 +215,6 @@ function PageCadastro() {
 
     return (
         <div id="scroll1">
-            <style>
-                {`
-                  .toggle-buttons {
-                    display: flex;
-                    justify-content: center;
-                    margin-bottom: 20px;
-                    top:0px;
-                    
-                }
-                
-                .toggle-buttons button {
-                    margin: 0 10px;
-                    padding: 10px 20px;
-                    border: none;
-                    cursor: pointer;
-                    background-color: #f0f0f0;
-                    transition: background-color 0.3s;
-                }
-                
-                .toggle-buttons .active {
-                    background:linear-gradient(180deg, #ff4d4d 0, #c40909);
-                    color: white;
-                }
-                  
-                 `}
-            </style>
             <div className="container" style={{display: 'block', marginTop:'auto'}} >
             <div className="toggle-buttons">
                     <button onClick={() => setIsLogin(true)} className={isLogin ? 'active' : ''}>Fazer Login</button>
