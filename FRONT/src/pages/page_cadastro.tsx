@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom"; // Importa o hook de navegação
 import { ModuloApi } from "../api";
 import { TabTitle } from "../components/GeneralFunctions/GeneralFunctions";
 import imagemcadastro from "../assests/imagem cadastro.jpg"; 
-import '../style/style.css'
+import '../style/style.css';
+import { DoadorProvider, useDoador } from '../context/DoadorContext';  
+
 
 function PageCadastro() {
     TabTitle('Autenticação - Sangue Bom');
@@ -23,6 +25,8 @@ function PageCadastro() {
     const [addDATANASCIMENTO, setAddDataNascimento] = useState('');
     const [addTIPOSANGUINEO, setAddTipoSanguineo] = useState('');
     const [isCadastroSucesso, setIsCadastroSucesso] = useState(false);
+    const { setDoador } = useDoador(); 
+
 
 
     const handleChangeEmail = (e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value);
@@ -44,6 +48,7 @@ function PageCadastro() {
 
                 if (sucesso) {
                     navigate('/perfil'); 
+                    setDoador(sucesso.doador); 
                 }
             } catch (error) {
                 setMensagem('Algo deu errado. Tente novamente.');
@@ -73,7 +78,7 @@ function PageCadastro() {
 
                 if (sucesso) {
                     setIsLogin(true); 
-                    setIsCadastroSucesso(sucesso); // Altera o estado para sucesso no cadastro
+                    setIsCadastroSucesso(sucesso); 
 
                 }
             } catch (error) {
