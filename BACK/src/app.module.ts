@@ -2,11 +2,13 @@
 
 import { Module } from '@nestjs/common';
 import { DoadorModule } from './doador/doador.module';
+import { FilesModule } from './files/files.module';
+
 
 
 
 @Module({
-  imports: [DoadorModule],
+  imports: [DoadorModule,FilesModule],
   controllers: [],
   providers: [],
 })

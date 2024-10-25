@@ -1,25 +1,50 @@
-import { DataSource } from "typeorm";
+// import { DataSource } from "typeorm";
  
-export const databaseProviders = [
-    {
-        provide: 'DATA_SOURCE',
-        useFactory: async () => {
-            const dataSource = new DataSource({
-                type: 'mysql',
-                host: '50.116.112.16',
-                port: 3306,
-                username: 'vitali04_sanguebom',
-                password: '123Mudar@3',
-                database: 'vitali04_db_sanguebom',
-                entities:[
-                    __dirname + '/../**/*.entity{.ts,.js}',
-                ],
-                synchronize: false,
+// export const databaseProviders = [
+//     {
+//         provide: 'DATA_SOURCE',
+//         useFactory: async () => {
+//             const dataSource = new DataSource({
+//                 type: 'mysql',
+//                 host: '50.116.112.16',
+//                 port: 3306,
+//                 username: 'vitali04_sanguebom',
+//                 password: '123Mudar@3',
+//                 database: 'vitali04_db_sanguebom',
+//                 entities:[
+//                     __dirname + '/../**/*.entity{.ts,.js}',
+//                 ],
+//                 synchronize: false,
                
  
  
-            });
-            return dataSource.initialize();
-        },
-    }
+//             });
+//             return dataSource.initialize();
+//         },
+//     }
+// ];
+
+
+import { DataSource } from 'typeorm';
+
+export const databaseProviders = [
+  {
+    provide: 'DATA_SOURCE',
+    useFactory: async () => {
+      const dataSource = new DataSource({
+        type: 'mysql',
+        host: 'localhost',
+        port: 3306,
+        username: 'root',
+        password: '',
+        database: 'db_sanguebom',
+        entities: [
+            __dirname + '/../**/*.entity{.ts,.js}',
+        ],
+        synchronize: true,
+      });
+      
+      return dataSource.initialize();
+    },
+  },
 ];
